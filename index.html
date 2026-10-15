@@ -158,7 +158,7 @@ html[data-theme="light"] .modal-box{box-shadow:0 24px 60px rgba(20,25,30,.18);}
 </head>
 <style>
 /* ---- KPI odometers ---- */
-.kpi-row{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+.kpi-row{display:grid; grid-template-columns:repeat(4,1fr); gap:18px;}
 .kpi-card{
   background:linear-gradient(180deg, var(--surface-2), var(--surface));
   border:1px solid var(--line); border-radius:14px; padding:20px 22px;
@@ -444,7 +444,8 @@ table.tickets-table tbody tr.expanded{background:rgba(198,161,91,0.1);}
 .status-pill.retorno-de-usuario{background:rgba(217,164,65,0.16); color:var(--amber);}
 .cat-pill{font-size:10px; font-weight:600; padding:2px 7px; border-radius:5px; border:1px solid var(--line);}
 .cat-pill.comercial{color:var(--gold-bright); border-color:rgba(198,161,91,0.4);}
-.cat-pill.outras{color:var(--text-faint);}
+.cat-pill.pos-vendas{color:#8FB3D9; border-color:rgba(143,179,217,0.4);}
+.cat-pill.demais{color:var(--text-faint);}
 .detail-row td{background:#17150F; padding:0; border-bottom:1px solid var(--line);}
 .detail-inner{padding:18px 24px; display:grid; grid-template-columns:2fr 1fr; gap:24px;}
 .detail-desc{font-size:13px; line-height:1.6; color:var(--text-muted);}
@@ -816,7 +817,8 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
         <div class="chip-toggle" id="filterCategoria">
           <button data-val="">Todas</button>
           <button data-val="Comercial">Comercial</button>
-          <button data-val="Outras">Outras</button>
+          <button data-val="Pós-vendas">Pós-vendas</button>
+          <button data-val="Demais">Demais</button>
         </div>
         <div class="chip-toggle" id="filterAberto">
           <button data-val="">Todas</button>
@@ -901,8 +903,7 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
 
 <footer>Central de Vagas · Base online protegida por autenticação · Histórico persistente por chamado.</footer>
 <script>let TICKETS = [];
-const CLASSIFICATION = 
-{"Agente De Patio": "Outras", "Ajudante De Motorista": "Outras", "Analista Administrativo De Locacao": "Outras", "Analista Administrativo De Pessoas": "Outras", "Analista Administrativo De Pos Venda": "Outras", "Analista Administrativo Financeiro": "Outras", "Analista Cobranca": "Outras", "Analista De Bi": "Outras", "Analista De Indicadores": "Outras", "Analista De Projeto": "Outras", "Analista De Ti": "Outras", "Analista Fiscal": "Outras", "Analista Gestao De Pessoas": "Outras", "Analista Marketing": "Outras", "Aprendiz Administrativo": "Outras", "Aprendiz Estoque": "Outras", "Assistente Administrativo": "Outras", "Assistente Administrativo De Compras": "Outras", "Assistente Administrativo De Pessoas": "Outras", "Assistente Administrativo De Vendas": "Outras", "Assistente Administrativo Financeiro": "Outras", "Assistente Administrativo Logistica": "Outras", "Assistente Adminstrativo De Pos Vendas": "Outras", "Assistente Compras": "Outras", "Assistente Credito E Cadastro": "Outras", "Assistente De Compras De Pecas": "Outras", "Assistente De Crm": "Outras", "Assistente De E Commerce De Pecas": "Outras", "Assistente De Estoque": "Outras", "Assistente De Gestao De Pessoas": "Outras", "Assistente De Pos Venda": "Outras", "Assistente Faturamento": "Outras", "Assistente Financeiro": "Outras", "Assistente Garantia": "Outras", "Atendente Administrativo Cnh": "Outras", "Atendente De Cnh": "Outras", "Auditor Interno": "Outras", "Auxiliar Administrativo": "Outras", "Auxiliar Administrativo De F&I": "Outras", "Auxiliar Administrativo De Logistica": "Outras", "Auxiliar Administrativo De Pessoal": "Outras", "Auxiliar Administrativo Financeiro": "Outras", "Auxiliar Administrativo Pos Venda": "Outras", "Auxiliar Administrativo Vendas": "Outras", "Auxiliar Compras": "Outras", "Auxiliar Estoque": "Outras", "Auxiliar Financeiro": "Outras", "Auxiliar Funilaria/Pintura": "Outras", "Auxiliar Garantia": "Outras", "Auxiliar Logistica": "Outras", "Auxiliar Mecanico": "Outras", "Auxiliar Servicos Gerais": "Outras", "Auxiliar Tecnologia Da Informacao": "Outras", "Avaliador De Motos": "Outras", "Chefe De Oficina": "Outras", "Comprador Pecas": "Outras", "Consultor De Pecas E Commerce": "Comercial", "Consultor De Vendas De Leads": "Comercial", "Consultor De Vendas Locacao": "Comercial", "Consultor E-Commerce": "Comercial", "Consultor Pecas": "Comercial", "Consultor Pos Vendas": "Comercial", "Consultor Tecnico": "Outras", "Consultor Vendas": "Comercial", "Consultor Vendas Direta": "Comercial", "Controlador De Produtividade": "Outras", "Controller De Pos Venda": "Outras", "Controller De Vendas": "Comercial", "Coordenador De Gestao De Pessoas": "Outras", "Coordenador De Pos Venda": "Outras", "Coordenador De Seguranca Do Trabalho": "Outras", "Coordenador Marketing": "Outras", "Coordenador Tecnologia Da Informacao": "Outras", "Encarregado Administrativo Logistica": "Outras", "Encarregado Estoque": "Outras", "Encarregado Estoque De Pecas": "Outras", "Encarregado Logistica": "Outras", "Entregador Tecnico": "Outras", "Entregador Tecnico De Veiculos": "Outras", "Estagiario": "Outras", "Estagiario Em Seguranca Do Trabalho": "Outras", "Estoquista": "Outras", "Estoquista De Motos": "Outras", "Ferramenteiro": "Outras", "Funileiro": "Outras", "Garantista": "Outras", "Gerente Comercial": "Comercial", "Gerente Pos Venda": "Outras", "Instrutor De Treinamento Tecnico": "Outras", "Instrutor Motorista Man": "Outras", "Lavador Autos": "Outras", "Lavador Motocicletas": "Outras", "Lider De Estoque": "Outras", "Mecanico": "Outras", "Mecanico A": "Outras", "Mecanico B": "Outras", "Mecanico C": "Outras", "Mecanico D": "Outras", "Mecanico Lider": "Outras", "Mecanico Motos": "Outras", "Monitor De Treinamento": "Outras", "Monitor Pos Venda": "Outras", "Montador": "Outras", "Montador Motos": "Outras", "Motorista": "Outras", "Motorista Caminhao": "Outras", "Oficial De Manutencao Predial": "Outras", "Operador Caixa": "Outras", "Operador Telemarketing": "Outras", "Orçamentista": "Outras", "Pintor": "Outras", "Pintor Preparador": "Outras", "Preparador De Veiculos": "Outras", "Qualificador De Lead": "Comercial", "Recepcionista Vendas": "Outras", "Supervisor Assistencia Tecnica": "Outras", "Supervisor De Crm": "Outras", "Supervisor E-Commerce": "Comercial", "Supervisor Pecas": "Outras", "Supervisor Pos Vendas": "Outras", "Supervisor Vendas": "Comercial", "Tecnico Seguranca Do Trabalho": "Outras", "Tecnico Servico Expresso": "Outras", "Vendedor Acessorios": "Comercial", "Vendedor De Consorcio": "Comercial", "Vendedor Motos Externo": "Comercial", "Vendedor Motos Interno": "Comercial", "Vendedor Pecas": "Comercial", "Vendedor Pecas Balcao": "Comercial", "Vendedor Pecas/Externo": "Comercial", "Vendedor Seguro": "Comercial", "Vendedor Veiculos": "Comercial", "Auxiliar Faturamento": "Outras", "Auxiliar Administrativo Cnh": "Outras", "Assistente Administrativo De Cnh": "Outras", "Analista De Comunicacao Interna": "Outras"};</script>
+const CLASSIFICATION = {"Agente De Patio":"Demais","Ajudante De Motorista":"Demais","Analista Administrativo De Locacao":"Demais","Analista Administrativo De Pessoas":"Demais","Analista Administrativo De Pos Venda":"Pós-vendas","Analista Administrativo Financeiro":"Demais","Analista Cobranca":"Demais","Analista De Bi":"Demais","Analista De Indicadores":"Demais","Analista De Projeto":"Demais","Analista De Ti":"Demais","Analista Fiscal":"Demais","Analista Gestao De Pessoas":"Demais","Analista Marketing":"Demais","Aprendiz Administrativo":"Demais","Aprendiz Estoque":"Demais","Assistente Administrativo":"Demais","Assistente Administrativo De Compras":"Demais","Assistente Administrativo De Pessoas":"Demais","Assistente Administrativo De Vendas":"Demais","Assistente Administrativo Financeiro":"Demais","Assistente Administrativo Logistica":"Demais","Assistente Adminstrativo De Pos Vendas":"Pós-vendas","Assistente Compras":"Demais","Assistente Credito E Cadastro":"Demais","Assistente De Compras De Pecas":"Demais","Assistente De Crm":"Demais","Assistente De E Commerce De Pecas":"Demais","Assistente De Estoque":"Demais","Assistente De Gestao De Pessoas":"Demais","Assistente De Pos Venda":"Pós-vendas","Assistente Faturamento":"Demais","Assistente Financeiro":"Demais","Assistente Garantia":"Demais","Atendente Administrativo Cnh":"Demais","Atendente De Cnh":"Demais","Auditor Interno":"Demais","Auxiliar Administrativo":"Demais","Auxiliar Administrativo De F&I":"Demais","Auxiliar Administrativo De Logistica":"Demais","Auxiliar Administrativo De Pessoal":"Demais","Auxiliar Administrativo Financeiro":"Demais","Auxiliar Administrativo Pos Venda":"Pós-vendas","Auxiliar Administrativo Vendas":"Demais","Auxiliar Compras":"Demais","Auxiliar Estoque":"Demais","Auxiliar Financeiro":"Demais","Auxiliar Funilaria/Pintura":"Pós-vendas","Auxiliar Garantia":"Pós-vendas","Auxiliar Logistica":"Demais","Auxiliar Mecanico":"Pós-vendas","Auxiliar Servicos Gerais":"Demais","Auxiliar Tecnologia Da Informacao":"Demais","Avaliador De Motos":"Demais","Chefe De Oficina":"Pós-vendas","Comprador Pecas":"Demais","Consultor De Pecas E Commerce":"Comercial","Consultor De Vendas De Leads":"Comercial","Consultor De Vendas Locacao":"Comercial","Consultor E-Commerce":"Comercial","Consultor Pecas":"Pós-vendas","Consultor Pos Vendas":"Pós-vendas","Consultor Tecnico":"Pós-vendas","Consultor Vendas":"Comercial","Consultor Vendas Direta":"Comercial","Controlador De Produtividade":"Pós-vendas","Controller De Pos Venda":"Pós-vendas","Controller De Vendas":"Comercial","Coordenador De Gestao De Pessoas":"Demais","Coordenador De Pos Venda":"Pós-vendas","Coordenador De Seguranca Do Trabalho":"Demais","Coordenador Marketing":"Demais","Coordenador Tecnologia Da Informacao":"Demais","Encarregado Administrativo Logistica":"Demais","Encarregado Estoque":"Demais","Encarregado Estoque De Pecas":"Pós-vendas","Encarregado Logistica":"Demais","Entregador Tecnico":"Pós-vendas","Entregador Tecnico De Veiculos":"Pós-vendas","Estagiario":"Demais","Estagiario Em Seguranca Do Trabalho":"Demais","Estoquista":"Demais","Estoquista De Motos":"Demais","Ferramenteiro":"Pós-vendas","Funileiro":"Pós-vendas","Garantista":"Pós-vendas","Gerente Comercial":"Comercial","Gerente Pos Venda":"Pós-vendas","Instrutor De Treinamento Tecnico":"Pós-vendas","Instrutor Motorista Man":"Demais","Lavador Autos":"Pós-vendas","Lavador Motocicletas":"Pós-vendas","Lider De Estoque":"Demais","Mecanico":"Pós-vendas","Mecanico A":"Pós-vendas","Mecanico B":"Pós-vendas","Mecanico C":"Pós-vendas","Mecanico D":"Pós-vendas","Mecanico Lider":"Pós-vendas","Mecanico Motos":"Pós-vendas","Monitor De Treinamento":"Demais","Monitor Pos Venda":"Pós-vendas","Montador":"Pós-vendas","Montador Motos":"Pós-vendas","Motorista":"Demais","Motorista Caminhao":"Demais","Oficial De Manutencao Predial":"Demais","Operador Caixa":"Demais","Operador Telemarketing":"Demais","Orçamentista":"Pós-vendas","Pintor":"Pós-vendas","Pintor Preparador":"Pós-vendas","Preparador De Veiculos":"Pós-vendas","Qualificador De Lead":"Comercial","Recepcionista Vendas":"Demais","Supervisor Assistencia Tecnica":"Pós-vendas","Supervisor De Crm":"Demais","Supervisor E-Commerce":"Comercial","Supervisor Pecas":"Pós-vendas","Supervisor Pos Vendas":"Pós-vendas","Supervisor Vendas":"Comercial","Tecnico Seguranca Do Trabalho":"Demais","Tecnico Servico Expresso":"Pós-vendas","Vendedor Acessorios":"Comercial","Vendedor De Consorcio":"Comercial","Vendedor Motos Externo":"Comercial","Vendedor Motos Interno":"Comercial","Vendedor Pecas":"Comercial","Vendedor Pecas Balcao":"Comercial","Vendedor Pecas/Externo":"Comercial","Vendedor Seguro":"Comercial","Vendedor Veiculos":"Comercial","Auxiliar Faturamento":"Demais","Auxiliar Administrativo Cnh":"Demais","Assistente Administrativo De Cnh":"Demais","Analista De Comunicacao Interna":"Demais","Tecnico Seguranca Do Trabalho E Meio Ambiente":"Demais","Instalador De Acessorios":"Pós-vendas","Operador F&I":"Comercial","Consultor De Peças Atacado":"Pós-vendas","Assistente Fiscal":"Demais","Assistente Controladoria":"Demais","Gerente Vendas":"Comercial"};</script>
 <script>
 // ================= ONLINE / AUTENTICAÇÃO =================
 const SUPABASE_URL='https://cmcyvcgvoqmcntdlkhah.supabase.co';
@@ -1099,6 +1100,12 @@ function escapeHtml(s){ return (s===null||s===undefined)?'':String(s).replace(/[
 function pct(n, d){ return d ? Math.round(n/d*100) : 0; }
 function avgDays(list){ return list.length ? Math.round(list.reduce((s,t)=>s+(t.tempoAb||0),0)/list.length) : 0; }
 function normalize(s){ return (s||'').toString().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+const CLASSIFICATION_NORMALIZED = Object.fromEntries(Object.entries(CLASSIFICATION).map(([cargo, category])=>[normalize(cargo), category]));
+const POS_VENDAS_DEPARTMENTS = new Set(['assistencia tecnica','pecas']);
+function classifyTicket(cargo, departamento){
+  if(POS_VENDAS_DEPARTMENTS.has(normalize(departamento).trim())) return 'Pós-vendas';
+  return CLASSIFICATION[cargo] || CLASSIFICATION_NORMALIZED[normalize(cargo).trim()] || 'Demais';
+}
 
 const isOpen = t => t.aberto === true;
 
@@ -1220,12 +1227,8 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
 function renderKpis(){
   const open = TICKETS.filter(isCountedOpen);
   const comercial = open.filter(t=>t.cat==='Comercial').length;
-  const outras = open.filter(t=>t.cat==='Outras').length;
-  const naoClassificada = open.filter(t=>t.cat==='Nao Classificado').length;
-  // O total precisa ser o total REAL de vagas abertas (open.length), não apenas
-  // comercial+outras — senão uma vaga cujo cargo ainda não está no mapa de
-  // classificação some do card sem aviso, e o total deixa de bater com o funil
-  // (que usa isCountedOpen diretamente, sem depender da classificação).
+  const posVendas = open.filter(t=>t.cat==='Pós-vendas').length;
+  const demais = open.filter(t=>t.cat==='Demais').length;
   const total = open.length;
   const mk = (label,val,extraClass,foot) => `
     <div class="kpi-card ${extraClass||''}">
@@ -1235,9 +1238,9 @@ function renderKpis(){
     </div>`;
   document.getElementById('kpiRow').innerHTML =
     mk('Vagas Comerciais', comercial, '', `${((comercial/total)*100||0).toFixed(0)}% do total em aberto`) +
-    mk('Demais Vagas (Adm/Operacional)', outras, '', `${((outras/total)*100||0).toFixed(0)}% do total em aberto`) +
-    mk('Total Geral em Aberto', total, 'total', `${TICKETS.length} chamados na base ao todo` +
-      (naoClassificada ? ` · ${naoClassificada} sem cargo classificado (incluída(s) no total)` : ''));
+    mk('Vagas de Pós-vendas', posVendas, '', `${((posVendas/total)*100||0).toFixed(0)}% do total em aberto`) +
+    mk('Demais Vagas', demais, '', `${((demais/total)*100||0).toFixed(0)}% do total em aberto`) +
+    mk('Total Geral em Aberto', total, 'total', `${TICKETS.length} chamados na base ao todo`);
 }
 
 // ================= TORRE DE NEGÓCIOS =================
@@ -1248,10 +1251,13 @@ function renderTorre(){
   const total = open.length || 1;
   const rows = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
   document.getElementById('torreRow').innerHTML = rows.length ? rows.map(([seg,n])=>{
-    const comercialN = open.filter(t=>(t.seg||'Sem torre informada')===seg && t.cat==='Comercial').length;
+    const inSegment = open.filter(t=>(t.seg||'Sem torre informada')===seg);
+    const comercialN = inSegment.filter(t=>t.cat==='Comercial').length;
+    const posVendasN = inSegment.filter(t=>t.cat==='Pós-vendas').length;
+    const demaisN = inSegment.filter(t=>t.cat==='Demais').length;
     return `
     <div class="breakdown-row">
-      <div class="breakdown-label">${escapeHtml(seg)}<span class="breakdown-sub">${comercialN} comercial · ${n-comercialN} demais</span></div>
+      <div class="breakdown-label">${escapeHtml(seg)}<span class="breakdown-sub">${comercialN} comercial · ${posVendasN} pós-vendas · ${demaisN} demais</span></div>
       <div class="breakdown-track"><div class="breakdown-fill" style="width:${(n/total*100)}%"></div></div>
       <div class="breakdown-val">${n}<span class="pct">${Math.round(n/total*100)}%</span></div>
     </div>`;
@@ -1639,7 +1645,7 @@ function renderTickets(){
       <td>${escapeHtml(t.tec||'—')}</td>
       <td>${escapeHtml(t.criador||'—')}</td>
       <td>${escapeHtml(t.dir||'—')}</td>
-      <td><span class="cat-pill ${t.cat==='Comercial'?'comercial':'outras'}">${escapeHtml(t.cat)}</span></td>
+      <td><span class="cat-pill ${t.cat==='Comercial'?'comercial':(t.cat==='Pós-vendas'?'pos-vendas':'demais')}">${escapeHtml(t.cat)}</span></td>
       <td>${escapeHtml(t.ocor||'—')}</td>
       <td><span class="${statusPillClass(t.desStatus)}">${escapeHtml(t.desStatus||'—')}</span></td>
       <td class="muted-mono">${escapeHtml(t.statusRH||'—')}</td>
@@ -1836,7 +1842,7 @@ let indicatorSegment = '';
 let indicatorMonth = null;
 function scopeTicketsBySegment(seg){ return seg ? TICKETS.filter(t=>t.seg===seg) : TICKETS.slice(); }
 function statusPrazoFora(t){ return normalize(t.statusTempo||'').includes('fora do prazo') || (isCountedOpen(t) && (t.tempoAb||0)>30); }
-function getGrupoCargo(t){ return t.grupoCargo || (t.cat==='Comercial' ? 'Comerciais' : (t.cat==='Outras' ? 'Demais vagas' : 'Não classificado')); }
+function getGrupoCargo(t){ return t.cat || 'Demais'; }
 function pctClosedOnTime(list){
   const closed=list.filter(t=>t.desStatus==='Concluido'); if(!closed.length) return 0;
   return Math.round(closed.filter(t=>normalize(t.statusTempo||'').includes('no prazo') && !normalize(t.statusTempo||'').includes('fora')).length/closed.length*100);
@@ -2176,7 +2182,7 @@ async function processUploadedFiles(mainFile, rhFile){
       const dAb = r['Data de Abertura'];
       const dFe = r['Data de Fechamento'];
       const dVe = r['Data do Vencimento'];
-      const categoria = CLASSIFICATION[cargo] || 'Nao Classificado';
+      const categoria = classifyTicket(cargo, r['Departamento']);
       const aberto = !!desStatus && desStatus!=='Concluido' && desStatus!=='Cancelamento';
       // Se a base principal já vier com a coluna DES_STATUSRH (arquivo já mesclado),
       // usa ela direto. Só recorre ao mapa do arquivo separado (rhFile) quando a
