@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Central de Vagas â€” Controle e Ranking</title>
+<title>Central de Vagas — Controle e Ranking</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -297,7 +297,7 @@ table.rank-table tbody tr:last-child td{border-bottom:none;}
 .breakdown-val{width:96px; flex-shrink:0; text-align:right; font-family:var(--font-mono); font-weight:600; font-size:14px;}
 .breakdown-val .pct{color:var(--text-faint); font-size:11px; font-weight:400; margin-left:4px;}
 
-/* ---- plano de aÃ§Ã£o (vagas >30 dias) ---- */
+/* ---- plano de ação (vagas >30 dias) ---- */
 .plano-table-wrap{background:var(--surface); border:1px solid var(--line); border-radius:14px; overflow:hidden;}
 table.plano-table{width:100%; border-collapse:collapse; font-size:12.5px;}
 table.plano-table th{
@@ -457,7 +457,7 @@ table.tickets-table tbody tr.expanded{background:rgba(198,161,91,0.1);}
 .empty-state .big{font-size:32px; margin-bottom:10px;}
 
 
-/* ---- indicadores gerenciais / diÃ¡rio de bordo ---- */
+/* ---- indicadores gerenciais / diário de bordo ---- */
 .manager-filter{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;}
 .manager-filter label{font-size:12px;color:var(--text-muted);font-weight:700;text-transform:uppercase;letter-spacing:.04em;}
 .manager-select,.diary-input,.diary-select,.diary-textarea{background:var(--surface-2);border:1px solid var(--line);color:var(--text);font-family:var(--font-body);font-size:12.5px;padding:9px 11px;border-radius:8px;}
@@ -534,9 +534,9 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
 }
 </style>
 <body>
-<div class="boot-loader" id="bootLoader"><div class="hud-loader"><div class="hud-ring-a"></div><div class="hud-ring-b"></div><div class="hud-core"></div><div class="hud-title">Central de Vagas</div><div class="hud-status" id="hudStatus">Inicializando nÃºcleo de dados...</div><div class="hud-track"><div class="hud-bar" id="hudBar"></div></div><div class="hud-data" id="hudData">RH SYSTEM // SECURE ACCESS</div></div></div>
-<div class="auth-shell" id="authShell"><div class="auth-card"><div class="auth-orbit"></div><div class="auth-title">Central de Vagas</div><div class="auth-sub">Acesso restrito Â· Recrutamento & SeleÃ§Ã£o</div><div class="auth-field"><label>E-mail corporativo</label><input type="email" id="loginEmail" autocomplete="username" placeholder="nome@empresa.com.br"></div><div class="auth-field"><label>Senha</label><input type="password" id="loginPassword" autocomplete="current-password" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"></div><button class="auth-btn" id="loginBtn">Acessar central</button><div class="auth-error" id="loginError"></div></div></div>
-<div class="password-modal" id="passwordModal"><div class="password-card"><div class="password-title" id="passwordModalTitle">Crie sua senha pessoal</div><div class="password-sub" id="passwordModalSub">Por seguranÃ§a, substitua a senha temporÃ¡ria antes de acessar a Central.</div><div class="password-field"><label>Nova senha</label><input type="password" id="newPassword" autocomplete="new-password"></div><div class="password-field"><label>Confirmar nova senha</label><input type="password" id="confirmPassword" autocomplete="new-password"></div><div class="password-rules">Use pelo menos 10 caracteres, com letra maiÃºscula, minÃºscula, nÃºmero e caractere especial. NÃ£o reutilize a senha temporÃ¡ria.</div><div class="password-error" id="passwordError"></div><div class="password-actions"><button class="password-cancel" id="passwordCancelBtn">Cancelar</button><button class="password-save" id="passwordSaveBtn">Salvar nova senha</button></div></div></div>
+<div class="boot-loader" id="bootLoader"><div class="hud-loader"><div class="hud-ring-a"></div><div class="hud-ring-b"></div><div class="hud-core"></div><div class="hud-title">Central de Vagas</div><div class="hud-status" id="hudStatus">Inicializando núcleo de dados...</div><div class="hud-track"><div class="hud-bar" id="hudBar"></div></div><div class="hud-data" id="hudData">RH SYSTEM // SECURE ACCESS</div></div></div>
+<div class="auth-shell" id="authShell"><div class="auth-card"><div class="auth-orbit"></div><div class="auth-title">Central de Vagas</div><div class="auth-sub">Acesso restrito · Recrutamento & Seleção</div><div class="auth-field"><label>E-mail corporativo</label><input type="email" id="loginEmail" autocomplete="username" placeholder="nome@empresa.com.br"></div><div class="auth-field"><label>Senha</label><input type="password" id="loginPassword" autocomplete="current-password" placeholder="••••••••"></div><button class="auth-btn" id="loginBtn">Acessar central</button><div class="auth-error" id="loginError"></div></div></div>
+<div class="password-modal" id="passwordModal"><div class="password-card"><div class="password-title" id="passwordModalTitle">Crie sua senha pessoal</div><div class="password-sub" id="passwordModalSub">Por segurança, substitua a senha temporária antes de acessar a Central.</div><div class="password-field"><label>Nova senha</label><input type="password" id="newPassword" autocomplete="new-password"></div><div class="password-field"><label>Confirmar nova senha</label><input type="password" id="confirmPassword" autocomplete="new-password"></div><div class="password-rules">Use pelo menos 10 caracteres, com letra maiúscula, minúscula, número e caractere especial. Não reutilize a senha temporária.</div><div class="password-error" id="passwordError"></div><div class="password-actions"><button class="password-cancel" id="passwordCancelBtn">Cancelar</button><button class="password-save" id="passwordSaveBtn">Salvar nova senha</button></div></div></div>
 
 
 <div class="topbar">
@@ -554,13 +554,13 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
       <button class="tab-btn" data-view="timeline">Linha do Tempo</button>
       <button class="tab-btn" data-view="ranking">Ranking Analistas</button>
       <button class="tab-btn" data-view="busca">Busca de Chamados</button>
-      <button class="tab-btn" data-view="diario">DiÃ¡rio de Bordo</button>
+      <button class="tab-btn" data-view="diario">Diário de Bordo</button>
     </div>
     <div class="meta-clock">
-      <span>Base atualizada em <span class="val" id="dataBase">â€”</span></span>
-      <span><span class="val" id="totalChamados">â€”</span> chamados carregados</span>
+      <span>Base atualizada em <span class="val" id="dataBase">—</span></span>
+      <span><span class="val" id="totalChamados">—</span> chamados carregados</span>
     </div>
-    <button class="theme-toggle-btn" id="themeToggleBtn" type="button" title="Alternar tema"><span class="theme-icon" id="themeIcon">â˜€ï¸</span><span id="themeText">Tema claro</span></button>
+    <button class="theme-toggle-btn" id="themeToggleBtn" type="button" title="Alternar tema"><span class="theme-icon" id="themeIcon">☀️</span><span id="themeText">Tema claro</span></button>
     <div class="user-chip" id="userChip"><span id="userEmail"></span><button class="password-change-btn" id="changePasswordBtn">Trocar senha</button><button class="logout-btn" id="logoutBtn">Sair</button></div>
     <button class="update-base-btn" id="openUploadModal">&#8635; Atualizar base</button>
   </div>
@@ -573,17 +573,17 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
       <button class="modal-close" id="closeModal">&times;</button>
     </div>
     <div class="modal-body">
-      <p class="modal-hint">Envie a planilha exportada do sistema (aba "Export") pra recalcular todo o painel â€” Volume Geral, Vagas CrÃ­ticas, Funil, Ranking e Busca. Se a planilha jÃ¡ tiver a coluna "DES_STATUSRH" (base e Status RH jÃ¡ mesclados), Ã© sÃ³ subir esse Ãºnico arquivo. NÃ£o precisa me pedir de novo: Ã© sÃ³ subir o arquivo aqui sempre que tiver uma base nova.</p>
+      <p class="modal-hint">Envie a planilha exportada do sistema (aba "Export") pra recalcular todo o painel — Volume Geral, Vagas Críticas, Funil, Ranking e Busca. Se a planilha já tiver a coluna "DES_STATUSRH" (base e Status RH já mesclados), é só subir esse único arquivo. Não precisa me pedir de novo: é só subir o arquivo aqui sempre que tiver uma base nova.</p>
       <div class="upload-field">
-        <label>Base principal (obrigatÃ³ria)</label>
+        <label>Base principal (obrigatória)</label>
         <input type="file" id="fileMain" accept=".xlsx,.xls">
       </div>
       <div class="upload-field">
-        <label>Status RH (opcional â€” sÃ³ se vier em arquivo separado; mescla pelo nÂº do chamado)</label>
+        <label>Status RH (opcional — só se vier em arquivo separado; mescla pelo nº do chamado)</label>
         <input type="file" id="fileRH" accept=".xlsx,.xls">
       </div>
       <div class="upload-field">
-        <label>Base de ativos (opcional â€” Excel ou CSV)</label>
+        <label>Base de ativos (opcional — Excel ou CSV)</label>
         <input type="file" id="fileAtivos" accept=".xlsx,.xls,.csv">
         <small>Usada para atualizar o total de ativos nos indicadores gerenciais.</small>
       </div>
@@ -602,17 +602,17 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
 
     <div class="section-head">
       <div>
-        <div class="section-eyebrow">01 Â· Volume</div>
+        <div class="section-eyebrow">01 · Volume</div>
         <div class="section-title">Volume geral de vagas em aberto</div>
       </div>
-      <div class="section-note">Retrato da situaÃ§Ã£o atual â€” todas as vagas ainda nÃ£o concluÃ­das ou canceladas.</div>
+      <div class="section-note">Retrato da situação atual — todas as vagas ainda não concluídas ou canceladas.</div>
     </div>
     <div class="kpi-row" id="kpiRow"></div>
 
     <div class="section-head">
       <div>
-        <div class="section-eyebrow">02 Â· Torres</div>
-        <div class="section-title">Vagas por Torre de NegÃ³cios</div>
+        <div class="section-eyebrow">02 · Torres</div>
+        <div class="section-title">Vagas por Torre de Negócios</div>
       </div>
       <div class="section-note">Vagas em aberto (mesma regra do Volume Geral), agrupadas por Segmento/Torre.</div>
     </div>
@@ -620,78 +620,78 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
 
     <div class="section-head">
       <div>
-        <div class="section-eyebrow">03 Â· Tempo</div>
+        <div class="section-eyebrow">03 · Tempo</div>
         <div class="section-title">Vagas por tempo de abertura</div>
       </div>
-      <div class="section-note">DistribuiÃ§Ã£o das vagas em aberto por faixa de dias desde a abertura.</div>
+      <div class="section-note">Distribuição das vagas em aberto por faixa de dias desde a abertura.</div>
     </div>
     <div class="breakdown-wrap" id="tempoRow"></div>
 
     <div class="section-head">
       <div>
-        <div class="section-eyebrow">04 Â· Prioridade</div>
-        <div class="section-title">Vagas crÃ­ticas / prioritÃ¡rias</div>
+        <div class="section-eyebrow">04 · Prioridade</div>
+        <div class="section-title">Vagas críticas / prioritárias</div>
       </div>
-      <div class="section-note">As 3 vagas abertas hÃ¡ mais tempo sem fechamento nem cancelamento.</div>
+      <div class="section-note">As 3 vagas abertas há mais tempo sem fechamento nem cancelamento.</div>
     </div>
     <div class="crit-grid" id="critGrid"></div>
 
     <div class="section-head">
       <div>
-        <div class="section-eyebrow">05 Â· Plano de aÃ§Ã£o</div>
-        <div class="section-title">Vagas crÃ­ticas abertas hÃ¡ mais de 30 dias</div>
+        <div class="section-eyebrow">05 · Plano de ação</div>
+        <div class="section-title">Vagas críticas abertas há mais de 30 dias</div>
       </div>
-      <div class="section-note">Lista completa (nÃ£o sÃ³ o top 3) para trabalhar o plano de aÃ§Ã£o com os gestores. As anotaÃ§Ãµes ficam salvas neste navegador.</div>
+      <div class="section-note">Lista completa (não só o top 3) para trabalhar o plano de ação com os gestores. As anotações ficam salvas neste navegador.</div>
     </div>
     <div class="plano-table-wrap">
       <div class="tickets-scroll">
         <table class="plano-table">
           <thead><tr>
-            <th>Chamado</th><th>Cargo</th><th>Empresa</th><th>Torre</th><th>Analista</th><th>Dias</th><th>Status</th><th>AÃ§Ã£o / gargalo</th>
+            <th>Chamado</th><th>Cargo</th><th>Empresa</th><th>Torre</th><th>Analista</th><th>Dias</th><th>Status</th><th>Ação / gargalo</th>
           </tr></thead>
           <tbody id="planoAcaoBody"></tbody>
         </table>
       </div>
     </div>
-    <div class="plano-save-hint">As anotaÃ§Ãµes de aÃ§Ã£o sÃ£o salvas automaticamente neste navegador (por nÃºmero de chamado).</div>
+    <div class="plano-save-hint">As anotações de ação são salvas automaticamente neste navegador (por número de chamado).</div>
 
     <div class="section-head">
       <div>
-        <div class="section-eyebrow">06 Â· Funil</div>
-        <div class="section-title">Status e funil do mÃªs</div>
+        <div class="section-eyebrow">06 · Funil</div>
+        <div class="section-title">Status e funil do mês</div>
       </div>
     </div>
     <div class="month-picker">
-      <label>MÃªs:</label>
+      <label>Mês:</label>
       <div class="month-pills" id="monthPills"></div>
     </div>
     <div class="funnel-row" id="funnelRow"></div>
     <div class="funnel-extra" id="funnelExtra"></div>
     <div class="note-box">
-      <b>Nota de mapeamento:</b> o funil usa o <b>Status RH</b> (etapa granular) como base â€” "Na fase do gestor" agrupa AvaliaÃ§Ã£o Gestor e Em Proposta; "Em andamento" agrupa Triagem, Entrevista RH e AnÃ¡lise de Elegibilidade. Vagas <b>em admissÃ£o</b>, congeladas (pelo Status RH ou pelo status geral â€” o que disser "congelada" primeiro vale), em retorno de usuÃ¡rio e as que o Status RH jÃ¡ marca como concluÃ­das (aguardando o status geral sincronizar) sÃ£o desconsideradas do Volume Geral, das Vagas CrÃ­ticas e do funil â€” por isso os dois blocos do funil somam exatamente o Volume Geral. O contador abaixo mostra quantas estÃ£o em cada situaÃ§Ã£o. Para vagas em aberto sem Status RH informado, ou com um Status RH que ainda nÃ£o mapeamos aqui (ex.: "MovimentaÃ§Ã£o Interna"), o painel usa o status geral (Aguardando AutorizaÃ§Ã£o / Em Atendimento) como aproximaÃ§Ã£o. "Fechadas no mÃªs" conta apenas pela data de fechamento â€” nÃ£o importa quando a vaga foi aberta.
+      <b>Nota de mapeamento:</b> o funil usa o <b>Status RH</b> (etapa granular) como base — "Na fase do gestor" agrupa Avaliação Gestor e Em Proposta; "Em andamento" agrupa Triagem, Entrevista RH e Análise de Elegibilidade. Vagas <b>em admissão</b>, congeladas (pelo Status RH ou pelo status geral — o que disser "congelada" primeiro vale), em retorno de usuário e as que o Status RH já marca como concluídas (aguardando o status geral sincronizar) são desconsideradas do Volume Geral, das Vagas Críticas e do funil — por isso os dois blocos do funil somam exatamente o Volume Geral. O contador abaixo mostra quantas estão em cada situação. Para vagas em aberto sem Status RH informado, ou com um Status RH que ainda não mapeamos aqui (ex.: "Movimentação Interna"), o painel usa o status geral (Aguardando Autorização / Em Atendimento) como aproximação. "Fechadas no mês" conta apenas pela data de fechamento — não importa quando a vaga foi aberta.
     </div>
 
     <div class="section-head">
       <div>
-        <div class="section-eyebrow">07 Â· AÃ§Ã£o</div>
-        <div class="section-title">SugestÃµes e pontos de atenÃ§Ã£o</div>
+        <div class="section-eyebrow">07 · Ação</div>
+        <div class="section-title">Sugestões e pontos de atenção</div>
       </div>
     </div>
-    <div class="suggest-label">SugestÃ£o gerada a partir dos dados abaixo â€” edite, apague ou complemente Ã  vontade.</div>
-    <textarea class="suggest-box" id="suggestBox" placeholder="O que podemos ajustar no processo, alinhamento com gestores ou fontes de captaÃ§Ã£o para destravar as vagas mais complexas?"></textarea>
-    <div class="suggest-hint">Este campo Ã© sÃ³ para anotaÃ§Ã£o durante a anÃ¡lise â€” o texto nÃ£o Ã© salvo ao fechar a pÃ¡gina.</div>
+    <div class="suggest-label">Sugestão gerada a partir dos dados abaixo — edite, apague ou complemente à vontade.</div>
+    <textarea class="suggest-box" id="suggestBox" placeholder="O que podemos ajustar no processo, alinhamento com gestores ou fontes de captação para destravar as vagas mais complexas?"></textarea>
+    <div class="suggest-hint">Este campo é só para anotação durante a análise — o texto não é salvo ao fechar a página.</div>
   </section>
 
   <!-- ===================== INDICADORES GERENCIAIS ===================== -->
   <section class="view" id="view-indicadores">
     <div class="section-head">
-      <div><div class="section-eyebrow">Indicadores</div><div class="section-title">VisÃ£o gerencial de vagas</div></div>
-      <div class="section-note">Indicadores inspirados no Painel de Controle: saldo, movimentaÃ§Ã£o, prazo, SLA e cortes gerenciais. Todos recalculados pela base carregada.</div>
+      <div><div class="section-eyebrow">Indicadores</div><div class="section-title">Visão gerencial de vagas</div></div>
+      <div class="section-note">Indicadores inspirados no Painel de Controle: saldo, movimentação, prazo, SLA e cortes gerenciais. Todos recalculados pela base carregada.</div>
     </div>
     <div class="manager-filter">
       <label for="indicatorSegment">Segmento</label>
       <select id="indicatorSegment" class="manager-select"><option value="">Todos os segmentos</option></select>
-      <label for="indicatorMonth">MÃªs</label>
+      <label for="indicatorMonth">Mês</label>
       <select id="indicatorMonth" class="manager-select"></select>
       <span class="save-hint" id="indicatorScopeHint"></span>
     </div>
@@ -699,31 +699,31 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
     <div class="history-panel">
       <div class="history-head">
         <div>
-          <div class="metric-title">EvoluÃ§Ã£o mensal Â· MovimentaÃ§Ã£o da carteira</div>
-          <div class="metric-sub">O Î” mensal considera Abertas âˆ’ Fechadas âˆ’ Canceladas âˆ’ Congeladas. O saldo atual Ã© exibido separadamente.</div>
+          <div class="metric-title">Evolução mensal · Movimentação da carteira</div>
+          <div class="metric-sub">O Δ mensal considera Abertas − Fechadas − Canceladas − Congeladas. O saldo atual é exibido separadamente.</div>
         </div>
         <div class="history-controls">
-          <label for="indicatorHistoryMonths">PerÃ­odo</label>
+          <label for="indicatorHistoryMonths">Período</label>
           <select id="indicatorHistoryMonths" class="manager-select">
-            <option value="6">6 meses</option><option value="12" selected>12 meses</option><option value="24">24 meses</option><option value="all">Todo histÃ³rico</option>
+            <option value="6">6 meses</option><option value="12" selected>12 meses</option><option value="24">24 meses</option><option value="all">Todo histórico</option>
           </select>
         </div>
       </div>
       <div class="history-summary" id="indicatorHistorySummary"></div>
       <div class="history-chart-scroll"><div class="history-chart" id="indicatorHistoryChart"></div></div>
-      <div class="history-legend"><span><i class="leg-open"></i>Abertas</span><span><i class="leg-close"></i>Fechadas</span><span><i class="leg-cancel"></i>Canceladas</span><span><i class="leg-freeze"></i>Congeladas</span><span><i class="leg-delta"></i>Î” do mÃªs</span></div>
+      <div class="history-legend"><span><i class="leg-open"></i>Abertas</span><span><i class="leg-close"></i>Fechadas</span><span><i class="leg-cancel"></i>Canceladas</span><span><i class="leg-freeze"></i>Congeladas</span><span><i class="leg-delta"></i>Δ do mês</span></div>
     </div>
     <div class="metric-grid">
-      <div class="metric-table-wrap"><div class="metric-title">Por segmento / torre</div><div class="metric-sub">Saldo, prazo, SLA e movimentaÃ§Ã£o do mÃªs selecionado.</div><div id="indicatorBySegment"></div></div>
-      <div class="metric-table-wrap"><div class="metric-title">Por grupo de cargo</div><div class="metric-sub">Quando a coluna â€œgrupo de cargoâ€ estiver na base, a classificaÃ§Ã£o do painel Ã© preservada.</div><div id="indicatorByGroup"></div></div>
+      <div class="metric-table-wrap"><div class="metric-title">Por segmento / torre</div><div class="metric-sub">Saldo, prazo, SLA e movimentação do mês selecionado.</div><div id="indicatorBySegment"></div></div>
+      <div class="metric-table-wrap"><div class="metric-title">Por grupo de cargo</div><div class="metric-sub">Quando a coluna “grupo de cargo” estiver na base, a classificação do painel é preservada.</div><div id="indicatorByGroup"></div></div>
     </div>
     <div class="manager-filter">
       <label for="indicatorDimension">Detalhar por</label>
       <select id="indicatorDimension" class="manager-select">
-        <option value="nuc">RegiÃ£o / NÃºcleo</option><option value="emp">Empresa</option><option value="criador">LÃ­der solicitante</option><option value="tec">Analista</option><option value="dir">Diretoria</option><option value="procedencia">ProcedÃªncia do fechamento</option>
+        <option value="nuc">Região / Núcleo</option><option value="emp">Empresa</option><option value="criador">Líder solicitante</option><option value="tec">Analista</option><option value="dir">Diretoria</option><option value="procedencia">Procedência do fechamento</option>
       </select>
     </div>
-    <div class="metric-table-wrap"><div class="metric-title" id="indicatorDimensionTitle">Detalhamento</div><div class="metric-sub">Aberturas e fechamentos no ano, saldo atual, SLA mÃ©dio e percentual de fechamentos no prazo.</div><div id="indicatorDimensionTable"></div></div>
+    <div class="metric-table-wrap"><div class="metric-title" id="indicatorDimensionTitle">Detalhamento</div><div class="metric-sub">Aberturas e fechamentos no ano, saldo atual, SLA médio e percentual de fechamentos no prazo.</div><div id="indicatorDimensionTable"></div></div>
   </section>
 
   <!-- ===================== LINHA DO TEMPO ===================== -->
@@ -731,30 +731,30 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
     <div class="section-head">
       <div>
         <div class="section-eyebrow">Linha do tempo</div>
-        <div class="section-title">Desde a Ãºltima reuniÃ£o</div>
+        <div class="section-title">Desde a última reunião</div>
       </div>
-      <div class="section-note">MovimentaÃ§Ã£o de vagas no perÃ­odo â€” abertura e fechamento por data; congeladas e "fase final" sÃ£o a foto de hoje.</div>
+      <div class="section-note">Movimentação de vagas no período — abertura e fechamento por data; congeladas e "fase final" são a foto de hoje.</div>
     </div>
     <div class="timeline-ref">
-      <label>Ãšltima reuniÃ£o:</label>
+      <label>Última reunião:</label>
       <input type="date" id="timelineRef">
       <label>Segmento:</label>
       <select id="timelineSegment" class="manager-select"><option value="">Todos os segmentos</option></select>
-      <span class="save-hint">A data fica salva neste navegador â€” atualize depois de cada reuniÃ£o.</span>
+      <span class="save-hint">A data fica salva neste navegador — atualize depois de cada reunião.</span>
     </div>
     <div class="timeline-grid" id="timelineGrid"></div>
     <div class="note-box" style="margin-top:16px;">
-      <b>Como cada nÃºmero Ã© contado:</b> "Abriram" e "Fecharam" usam a Data de Abertura / Data de Fechamento de cada chamado a partir da data acima (dado exato). "Canceladas" usa a Data de Fechamento dos chamados com status Cancelamento no perÃ­odo. JÃ¡ <b>Congeladas</b> e <b>Na fase final</b> sÃ£o a contagem de hoje (foto atual), nÃ£o uma variaÃ§Ã£o da semana â€” a base nÃ£o guarda em que dia uma vaga mudou de status, sÃ³ a abertura e o fechamento. Se quiser acompanhar a variaÃ§Ã£o real dessas duas, a saÃ­da Ã© anotar o nÃºmero aqui a cada reuniÃ£o.
+      <b>Como cada número é contado:</b> "Abriram" e "Fecharam" usam a Data de Abertura / Data de Fechamento de cada chamado a partir da data acima (dado exato). "Canceladas" usa a Data de Fechamento dos chamados com status Cancelamento no período. Já <b>Congeladas</b> e <b>Na fase final</b> são a contagem de hoje (foto atual), não uma variação da semana — a base não guarda em que dia uma vaga mudou de status, só a abertura e o fechamento. Se quiser acompanhar a variação real dessas duas, a saída é anotar o número aqui a cada reunião.
     </div>
 
     <div class="timeline-list-wrap">
-      <div class="timeline-sub-title">Vagas abertas no perÃ­odo</div>
+      <div class="timeline-sub-title">Vagas abertas no período</div>
       <table class="timeline-mini-table"><thead><tr><th>Chamado</th><th>Cargo</th><th>Empresa</th><th>Torre</th><th>Abertura</th></tr></thead><tbody id="timelineAbriramBody"></tbody></table>
 
-      <div class="timeline-sub-title">Vagas fechadas (contratadas) no perÃ­odo</div>
+      <div class="timeline-sub-title">Vagas fechadas (contratadas) no período</div>
       <table class="timeline-mini-table"><thead><tr><th>Chamado</th><th>Cargo</th><th>Empresa</th><th>Torre</th><th>Fechamento</th></tr></thead><tbody id="timelineFecharamBody"></tbody></table>
 
-      <div class="timeline-sub-title">Vagas canceladas no perÃ­odo</div>
+      <div class="timeline-sub-title">Vagas canceladas no período</div>
       <table class="timeline-mini-table"><thead><tr><th>Chamado</th><th>Cargo</th><th>Empresa</th><th>Torre</th><th>Fechamento</th></tr></thead><tbody id="timelineCanceladasBody"></tbody></table>
     </div>
   </section>
@@ -764,9 +764,9 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
     <div class="section-head">
       <div>
         <div class="section-eyebrow">Ranking</div>
-        <div class="section-title">Analistas â€” fechadas e abertas por mÃªs</div>
+        <div class="section-title">Analistas — fechadas e abertas por mês</div>
       </div>
-      <div class="section-note">Clique nos cabeÃ§alhos para ordenar. "Total Fechadas" conta todas as vagas que esse analista jÃ¡ fechou na base (qualquer data) + as que estÃ£o em admissÃ£o (contam como fechadas). "Em Aberto Hoje" Ã© a carga atual dele, na mesma regra do Volume Geral (sem congeladas, retorno de usuÃ¡rio, em admissÃ£o ou jÃ¡ concluÃ­das pelo RH).</div>
+      <div class="section-note">Clique nos cabeçalhos para ordenar. "Total Fechadas" conta todas as vagas que esse analista já fechou na base (qualquer data) + as que estão em admissão (contam como fechadas). "Em Aberto Hoje" é a carga atual dele, na mesma regra do Volume Geral (sem congeladas, retorno de usuário, em admissão ou já concluídas pelo RH).</div>
     </div>
     <div class="rank-table-wrap">
       <div class="tickets-scroll">
@@ -785,44 +785,44 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
         <div class="section-eyebrow">Busca</div>
         <div class="section-title">Busca de chamados</div>
       </div>
-      <div class="section-note">Busca instantÃ¢nea por chamado, cargo, empresa, analista, nÃºcleo ou descriÃ§Ã£o.</div>
+      <div class="section-note">Busca instantânea por chamado, cargo, empresa, analista, núcleo ou descrição.</div>
     </div>
 
     <div class="search-bar">
       <div class="search-input-row">
         <span class="icon">&#128269;</span>
-        <input type="text" id="searchInput" placeholder="Buscar por nÂº do chamado, cargo, empresa, analista, nÃºcleo, descriÃ§Ã£o...">
+        <input type="text" id="searchInput" placeholder="Buscar por nº do chamado, cargo, empresa, analista, núcleo, descrição...">
         <button class="clear-btn" id="clearSearch">&times;</button>
       </div>
       <div class="filter-row">
         <div class="multi-select" id="msSegmento">
-          <button class="ms-btn" type="button"><span class="ms-label">Segmento</span><span class="ms-arrow">â–¾</span></button>
+          <button class="ms-btn" type="button"><span class="ms-label">Segmento</span><span class="ms-arrow">▾</span></button>
           <div class="ms-panel"></div>
         </div>
         <div class="multi-select" id="msStatus">
-          <button class="ms-btn" type="button"><span class="ms-label">Status</span><span class="ms-arrow">â–¾</span></button>
+          <button class="ms-btn" type="button"><span class="ms-label">Status</span><span class="ms-arrow">▾</span></button>
           <div class="ms-panel"></div>
         </div>
         <div class="multi-select" id="msStatusRH">
-          <button class="ms-btn" type="button"><span class="ms-label">Status RH</span><span class="ms-arrow">â–¾</span></button>
+          <button class="ms-btn" type="button"><span class="ms-label">Status RH</span><span class="ms-arrow">▾</span></button>
           <div class="ms-panel"></div>
         </div>
         <div class="multi-select" id="msTecnico">
-          <button class="ms-btn" type="button"><span class="ms-label">Analista</span><span class="ms-arrow">â–¾</span></button>
+          <button class="ms-btn" type="button"><span class="ms-label">Analista</span><span class="ms-arrow">▾</span></button>
           <div class="ms-panel"></div>
         </div>
         <div class="multi-select" id="msCriador">
-          <button class="ms-btn" type="button"><span class="ms-label">Criador</span><span class="ms-arrow">â–¾</span></button>
+          <button class="ms-btn" type="button"><span class="ms-label">Criador</span><span class="ms-arrow">▾</span></button>
           <div class="ms-panel"></div>
         </div>
         <div class="multi-select" id="msDiretor">
-          <button class="ms-btn" type="button"><span class="ms-label">Diretoria</span><span class="ms-arrow">â–¾</span></button>
+          <button class="ms-btn" type="button"><span class="ms-label">Diretoria</span><span class="ms-arrow">▾</span></button>
           <div class="ms-panel"></div>
         </div>
         <div class="chip-toggle" id="filterCategoria">
           <button data-val="">Todas</button>
           <button data-val="Comercial">Comercial</button>
-          <button data-val="PÃ³s-vendas">PÃ³s-vendas</button>
+          <button data-val="Pós-vendas">Pós-vendas</button>
           <button data-val="Demais">Demais</button>
         </div>
         <div class="chip-toggle" id="filterAberto">
@@ -850,18 +850,18 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
     </div>
   </section>
 
-  <!-- ===================== DIÃRIO DE BORDO ===================== -->
+  <!-- ===================== DIÁRIO DE BORDO ===================== -->
   <section class="view" id="view-diario">
     <div class="section-head">
-      <div><div class="section-eyebrow">DiÃ¡rio de bordo</div><div class="section-title">Registro diÃ¡rio das analistas</div></div>
-      <div class="section-note">Acompanhamento estruturado por chamado, com datas do processo, SLA automÃ¡tico e um Ãºnico campo livre para atualizaÃ§Ã£o. O histÃ³rico permanece vinculado ao nÃºmero do chamado.</div>
+      <div><div class="section-eyebrow">Diário de bordo</div><div class="section-title">Registro diário das analistas</div></div>
+      <div class="section-note">Acompanhamento estruturado por chamado, com datas do processo, SLA automático e um único campo livre para atualização. O histórico permanece vinculado ao número do chamado.</div>
     </div>
     <div class="diary-ticket-picker">
       <div class="diary-ticket-toolbar">
-        <input id="diaryTicketSearch" class="diary-input" placeholder="Buscar chamado, cargo, empresa, analista, nÃºcleo, descriÃ§Ã£o...">
+        <input id="diaryTicketSearch" class="diary-input" placeholder="Buscar chamado, cargo, empresa, analista, núcleo, descrição...">
         <select id="diaryTicketSegment" class="manager-select"><option value="">Todos os segmentos</option></select>
         <select id="diaryTicketAnalyst" class="manager-select"><option value="">Todas as analistas</option></select>
-        <select id="diaryTicketOpen" class="manager-select" aria-label="Filtrar chamados por situaÃ§Ã£o">
+        <select id="diaryTicketOpen" class="manager-select" aria-label="Filtrar chamados por situação">
           <option value="">Todas</option>
           <option value="aberta">Em aberto</option>
           <option value="fechada">Fechadas</option>
@@ -882,40 +882,40 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
       <div class="diary-field"><label>Analista</label><select id="diaryAnalyst" class="diary-select"></select></div>
       <div class="diary-field"><label>Segmento</label><select id="diarySegment" class="diary-select"></select></div>
       <div class="diary-field"><label>Chamado selecionado</label><input type="text" id="diaryTicket" class="diary-input" placeholder="Clique em um chamado acima" readonly></div>
-      <div class="diary-field wide"><label>Status / etapa</label><input type="text" id="diaryStatus" class="diary-input" placeholder="Ex.: Triagem, AvaliaÃ§Ã£o Gestor, Proposta, AdmissÃ£o..."></div>
-      <div class="diary-field"><label>Ãšltima alteraÃ§Ã£o de status</label><input type="date" id="diaryStatusChange" class="diary-input" readonly title="Atualizado automaticamente quando o status/etapa for alterado"></div>
-      <div class="diary-field"><label>InÃ­cio do processo seletivo</label><input type="date" id="diaryProcessStart" class="diary-input"></div>
+      <div class="diary-field wide"><label>Status / etapa</label><input type="text" id="diaryStatus" class="diary-input" placeholder="Ex.: Triagem, Avaliação Gestor, Proposta, Admissão..."></div>
+      <div class="diary-field"><label>Última alteração de status</label><input type="date" id="diaryStatusChange" class="diary-input" readonly title="Atualizado automaticamente quando o status/etapa for alterado"></div>
+      <div class="diary-field"><label>Início do processo seletivo</label><input type="date" id="diaryProcessStart" class="diary-input"></div>
       <div class="diary-field"><label>Aceite da proposta</label><input type="date" id="diaryProposalAccepted" class="diary-input"></div>
-      <div class="diary-field"><label>SLA processo seletivo</label><input type="text" id="diarySla" class="diary-input" readonly placeholder="AutomÃ¡tico"></div>
+      <div class="diary-field"><label>SLA processo seletivo</label><input type="text" id="diarySla" class="diary-input" readonly placeholder="Automático"></div>
       <div class="diary-field"><label>Data de congelamento</label><input type="date" id="diaryFreezeDate" class="diary-input"></div>
       <div class="diary-field"><label>Nome do aprovado</label><input type="text" id="diaryApprovedName" class="diary-input" placeholder="Nome do candidato aprovado"></div>
-      <div class="diary-field"><label>ProcedÃªncia fechamento</label><input type="text" id="diaryClosingSource" class="diary-input" placeholder="Origem/procedÃªncia"></div>
-      <div class="diary-field"><label>Ã‰ PCD?</label><select id="diaryPcd" class="diary-select"><option value="">â€”</option><option>Sim</option><option>NÃ£o</option></select></div>
-      <div class="diary-field"><label>PrevisÃ£o de inÃ­cio</label><input type="date" id="diaryExpectedStart" class="diary-input"></div>
-      <div class="diary-field full"><label>AtualizaÃ§Ã£o / observaÃ§Ãµes</label><textarea id="diaryUpdate" class="diary-textarea" placeholder="Registre aqui o andamento do chamado, retorno do gestor/candidato, pendÃªncias e prÃ³ximos passos."></textarea></div>
+      <div class="diary-field"><label>Procedência fechamento</label><input type="text" id="diaryClosingSource" class="diary-input" placeholder="Origem/procedência"></div>
+      <div class="diary-field"><label>É PCD?</label><select id="diaryPcd" class="diary-select"><option value="">—</option><option>Sim</option><option>Não</option></select></div>
+      <div class="diary-field"><label>Previsão de início</label><input type="date" id="diaryExpectedStart" class="diary-input"></div>
+      <div class="diary-field full"><label>Atualização / observações</label><textarea id="diaryUpdate" class="diary-textarea" placeholder="Registre aqui o andamento do chamado, retorno do gestor/candidato, pendências e próximos passos."></textarea></div>
       <div class="diary-actions"><button class="diary-btn secondary" id="diaryClear" type="button">Limpar</button><button class="diary-btn" id="diarySave" type="button">Salvar registro</button></div>
     </div>
     <div class="manager-filter diary-history-toolbar">
-      <label>HistÃ³rico do chamado</label>
+      <label>Histórico do chamado</label>
       <span id="diaryHistoryTicket" class="diary-history-ticket">Selecione um chamado acima</span>
-      <input id="diaryFilterText" class="diary-input" placeholder="Buscar dentro do histÃ³rico deste chamado...">
-      <button class="export-btn" id="diaryExport" type="button">Exportar histÃ³rico CSV</button>
+      <input id="diaryFilterText" class="diary-input" placeholder="Buscar dentro do histórico deste chamado...">
+      <button class="export-btn" id="diaryExport" type="button">Exportar histórico CSV</button>
     </div>
-    <div class="diary-table-wrap"><div class="diary-scroll"><table class="diary-table"><thead><tr><th>Data</th><th>Analista</th><th>Chamado</th><th>Status</th><th>Ãšlt. alteraÃ§Ã£o status</th><th>InÃ­cio processo</th><th>Aceite proposta</th><th>SLA</th><th>Congelamento</th><th>Aprovado</th><th>ProcedÃªncia</th><th>PCD?</th><th>Prev. inÃ­cio</th><th>AtualizaÃ§Ã£o / observaÃ§Ãµes</th><th>AÃ§Ãµes</th></tr></thead><tbody id="diaryBody"></tbody></table></div></div>
+    <div class="diary-table-wrap"><div class="diary-scroll"><table class="diary-table"><thead><tr><th>Data</th><th>Analista</th><th>Chamado</th><th>Status</th><th>Últ. alteração status</th><th>Início processo</th><th>Aceite proposta</th><th>SLA</th><th>Congelamento</th><th>Aprovado</th><th>Procedência</th><th>PCD?</th><th>Prev. início</th><th>Atualização / observações</th><th>Ações</th></tr></thead><tbody id="diaryBody"></tbody></table></div></div>
   </section>
 
 </div>
 
-<footer>Central de Vagas Â· Base online protegida por autenticaÃ§Ã£o Â· HistÃ³rico persistente por chamado.</footer>
+<footer>Central de Vagas · Base online protegida por autenticação · Histórico persistente por chamado.</footer>
 <script>let TICKETS = [];
 let ACTIVE_ASSETS_COUNT = null;
 try {
   const savedAssetsCount = localStorage.getItem('centralVagasActiveAssetsCount');
   if (savedAssetsCount !== null && Number.isFinite(Number(savedAssetsCount))) ACTIVE_ASSETS_COUNT = Number(savedAssetsCount);
-} catch(e) { /* armazenamento local indisponÃ­vel */ }
-const CLASSIFICATION = {"Agente De Patio":"Demais","Ajudante De Motorista":"Demais","Analista Administrativo De Locacao":"Demais","Analista Administrativo De Pessoas":"Demais","Analista Administrativo De Pos Venda":"PÃ³s-vendas","Analista Administrativo Financeiro":"Demais","Analista Cobranca":"Demais","Analista De Bi":"Demais","Analista De Indicadores":"Demais","Analista De Projeto":"Demais","Analista De Ti":"Demais","Analista Fiscal":"Demais","Analista Gestao De Pessoas":"Demais","Analista Marketing":"Demais","Aprendiz Administrativo":"Demais","Aprendiz Estoque":"Demais","Assistente Administrativo":"Demais","Assistente Administrativo De Compras":"Demais","Assistente Administrativo De Pessoas":"Demais","Assistente Administrativo De Vendas":"Demais","Assistente Administrativo Financeiro":"Demais","Assistente Administrativo Logistica":"Demais","Assistente Adminstrativo De Pos Vendas":"PÃ³s-vendas","Assistente Compras":"Demais","Assistente Credito E Cadastro":"Demais","Assistente De Compras De Pecas":"Demais","Assistente De Crm":"Demais","Assistente De E Commerce De Pecas":"Demais","Assistente De Estoque":"Demais","Assistente De Gestao De Pessoas":"Demais","Assistente De Pos Venda":"PÃ³s-vendas","Assistente Faturamento":"Demais","Assistente Financeiro":"Demais","Assistente Garantia":"Demais","Atendente Administrativo Cnh":"Demais","Atendente De Cnh":"Demais","Auditor Interno":"Demais","Auxiliar Administrativo":"Demais","Auxiliar Administrativo De F&I":"Demais","Auxiliar Administrativo De Logistica":"Demais","Auxiliar Administrativo De Pessoal":"Demais","Auxiliar Administrativo Financeiro":"Demais","Auxiliar Administrativo Pos Venda":"PÃ³s-vendas","Auxiliar Administrativo Vendas":"Demais","Auxiliar Compras":"Demais","Auxiliar Estoque":"Demais","Auxiliar Financeiro":"Demais","Auxiliar Funilaria/Pintura":"PÃ³s-vendas","Auxiliar Garantia":"PÃ³s-vendas","Auxiliar Logistica":"Demais","Auxiliar Mecanico":"PÃ³s-vendas","Auxiliar Servicos Gerais":"Demais","Auxiliar Tecnologia Da Informacao":"Demais","Avaliador De Motos":"Demais","Chefe De Oficina":"PÃ³s-vendas","Comprador Pecas":"Demais","Consultor De Pecas E Commerce":"Comercial","Consultor De Vendas De Leads":"Comercial","Consultor De Vendas Locacao":"Comercial","Consultor E-Commerce":"Comercial","Consultor Pecas":"PÃ³s-vendas","Consultor Pos Vendas":"PÃ³s-vendas","Consultor Tecnico":"PÃ³s-vendas","Consultor Vendas":"Comercial","Consultor Vendas Direta":"Comercial","Controlador De Produtividade":"PÃ³s-vendas","Controller De Pos Venda":"PÃ³s-vendas","Controller De Vendas":"Comercial","Coordenador De Gestao De Pessoas":"Demais","Coordenador De Pos Venda":"PÃ³s-vendas","Coordenador De Seguranca Do Trabalho":"Demais","Coordenador Marketing":"Demais","Coordenador Tecnologia Da Informacao":"Demais","Encarregado Administrativo Logistica":"Demais","Encarregado Estoque":"Demais","Encarregado Estoque De Pecas":"PÃ³s-vendas","Encarregado Logistica":"Demais","Entregador Tecnico":"PÃ³s-vendas","Entregador Tecnico De Veiculos":"PÃ³s-vendas","Estagiario":"Demais","Estagiario Em Seguranca Do Trabalho":"Demais","Estoquista":"Demais","Estoquista De Motos":"Demais","Ferramenteiro":"PÃ³s-vendas","Funileiro":"PÃ³s-vendas","Garantista":"PÃ³s-vendas","Gerente Comercial":"Comercial","Gerente Pos Venda":"PÃ³s-vendas","Instrutor De Treinamento Tecnico":"PÃ³s-vendas","Instrutor Motorista Man":"Demais","Lavador Autos":"PÃ³s-vendas","Lavador Motocicletas":"PÃ³s-vendas","Lider De Estoque":"Demais","Mecanico":"PÃ³s-vendas","Mecanico A":"PÃ³s-vendas","Mecanico B":"PÃ³s-vendas","Mecanico C":"PÃ³s-vendas","Mecanico D":"PÃ³s-vendas","Mecanico Lider":"PÃ³s-vendas","Mecanico Motos":"PÃ³s-vendas","Monitor De Treinamento":"Demais","Monitor Pos Venda":"PÃ³s-vendas","Montador":"PÃ³s-vendas","Montador Motos":"PÃ³s-vendas","Motorista":"Demais","Motorista Caminhao":"Demais","Oficial De Manutencao Predial":"Demais","Operador Caixa":"Demais","Operador Telemarketing":"Demais","OrÃ§amentista":"PÃ³s-vendas","Pintor":"PÃ³s-vendas","Pintor Preparador":"PÃ³s-vendas","Preparador De Veiculos":"PÃ³s-vendas","Qualificador De Lead":"Comercial","Recepcionista Vendas":"Demais","Supervisor Assistencia Tecnica":"PÃ³s-vendas","Supervisor De Crm":"Demais","Supervisor E-Commerce":"Comercial","Supervisor Pecas":"PÃ³s-vendas","Supervisor Pos Vendas":"PÃ³s-vendas","Supervisor Vendas":"Comercial","Tecnico Seguranca Do Trabalho":"Demais","Tecnico Servico Expresso":"PÃ³s-vendas","Vendedor Acessorios":"Comercial","Vendedor De Consorcio":"Comercial","Vendedor Motos Externo":"Comercial","Vendedor Motos Interno":"Comercial","Vendedor Pecas":"Comercial","Vendedor Pecas Balcao":"Comercial","Vendedor Pecas/Externo":"Comercial","Vendedor Seguro":"Comercial","Vendedor Veiculos":"Comercial","Auxiliar Faturamento":"Demais","Auxiliar Administrativo Cnh":"Demais","Assistente Administrativo De Cnh":"Demais","Analista De Comunicacao Interna":"Demais","Tecnico Seguranca Do Trabalho E Meio Ambiente":"Demais","Instalador De Acessorios":"PÃ³s-vendas","Operador F&I":"Comercial","Consultor De PeÃ§as Atacado":"PÃ³s-vendas","Assistente Fiscal":"Demais","Assistente Controladoria":"Demais","Gerente Vendas":"Comercial"};</script>
+} catch(e) { /* armazenamento local indisponível */ }
+const CLASSIFICATION = {"Agente De Patio":"Demais","Ajudante De Motorista":"Demais","Analista Administrativo De Locacao":"Demais","Analista Administrativo De Pessoas":"Demais","Analista Administrativo De Pos Venda":"Pós-vendas","Analista Administrativo Financeiro":"Demais","Analista Cobranca":"Demais","Analista De Bi":"Demais","Analista De Indicadores":"Demais","Analista De Projeto":"Demais","Analista De Ti":"Demais","Analista Fiscal":"Demais","Analista Gestao De Pessoas":"Demais","Analista Marketing":"Demais","Aprendiz Administrativo":"Demais","Aprendiz Estoque":"Demais","Assistente Administrativo":"Demais","Assistente Administrativo De Compras":"Demais","Assistente Administrativo De Pessoas":"Demais","Assistente Administrativo De Vendas":"Demais","Assistente Administrativo Financeiro":"Demais","Assistente Administrativo Logistica":"Demais","Assistente Adminstrativo De Pos Vendas":"Pós-vendas","Assistente Compras":"Demais","Assistente Credito E Cadastro":"Demais","Assistente De Compras De Pecas":"Demais","Assistente De Crm":"Demais","Assistente De E Commerce De Pecas":"Demais","Assistente De Estoque":"Demais","Assistente De Gestao De Pessoas":"Demais","Assistente De Pos Venda":"Pós-vendas","Assistente Faturamento":"Demais","Assistente Financeiro":"Demais","Assistente Garantia":"Demais","Atendente Administrativo Cnh":"Demais","Atendente De Cnh":"Demais","Auditor Interno":"Demais","Auxiliar Administrativo":"Demais","Auxiliar Administrativo De F&I":"Demais","Auxiliar Administrativo De Logistica":"Demais","Auxiliar Administrativo De Pessoal":"Demais","Auxiliar Administrativo Financeiro":"Demais","Auxiliar Administrativo Pos Venda":"Pós-vendas","Auxiliar Administrativo Vendas":"Demais","Auxiliar Compras":"Demais","Auxiliar Estoque":"Demais","Auxiliar Financeiro":"Demais","Auxiliar Funilaria/Pintura":"Pós-vendas","Auxiliar Garantia":"Pós-vendas","Auxiliar Logistica":"Demais","Auxiliar Mecanico":"Pós-vendas","Auxiliar Servicos Gerais":"Demais","Auxiliar Tecnologia Da Informacao":"Demais","Avaliador De Motos":"Demais","Chefe De Oficina":"Pós-vendas","Comprador Pecas":"Demais","Consultor De Pecas E Commerce":"Comercial","Consultor De Vendas De Leads":"Comercial","Consultor De Vendas Locacao":"Comercial","Consultor E-Commerce":"Comercial","Consultor Pecas":"Pós-vendas","Consultor Pos Vendas":"Pós-vendas","Consultor Tecnico":"Pós-vendas","Consultor Vendas":"Comercial","Consultor Vendas Direta":"Comercial","Controlador De Produtividade":"Pós-vendas","Controller De Pos Venda":"Pós-vendas","Controller De Vendas":"Comercial","Coordenador De Gestao De Pessoas":"Demais","Coordenador De Pos Venda":"Pós-vendas","Coordenador De Seguranca Do Trabalho":"Demais","Coordenador Marketing":"Demais","Coordenador Tecnologia Da Informacao":"Demais","Encarregado Administrativo Logistica":"Demais","Encarregado Estoque":"Demais","Encarregado Estoque De Pecas":"Pós-vendas","Encarregado Logistica":"Demais","Entregador Tecnico":"Pós-vendas","Entregador Tecnico De Veiculos":"Pós-vendas","Estagiario":"Demais","Estagiario Em Seguranca Do Trabalho":"Demais","Estoquista":"Demais","Estoquista De Motos":"Demais","Ferramenteiro":"Pós-vendas","Funileiro":"Pós-vendas","Garantista":"Pós-vendas","Gerente Comercial":"Comercial","Gerente Pos Venda":"Pós-vendas","Instrutor De Treinamento Tecnico":"Pós-vendas","Instrutor Motorista Man":"Demais","Lavador Autos":"Pós-vendas","Lavador Motocicletas":"Pós-vendas","Lider De Estoque":"Demais","Mecanico":"Pós-vendas","Mecanico A":"Pós-vendas","Mecanico B":"Pós-vendas","Mecanico C":"Pós-vendas","Mecanico D":"Pós-vendas","Mecanico Lider":"Pós-vendas","Mecanico Motos":"Pós-vendas","Monitor De Treinamento":"Demais","Monitor Pos Venda":"Pós-vendas","Montador":"Pós-vendas","Montador Motos":"Pós-vendas","Motorista":"Demais","Motorista Caminhao":"Demais","Oficial De Manutencao Predial":"Demais","Operador Caixa":"Demais","Operador Telemarketing":"Demais","Orçamentista":"Pós-vendas","Pintor":"Pós-vendas","Pintor Preparador":"Pós-vendas","Preparador De Veiculos":"Pós-vendas","Qualificador De Lead":"Comercial","Recepcionista Vendas":"Demais","Supervisor Assistencia Tecnica":"Pós-vendas","Supervisor De Crm":"Demais","Supervisor E-Commerce":"Comercial","Supervisor Pecas":"Pós-vendas","Supervisor Pos Vendas":"Pós-vendas","Supervisor Vendas":"Comercial","Tecnico Seguranca Do Trabalho":"Demais","Tecnico Servico Expresso":"Pós-vendas","Vendedor Acessorios":"Comercial","Vendedor De Consorcio":"Comercial","Vendedor Motos Externo":"Comercial","Vendedor Motos Interno":"Comercial","Vendedor Pecas":"Comercial","Vendedor Pecas Balcao":"Comercial","Vendedor Pecas/Externo":"Comercial","Vendedor Seguro":"Comercial","Vendedor Veiculos":"Comercial","Auxiliar Faturamento":"Demais","Auxiliar Administrativo Cnh":"Demais","Assistente Administrativo De Cnh":"Demais","Analista De Comunicacao Interna":"Demais","Tecnico Seguranca Do Trabalho E Meio Ambiente":"Demais","Instalador De Acessorios":"Pós-vendas","Operador F&I":"Comercial","Consultor De Peças Atacado":"Pós-vendas","Assistente Fiscal":"Demais","Assistente Controladoria":"Demais","Gerente Vendas":"Comercial"};</script>
 <script>
-// ================= ONLINE / AUTENTICAÃ‡ÃƒO =================
+// ================= ONLINE / AUTENTICAÇÃO =================
 const SUPABASE_URL='https://cmcyvcgvoqmcntdlkhah.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY='sb_publishable_yy7bZeoZKk0RVkNbuHH42g_6sEDDrIa';
 function createFallbackSupabase(url,key){
@@ -952,7 +952,7 @@ function createFallbackSupabase(url,key){
       let r;try{r=await fetch(u,{method:this.method,headers:h,body:this.body!==null?JSON.stringify(this.body):undefined});}catch(e){return {data:null,error:{message:e.message}}}
       let txt=await r.text(),data=null;if(txt){try{data=JSON.parse(txt)}catch{data=txt}}
       if(!r.ok)return {data:null,error:{message:data?.message||data?.hint||data?.details||('HTTP '+r.status)}};
-      if(this.wantSingle){if(Array.isArray(data)){if(data.length!==1)return {data:null,error:{message:'Registro Ãºnico nÃ£o encontrado'}};data=data[0]}}
+      if(this.wantSingle){if(Array.isArray(data)){if(data.length!==1)return {data:null,error:{message:'Registro único não encontrado'}};data=data[0]}}
       if(this.wantMaybe){if(Array.isArray(data))data=data[0]||null}
       return {data,error:null};
     }
@@ -973,20 +973,20 @@ async function fetchAllChamados(){
   return rows.map(r=>({...r.payload,id:String(r.chamado_id),_rowVersion:r.row_version||1,_updatedAt:r.updated_at||null}));
 }
 async function syncTicketsToSupabase(list){
-  const user=(await sb.auth.getUser()).data.user; if(!user)throw new Error('SessÃ£o expirada. Entre novamente.');
+  const user=(await sb.auth.getUser()).data.user; if(!user)throw new Error('Sessão expirada. Entre novamente.');
   const rows=list.map(t=>({chamado_id:String(t.id),payload:t,updated_at:new Date().toISOString(),updated_by:user.id}));
   for(let i=0;i<rows.length;i+=250){const {error}=await sb.from('chamados').upsert(rows.slice(i,i+250),{onConflict:'chamado_id'});if(error)throw error;}
 }
 async function loadOnlineWorkspace(){
-  showLoader('Validando sessÃ£o segura...',18);
+  showLoader('Validando sessão segura...',18);
   setLoader('Sincronizando base de chamados...',42);
   const online=await fetchAllChamados();
   TICKETS=online;
   const onlineUpdates = online.map(t=>t._updatedAt).filter(Boolean).sort();
   LAST_BASE_UPDATE = onlineUpdates.length ? onlineUpdates[onlineUpdates.length-1] : null;
-  setLoader('Carregando histÃ³rico do DiÃ¡rio de Bordo...',66);
+  setLoader('Carregando histórico do Diário de Bordo...',66);
   await loadDiary();
-  setLoader('Montando indicadores e painÃ©is...',86);
+  setLoader('Montando indicadores e painéis...',86);
   rebuildDashboard();
   renderDiary();
   setLoader('Central pronta.',100);
@@ -1002,25 +1002,25 @@ async function signIn(){
   const original=btn.textContent;
   btn.disabled=true;btn.textContent='Conectando...';
   showLoader('Autenticando credenciais...',24);
-  const withTimeout=(promise,ms=12000)=>Promise.race([promise,new Promise((_,rej)=>setTimeout(()=>rej(new Error('Tempo de conexÃ£o excedido.')),ms))]);
+  const withTimeout=(promise,ms=12000)=>Promise.race([promise,new Promise((_,rej)=>setTimeout(()=>rej(new Error('Tempo de conexão excedido.')),ms))]);
   try{
     let {data,error}=await withTimeout(sb.auth.signInWithPassword({email,password}));
     if(error){
-      if(password!=='Central@2026!') throw new Error('No primeiro acesso, use a senha temporÃ¡ria informada pelo RH.');
+      if(password!=='Central@2026!') throw new Error('No primeiro acesso, use a senha temporária informada pelo RH.');
       setLoader('Validando primeiro acesso...',46);btn.textContent='Ativando primeiro acesso...';
       const signup=await withTimeout(sb.auth.signUp({email,password}));
       if(signup.error) throw new Error(signup.error.message||'Falha ao criar o primeiro acesso.');
       setLoader('Ativando acesso seguro...',68);
       ({data,error}=await withTimeout(sb.auth.signInWithPassword({email,password})));
     }
-    if(error||!data?.user) throw new Error(error?.message||'NÃ£o foi possÃ­vel validar o usuÃ¡rio.');
+    if(error||!data?.user) throw new Error(error?.message||'Não foi possível validar o usuário.');
     currentUser=data.user;
     await enterWorkspace();
   }catch(e){
     console.error('Falha no login',e);
     hideLoader();
     const msg=String(e?.message||e||'Falha inesperada');
-    if(/not authorized|nÃ£o autorizado|Email nÃ£o autorizado/i.test(msg)) err.textContent='E-mail nÃ£o autorizado para esta Central.';
+    if(/not authorized|não autorizado|Email não autorizado/i.test(msg)) err.textContent='E-mail não autorizado para esta Central.';
     else if(/invalid login credentials/i.test(msg)) err.textContent='E-mail ou senha incorretos.';
     else err.textContent=msg;
   }finally{
@@ -1040,7 +1040,7 @@ function openPasswordModal(forced=false){
   document.getElementById('passwordModal')?.classList.add('show');
   document.getElementById('passwordCancelBtn').style.display=forced?'none':'block';
   document.getElementById('passwordModalTitle').textContent=forced?'Crie sua senha pessoal':'Trocar senha';
-  document.getElementById('passwordModalSub').textContent=forced?'Por seguranÃ§a, substitua a senha temporÃ¡ria antes de acessar a Central.':'Defina uma nova senha para sua conta.';
+  document.getElementById('passwordModalSub').textContent=forced?'Por segurança, substitua a senha temporária antes de acessar a Central.':'Defina uma nova senha para sua conta.';
   document.getElementById('newPassword').value='';
   document.getElementById('confirmPassword').value='';
   document.getElementById('passwordError').textContent='';
@@ -1052,13 +1052,13 @@ async function saveNewPassword(){
   const p=document.getElementById('newPassword').value;
   const c=document.getElementById('confirmPassword').value;
   const err=document.getElementById('passwordError');err.textContent='';
-  if(p==='Central@2026!'){err.textContent='Escolha uma senha diferente da senha temporÃ¡ria.';return;}
-  if(!validNewPassword(p)){err.textContent='A nova senha nÃ£o atende aos critÃ©rios mÃ­nimos.';return;}
-  if(p!==c){err.textContent='As senhas nÃ£o coincidem.';return;}
+  if(p==='Central@2026!'){err.textContent='Escolha uma senha diferente da senha temporária.';return;}
+  if(!validNewPassword(p)){err.textContent='A nova senha não atende aos critérios mínimos.';return;}
+  if(p!==c){err.textContent='As senhas não coincidem.';return;}
   document.getElementById('passwordSaveBtn').disabled=true;
   document.getElementById('passwordSaveBtn').textContent='Salvando...';
   const {error}=await sb.auth.updateUser({password:p});
-  if(error){err.textContent='NÃ£o foi possÃ­vel alterar a senha. Tente novamente.';}
+  if(error){err.textContent='Não foi possível alterar a senha. Tente novamente.';}
   else{
     const {error:profileError}=await sb.from('user_profiles').update({must_change_password:false,updated_at:new Date().toISOString()}).eq('user_id',currentUser.id);
     if(profileError){err.textContent='Senha alterada, mas houve falha ao atualizar o perfil. Entre novamente.';}
@@ -1073,7 +1073,7 @@ async function saveNewPassword(){
 async function finishWorkspaceEntry(){
   document.getElementById('userChip')?.classList.add('visible');
   document.getElementById('userEmail').textContent=currentUser?.email||'';
-  try{await loadOnlineWorkspace();window.__workspaceLoaded=true;}catch(e){console.error(e);hideLoader();alert('NÃ£o foi possÃ­vel carregar a base online: '+e.message);}
+  try{await loadOnlineWorkspace();window.__workspaceLoaded=true;}catch(e){console.error(e);hideLoader();alert('Não foi possível carregar a base online: '+e.message);}
 }
 async function enterWorkspace(){
   document.getElementById('authShell')?.classList.add('hidden');
@@ -1083,13 +1083,13 @@ async function enterWorkspace(){
     if(!profile||profile.active===false){await sb.auth.signOut();location.reload();return;}
     if(profile.must_change_password){hideLoader();openPasswordModal(true);return;}
     await finishWorkspaceEntry();
-  }catch(e){console.error(e);hideLoader();alert('NÃ£o foi possÃ­vel validar seu perfil de acesso.');}
+  }catch(e){console.error(e);hideLoader();alert('Não foi possível validar seu perfil de acesso.');}
 }
 async function bootAuth(){
   const {data}=await sb.auth.getSession();currentUser=data.session?.user||null;
   if(currentUser){await enterWorkspace();}else{document.getElementById('authShell')?.classList.remove('hidden');hideLoader();}
 }
-async function logout(){showLoader('Encerrando sessÃ£o...',55);await sb.auth.signOut();location.reload();}
+async function logout(){showLoader('Encerrando sessão...',55);await sb.auth.signOut();location.reload();}
 document.getElementById('loginBtn')?.addEventListener('click',signIn);
 document.getElementById('loginPassword')?.addEventListener('keydown',e=>{if(e.key==='Enter')signIn();});
 document.getElementById('logoutBtn')?.addEventListener('click',logout);
@@ -1097,12 +1097,12 @@ document.getElementById('changePasswordBtn')?.addEventListener('click',()=>openP
 document.getElementById('passwordCancelBtn')?.addEventListener('click',closePasswordModal);
 document.getElementById('passwordSaveBtn')?.addEventListener('click',saveNewPassword);
 document.getElementById('confirmPassword')?.addEventListener('keydown',e=>{if(e.key==='Enter')saveNewPassword();});
-window.addEventListener('error',e=>{const el=document.getElementById('loginError');if(el)el.textContent='Erro na aplicaÃ§Ã£o: '+(e.message||'falha inesperada');console.error(e.error||e);});
-window.addEventListener('unhandledrejection',e=>{const el=document.getElementById('loginError');if(el)el.textContent='Falha de conexÃ£o/autenticaÃ§Ã£o: '+(e.reason?.message||e.reason||'erro inesperado');console.error(e.reason);});
-bootAuth().catch(e=>{console.error('Falha ao iniciar autenticaÃ§Ã£o',e);hideLoader();document.getElementById('authShell')?.classList.remove('hidden');const el=document.getElementById('loginError');if(el)el.textContent='NÃ£o foi possÃ­vel iniciar a autenticaÃ§Ã£o. Atualize a pÃ¡gina e tente novamente.';});
+window.addEventListener('error',e=>{const el=document.getElementById('loginError');if(el)el.textContent='Erro na aplicação: '+(e.message||'falha inesperada');console.error(e.error||e);});
+window.addEventListener('unhandledrejection',e=>{const el=document.getElementById('loginError');if(el)el.textContent='Falha de conexão/autenticação: '+(e.reason?.message||e.reason||'erro inesperado');console.error(e.reason);});
+bootAuth().catch(e=>{console.error('Falha ao iniciar autenticação',e);hideLoader();document.getElementById('authShell')?.classList.remove('hidden');const el=document.getElementById('loginError');if(el)el.textContent='Não foi possível iniciar a autenticação. Atualize a página e tente novamente.';});
 const MONTH_NAMES = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
-function monthLabel(ym){ if(!ym) return 'â€”'; const [y,m]=ym.split('-'); return MONTH_NAMES[parseInt(m,10)-1]+'/'+y.slice(2); }
-function fmtDate(iso){ if(!iso) return 'â€”'; const [y,m,d]=iso.split('-'); return `${d}/${m}/${y}`; }
+function monthLabel(ym){ if(!ym) return '—'; const [y,m]=ym.split('-'); return MONTH_NAMES[parseInt(m,10)-1]+'/'+y.slice(2); }
+function fmtDate(iso){ if(!iso) return '—'; const [y,m,d]=iso.split('-'); return `${d}/${m}/${y}`; }
 function monthFromIso(iso){ return iso && /^\d{4}-\d{2}/.test(iso) ? iso.slice(0,7) : null; }
 function freezeMovementMonth(t){ return monthFromIso(t.dataCongelamento) || (isCongelada(t) ? monthFromIso(t.dataMudancaStatus) : null); }
 function slug(s){ return (s||'').toString().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,''); }
@@ -1113,32 +1113,32 @@ function normalize(s){ return (s||'').toString().toLowerCase().normalize('NFD').
 const CLASSIFICATION_NORMALIZED = Object.fromEntries(Object.entries(CLASSIFICATION).map(([cargo, category])=>[normalize(cargo), category]));
 const POS_VENDAS_DEPARTMENTS = new Set(['assistencia tecnica','pecas']);
 function classifyTicket(cargo, departamento){
-  if(POS_VENDAS_DEPARTMENTS.has(normalize(departamento).trim())) return 'PÃ³s-vendas';
+  if(POS_VENDAS_DEPARTMENTS.has(normalize(departamento).trim())) return 'Pós-vendas';
   return CLASSIFICATION[cargo] || CLASSIFICATION_NORMALIZED[normalize(cargo).trim()] || 'Demais';
 }
 
 const isOpen = t => t.aberto === true;
 
-const RH_GESTOR = ['AvaliaÃ§Ã£o Gestor', 'Em Proposta'];
+const RH_GESTOR = ['Avaliação Gestor', 'Em Proposta'];
 const RH_ANDAMENTO = ['Triagem', 'Entrevista - Rh', 'Analise De Elegibilidade'];
 const RH_CONGELADA = ['Vaga Congelada'];
-const RH_ADMISSAO = ['Em AdmissÃ£o'];
+const RH_ADMISSAO = ['Em Admissão'];
 
 function isEmAdmissao(t){
   if(!isOpen(t)) return false;
-  return t.statusRH === 'Em AdmissÃ£o';
+  return t.statusRH === 'Em Admissão';
 }
 function isGestorStage(t){
-  // Status RH pode ficar desatualizado quando a vaga jÃ¡ foi cancelada/concluÃ­da
-  // no status geral (ex: RH marcou "AvaliaÃ§Ã£o Gestor" e depois a vaga foi
-  // cancelada sem o Status RH sincronizar). Por isso, sÃ³ usamos o Status RH
-  // como aproximaÃ§Ã£o de etapa quando a vaga ainda estÃ¡ aberta pelo status geral.
+  // Status RH pode ficar desatualizado quando a vaga já foi cancelada/concluída
+  // no status geral (ex: RH marcou "Avaliação Gestor" e depois a vaga foi
+  // cancelada sem o Status RH sincronizar). Por isso, só usamos o Status RH
+  // como aproximação de etapa quando a vaga ainda está aberta pelo status geral.
   if(!isOpen(t) || isCongelada(t) || isEmAdmissao(t)) return false;
   if(t.statusRH){
     if(RH_GESTOR.includes(t.statusRH)) return true;
-    // Valor de Status RH conhecido mas de outra etapa (andamento/congelada/admissÃ£o/concluÃ­do) -> nÃ£o Ã© gestor.
+    // Valor de Status RH conhecido mas de outra etapa (andamento/congelada/admissão/concluído) -> não é gestor.
     if(RH_ANDAMENTO.includes(t.statusRH) || RH_CONGELADA.includes(t.statusRH) || RH_ADMISSAO.includes(t.statusRH) || t.statusRH === 'Concluido') return false;
-    // Status RH com valor nÃ£o mapeado ainda (ex: "MovimentaÃ§Ã£o Interna") -> cai na aproximaÃ§Ã£o pelo status geral.
+    // Status RH com valor não mapeado ainda (ex: "Movimentação Interna") -> cai na aproximação pelo status geral.
   }
   return t.desStatus === 'Aguardando Autorizacao';
 }
@@ -1152,9 +1152,9 @@ function isAndamentoStage(t){
 }
 function isCongelada(t){
   if(!isOpen(t)) return false;
-  // Considera congelada se QUALQUER um dos dois status (RH ou geral) indicar isso â€”
-  // evita que uma vaga congelada pelo status geral escape da contagem sÃ³ porque
-  // o Status RH ainda nÃ£o foi atualizado para "Vaga Congelada".
+  // Considera congelada se QUALQUER um dos dois status (RH ou geral) indicar isso —
+  // evita que uma vaga congelada pelo status geral escape da contagem só porque
+  // o Status RH ainda não foi atualizado para "Vaga Congelada".
   if(t.statusRH && RH_CONGELADA.includes(t.statusRH)) return true;
   return t.desStatus === 'Vaga Congelada';
 }
@@ -1195,12 +1195,12 @@ function computeDerived(){
       const fechadas = TICKETS.filter(t=>t.tec===tec && t.desStatus==='Concluido' && t.mesFe===m).length;
       return {m, fechadas};
     });
-    // Total real de fechadas (todas as datas, nÃ£o sÃ³ os meses com abertura na base).
-    // Vagas em admissÃ£o contam aqui como jÃ¡ fechadas pelo analista (sÃ³ falta a
-    // formalizaÃ§Ã£o), mas como nÃ£o tÃªm data de fechamento ainda, nÃ£o entram no
-    // quebra por mÃªs acima â€” sÃ³ no total.
+    // Total real de fechadas (todas as datas, não só os meses com abertura na base).
+    // Vagas em admissão contam aqui como já fechadas pelo analista (só falta a
+    // formalização), mas como não têm data de fechamento ainda, não entram no
+    // quebra por mês acima — só no total.
     // "Em aberto hoje" usa a mesma regra do resto do painel: desconsidera
-    // congeladas, retorno de usuÃ¡rio, concluÃ­das pelo RH e em admissÃ£o.
+    // congeladas, retorno de usuário, concluídas pelo RH e em admissão.
     const totalFechadas = TICKETS.filter(t=>t.tec===tec && (t.desStatus==='Concluido' || isEmAdmissao(t))).length;
     const abertoHoje = TICKETS.filter(t=>t.tec===tec && isCountedOpen(t)).length;
     return {tec, perMonth, totalFechadas, abertoHoje};
@@ -1214,7 +1214,7 @@ function applyTheme(theme){
   document.documentElement.setAttribute('data-theme',chosen);
   try{localStorage.setItem('central-vagas-theme',chosen);}catch(_e){}
   const icon=document.getElementById('themeIcon'),text=document.getElementById('themeText');
-  if(icon) icon.textContent=chosen==='light'?'ðŸŒ™':'â˜€ï¸';
+  if(icon) icon.textContent=chosen==='light'?'🌙':'☀️';
   if(text) text.textContent=chosen==='light'?'Tema escuro':'Tema claro';
 }
 (function initTheme(){
@@ -1237,7 +1237,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
 function renderKpis(){
   const open = TICKETS.filter(isCountedOpen);
   const comercial = open.filter(t=>t.cat==='Comercial').length;
-  const posVendas = open.filter(t=>t.cat==='PÃ³s-vendas').length;
+  const posVendas = open.filter(t=>t.cat==='Pós-vendas').length;
   const demais = open.filter(t=>t.cat==='Demais').length;
   const total = open.length;
   const mk = (label,val,extraClass,foot) => `
@@ -1248,12 +1248,12 @@ function renderKpis(){
     </div>`;
   document.getElementById('kpiRow').innerHTML =
     mk('Vagas Comerciais', comercial, '', `${((comercial/total)*100||0).toFixed(0)}% do total em aberto`) +
-    mk('Vagas de PÃ³s-vendas', posVendas, '', `${((posVendas/total)*100||0).toFixed(0)}% do total em aberto`) +
+    mk('Vagas de Pós-vendas', posVendas, '', `${((posVendas/total)*100||0).toFixed(0)}% do total em aberto`) +
     mk('Demais Vagas', demais, '', `${((demais/total)*100||0).toFixed(0)}% do total em aberto`) +
     mk('Total Geral em Aberto', total, 'total', `${TICKETS.length} chamados na base ao todo`);
 }
 
-// ================= TORRE DE NEGÃ“CIOS =================
+// ================= TORRE DE NEGÓCIOS =================
 function renderTorre(){
   const open = TICKETS.filter(isCountedOpen);
   const counts = {};
@@ -1263,11 +1263,11 @@ function renderTorre(){
   document.getElementById('torreRow').innerHTML = rows.length ? rows.map(([seg,n])=>{
     const inSegment = open.filter(t=>(t.seg||'Sem torre informada')===seg);
     const comercialN = inSegment.filter(t=>t.cat==='Comercial').length;
-    const posVendasN = inSegment.filter(t=>t.cat==='PÃ³s-vendas').length;
+    const posVendasN = inSegment.filter(t=>t.cat==='Pós-vendas').length;
     const demaisN = inSegment.filter(t=>t.cat==='Demais').length;
     return `
     <div class="breakdown-row">
-      <div class="breakdown-label">${escapeHtml(seg)}<span class="breakdown-sub">${comercialN} comercial Â· ${posVendasN} pÃ³s-vendas Â· ${demaisN} demais</span></div>
+      <div class="breakdown-label">${escapeHtml(seg)}<span class="breakdown-sub">${comercialN} comercial · ${posVendasN} pós-vendas · ${demaisN} demais</span></div>
       <div class="breakdown-track"><div class="breakdown-fill" style="width:${(n/total*100)}%"></div></div>
       <div class="breakdown-val">${n}<span class="pct">${Math.round(n/total*100)}%</span></div>
     </div>`;
@@ -1278,10 +1278,10 @@ function renderTorre(){
 function renderTempoAbertura(){
   const open = TICKETS.filter(isCountedOpen);
   const buckets = [
-    {key:'0-7', label:'AtÃ© 7 dias', test:d=>d<=7},
-    {key:'8-14', label:'AtÃ© 14 dias', test:d=>d>7 && d<=14},
-    {key:'15-21', label:'AtÃ© 21 dias', test:d=>d>14 && d<=21},
-    {key:'22-30', label:'AtÃ© 30 dias', test:d=>d>21 && d<=30},
+    {key:'0-7', label:'Até 7 dias', test:d=>d<=7},
+    {key:'8-14', label:'Até 14 dias', test:d=>d>7 && d<=14},
+    {key:'15-21', label:'Até 21 dias', test:d=>d>14 && d<=21},
+    {key:'22-30', label:'Até 30 dias', test:d=>d>21 && d<=30},
     {key:'30+', label:'Mais de 30 dias', test:d=>d>30},
   ];
   const total = open.length || 1;
@@ -1297,13 +1297,13 @@ function renderTempoAbertura(){
   }).join('');
 }
 
-// ================= PLANO DE AÃ‡ÃƒO (VAGAS +30 DIAS) =================
+// ================= PLANO DE AÇÃO (VAGAS +30 DIAS) =================
 function planoNotaKey(id){ return 'centralVagas.planoNota.'+id; }
 function renderPlanoAcao(){
   const list = TICKETS.filter(isCountedOpen).filter(t=>(t.tempoAb||0)>30).slice().sort((a,b)=>(b.tempoAb||0)-(a.tempoAb||0));
   const body = document.getElementById('planoAcaoBody');
   if(!list.length){
-    body.innerHTML = `<tr><td colspan="8"><div class="empty-state">Nenhuma vaga em aberto hÃ¡ mais de 30 dias.</div></td></tr>`;
+    body.innerHTML = `<tr><td colspan="8"><div class="empty-state">Nenhuma vaga em aberto há mais de 30 dias.</div></td></tr>`;
     return;
   }
   body.innerHTML = list.map(t=>{
@@ -1314,11 +1314,11 @@ function renderPlanoAcao(){
       <td class="mono-id">#${t.id}</td>
       <td>${escapeHtml(t.cargo)}</td>
       <td>${escapeHtml(t.emp)}</td>
-      <td>${escapeHtml(t.seg||'â€”')}</td>
+      <td>${escapeHtml(t.seg||'—')}</td>
       <td>${escapeHtml(t.tec||'sem analista')}</td>
       <td class="plano-dias ${diasClass}">${t.tempoAb} dias</td>
-      <td class="muted-mono">${escapeHtml(t.statusRH || t.desStatus || 'â€”')}</td>
-      <td><textarea class="plano-note-input" data-id="${t.id}" placeholder="Gargalo / prÃ³ximo passo...">${escapeHtml(saved)}</textarea></td>
+      <td class="muted-mono">${escapeHtml(t.statusRH || t.desStatus || '—')}</td>
+      <td><textarea class="plano-note-input" data-id="${t.id}" placeholder="Gargalo / próximo passo...">${escapeHtml(saved)}</textarea></td>
     </tr>`;
   }).join('');
   body.querySelectorAll('.plano-note-input').forEach(ta=>{
@@ -1339,23 +1339,23 @@ function renderCritical(){
     <div class="crit-card ${isExp?'expanded':''}" data-id="${t.id}">
       <div class="crit-rank">PRIORIDADE ${i+1}</div>
       <div class="crit-title">${escapeHtml(t.cargo)}</div>
-      <div class="crit-sub">${escapeHtml(t.emp)} Â· Chamado #${t.id} Â· ${escapeHtml(t.tec||'sem analista')}</div>
+      <div class="crit-sub">${escapeHtml(t.emp)} · Chamado #${t.id} · ${escapeHtml(t.tec||'sem analista')}</div>
       <div class="crit-tags">
         <span class="tag days">${t.tempoAb} dias em aberto</span>
-        <span class="tag status">${escapeHtml(t.statusRH || t.desStatus || 'â€”')}</span>
+        <span class="tag status">${escapeHtml(t.statusRH || t.desStatus || '—')}</span>
       </div>
-      <div class="crit-click-hint">${isExp ? 'Clique para recolher â–²' : 'Clique para ver do que se trata â–¼'}</div>
+      <div class="crit-click-hint">${isExp ? 'Clique para recolher ▲' : 'Clique para ver do que se trata ▼'}</div>
       ${isExp ? `
       <div class="crit-detail">
-        <b>DescriÃ§Ã£o do chamado</b>${escapeHtml(t.desc || 'Sem descriÃ§Ã£o.')}
+        <b>Descrição do chamado</b>${escapeHtml(t.desc || 'Sem descrição.')}
         <div class="crit-detail-grid">
-          <div><span>Segmento</span><b class="val">${escapeHtml(t.seg||'â€”')}</b></div>
-          <div><span>NÃºcleo</span><b class="val">${escapeHtml(t.nuc||'â€”')}</b></div>
-          <div><span>Departamento</span><b class="val">${escapeHtml(t.dept||'â€”')}</b></div>
-          <div><span>Diretor</span><b class="val">${escapeHtml(t.dir||'â€”')}</b></div>
-          <div><span>Criador</span><b class="val">${escapeHtml(t.criador||'â€”')}</b></div>
-          <div><span>OcorrÃªncia</span><b class="val">${escapeHtml(t.ocor||'â€”')}</b></div>
-          <div><span>Substituindo</span><b class="val">${escapeHtml(t.subst||'â€”')}</b></div>
+          <div><span>Segmento</span><b class="val">${escapeHtml(t.seg||'—')}</b></div>
+          <div><span>Núcleo</span><b class="val">${escapeHtml(t.nuc||'—')}</b></div>
+          <div><span>Departamento</span><b class="val">${escapeHtml(t.dept||'—')}</b></div>
+          <div><span>Diretor</span><b class="val">${escapeHtml(t.dir||'—')}</b></div>
+          <div><span>Criador</span><b class="val">${escapeHtml(t.criador||'—')}</b></div>
+          <div><span>Ocorrência</span><b class="val">${escapeHtml(t.ocor||'—')}</b></div>
+          <div><span>Substituindo</span><b class="val">${escapeHtml(t.subst||'—')}</b></div>
           <div><span>Data de abertura</span><b class="val">${fmtDate(t.dataAb)}</b></div>
         </div>
       </div>` : ''}
@@ -1397,30 +1397,30 @@ function renderFunnel(){
   const semRH = TICKETS.filter(isCountedOpen).filter(t=>!t.statusRH).length;
   document.getElementById('funnelRow').innerHTML = `
     <div class="funnel-card fechadas">
-      <div class="fn-label">Fechadas no mÃªs</div>
+      <div class="fn-label">Fechadas no mês</div>
       <div class="fn-num">${fechadas.length}</div>
       <div class="fn-desc">SLA cumprido / contratados em ${monthLabel(selectedMonth)}</div>
       <div class="fn-sla">Dentro do prazo: <b>${noPrazo}</b> / ${fechadas.length}</div>
-      <div class="funnel-arrow">â†’</div>
+      <div class="funnel-arrow">→</div>
     </div>
     <div class="funnel-card gestor">
       <div class="fn-label">Na fase do gestor</div>
       <div class="fn-num">${gestor.length}</div>
-      <div class="fn-desc">AvaliaÃ§Ã£o do gestor ou em proposta (Status RH)</div>
-      <div class="funnel-arrow">â†’</div>
+      <div class="fn-desc">Avaliação do gestor ou em proposta (Status RH)</div>
+      <div class="funnel-arrow">→</div>
     </div>
     <div class="funnel-card andamento">
       <div class="fn-label">Em andamento</div>
       <div class="fn-num">${andamento.length}</div>
-      <div class="fn-desc">Triagem, entrevista RH ou anÃ¡lise de elegibilidade (Status RH)</div>
+      <div class="fn-desc">Triagem, entrevista RH ou análise de elegibilidade (Status RH)</div>
     </div>`;
   document.getElementById('funnelExtra').innerHTML =
-    `<b>${emAdmissao.length}</b> vaga(s) em admissÃ£o` +
-    ` &nbsp;Â·&nbsp; <b>${congelada.length}</b> vaga(s) congelada(s)` +
-    ` &nbsp;Â·&nbsp; <b>${retornoUsuario.length}</b> vaga(s) em retorno de usuÃ¡rio` +
-    (concluidaPeloRH.length ? ` &nbsp;Â·&nbsp; <b>${concluidaPeloRH.length}</b> vaga(s) jÃ¡ concluÃ­da(s) pelo RH (status geral ainda nÃ£o sincronizou)` : '') +
-    (semRH ? ` &nbsp;Â·&nbsp; <b>${semRH}</b> vaga(s) em aberto ainda sem Status RH informado (usando o status geral como aproximaÃ§Ã£o)` : '') +
-    ` &nbsp;â€” nenhuma delas entra no Volume Geral, nas Vagas CrÃ­ticas ou no funil.`;
+    `<b>${emAdmissao.length}</b> vaga(s) em admissão` +
+    ` &nbsp;·&nbsp; <b>${congelada.length}</b> vaga(s) congelada(s)` +
+    ` &nbsp;·&nbsp; <b>${retornoUsuario.length}</b> vaga(s) em retorno de usuário` +
+    (concluidaPeloRH.length ? ` &nbsp;·&nbsp; <b>${concluidaPeloRH.length}</b> vaga(s) já concluída(s) pelo RH (status geral ainda não sincronizou)` : '') +
+    (semRH ? ` &nbsp;·&nbsp; <b>${semRH}</b> vaga(s) em aberto ainda sem Status RH informado (usando o status geral como aproximação)` : '') +
+    ` &nbsp;— nenhuma delas entra no Volume Geral, nas Vagas Críticas ou no funil.`;
 }
 
 // ================= RANKING =================
@@ -1439,7 +1439,7 @@ function renderRankTable(){
   const head = document.getElementById('rankHead');
   head.innerHTML = `<th style="cursor:default;">#</th><th data-key="tec">Analista</th>` +
     months.map(m=>`<th data-key="m:${m}">${monthLabel(m)}<div style="font-weight:400;color:var(--text-faint);font-size:9px;">fech.</div></th>`).join('') +
-    `<th data-key="totalFechadas">Total Fechadas</th><th data-key="abertoHoje">Em Aberto Hoje</th><th>PosiÃ§Ã£o</th>`;
+    `<th data-key="totalFechadas">Total Fechadas</th><th data-key="abertoHoje">Em Aberto Hoje</th><th>Posição</th>`;
   head.querySelectorAll('th[data-key]').forEach(th=>{
     th.addEventListener('click', ()=>{
       const key = th.dataset.key;
@@ -1462,7 +1462,7 @@ function renderRankTable(){
         </div>
       </td>
       <td class="num-mono aberto-hoje">${r.abertoHoje}</td>
-      <td class="muted-mono">${i+1}Âº</td>
+      <td class="muted-mono">${i+1}º</td>
     </tr>`;
   }).join('') || `<tr><td colspan="20"><div class="empty-state">Sem dados de analistas na base carregada.</div></td></tr>`;
 }
@@ -1477,7 +1477,7 @@ const TICKET_COLS = [
   {key:'criador', label:'Criador'},
   {key:'dir', label:'Diretoria'},
   {key:'cat', label:'Categoria'},
-  {key:'ocor', label:'OcorrÃªncia'},
+  {key:'ocor', label:'Ocorrência'},
   {key:'desStatus', label:'Status'},
   {key:'statusRH', label:'Status RH'},
   {key:'dataAb', label:'Abertura'},
@@ -1490,11 +1490,11 @@ let expandedId = null;
 
 function faixaTempo(t){
   const d = t.tempoAb;
-  if(d===null || d===undefined) return 'â€”';
-  if(d<=7) return 'AtÃ© 7 dias';
-  if(d<=14) return 'AtÃ© 14 dias';
-  if(d<=21) return 'AtÃ© 21 dias';
-  if(d<=30) return 'AtÃ© 30 dias';
+  if(d===null || d===undefined) return '—';
+  if(d<=7) return 'Até 7 dias';
+  if(d<=14) return 'Até 14 dias';
+  if(d<=21) return 'Até 21 dias';
+  if(d<=30) return 'Até 30 dias';
   return 'Mais de 30 dias';
 }
 
@@ -1515,7 +1515,7 @@ let msSegmento, msStatus, msStatusRH, msTecnico, msCriador, msDiretor;
 
 function initMultiSelect(containerId, label, values, targetSetKey){
   const container = document.getElementById(containerId);
-  container.innerHTML = `<button class="ms-btn" type="button"><span class="ms-label">${escapeHtml(label)}</span><span class="ms-arrow">â–¾</span></button><div class="ms-panel"></div>`;
+  container.innerHTML = `<button class="ms-btn" type="button"><span class="ms-label">${escapeHtml(label)}</span><span class="ms-arrow">▾</span></button><div class="ms-panel"></div>`;
   const btn = container.querySelector('.ms-btn');
   const labelEl = btn.querySelector('.ms-label');
   const panel = container.querySelector('.ms-panel');
@@ -1533,8 +1533,8 @@ function initMultiSelect(containerId, label, values, targetSetKey){
     const searchHtml = `<div class="ms-search"><input type="text" class="ms-search-input" placeholder="Buscar ${escapeHtml(label.toLowerCase())}..." value="${escapeHtml(searchTerm)}"></div>`;
     const optionsHtml = filteredValues.length ? filteredValues.map(v=>
         `<label class="ms-option"><input type="checkbox" value="${escapeHtml(v)}" ${selected.has(v)?'checked':''}> ${escapeHtml(v)}</label>`
-      ).join('') : `<div class="ms-empty">${q ? 'Nada encontrado' : 'Nenhuma opÃ§Ã£o'}</div>`;
-    const actionsHtml = `<div class="ms-actions"><button type="button" data-act="all">Marcar ${q ? 'visÃ­veis' : 'todos'}</button><button type="button" data-act="clear">Limpar</button></div>`;
+      ).join('') : `<div class="ms-empty">${q ? 'Nada encontrado' : 'Nenhuma opção'}</div>`;
+    const actionsHtml = `<div class="ms-actions"><button type="button" data-act="all">Marcar ${q ? 'visíveis' : 'todos'}</button><button type="button" data-act="clear">Limpar</button></div>`;
     panel.innerHTML = searchHtml + optionsHtml + actionsHtml;
     const searchInput = panel.querySelector('.ms-search-input');
     searchInput.addEventListener('input', (e)=>{
@@ -1622,8 +1622,8 @@ function renderTicketsHead(){
 
 function renderTicketDiaryHistory(ticketId){
   const hist=(typeof getDiaryByTicket==='function'?getDiaryByTicket(ticketId):[]);
-  if(!hist.length) return `<div class="ticket-diary-history"><h4>DiÃ¡rio de Bordo</h4><div class="muted-mono">Nenhum registro incluÃ­do para este chamado.</div></div>`;
-  return `<div class="ticket-diary-history"><h4>DiÃ¡rio de Bordo Â· ${hist.length} registro${hist.length===1?'':'s'}</h4>${hist.map(x=>`<div class="ticket-diary-entry"><div class="ticket-diary-entry-head"><b>${fmtDate(x.date)}</b><span>${escapeHtml(x.analyst||'â€”')}</span><span>${escapeHtml(x.status||'â€”')}</span></div><div class="ticket-diary-entry-grid"><div><span>Ãšltima alteraÃ§Ã£o de status</span><b>${fmtDate(x.statusChange)}</b></div><div><span>InÃ­cio processo seletivo</span><b>${fmtDate(x.processStart)}</b></div><div><span>Aceite da proposta</span><b>${fmtDate(x.proposalAccepted)}</b></div><div><span>SLA processo</span><b>${x.sla===null||x.sla===undefined?'â€”':escapeHtml(String(x.sla))+' d'}</b></div><div><span>Congelamento</span><b>${fmtDate(x.freezeDate)}</b></div><div><span>Nome do aprovado</span><b>${escapeHtml(x.approvedName||'â€”')}</b></div><div><span>ProcedÃªncia fechamento</span><b>${escapeHtml(x.closingSource||'â€”')}</b></div><div><span>PCD?</span><b>${escapeHtml(x.pcd||'â€”')}</b></div><div><span>PrevisÃ£o de inÃ­cio</span><b>${fmtDate(x.expectedStart)}</b></div><div style="grid-column:1/-1"><span>AtualizaÃ§Ã£o / observaÃ§Ãµes</span><b>${escapeHtml(x.update||'â€”')}</b></div></div></div>`).join('')}</div>`;
+  if(!hist.length) return `<div class="ticket-diary-history"><h4>Diário de Bordo</h4><div class="muted-mono">Nenhum registro incluído para este chamado.</div></div>`;
+  return `<div class="ticket-diary-history"><h4>Diário de Bordo · ${hist.length} registro${hist.length===1?'':'s'}</h4>${hist.map(x=>`<div class="ticket-diary-entry"><div class="ticket-diary-entry-head"><b>${fmtDate(x.date)}</b><span>${escapeHtml(x.analyst||'—')}</span><span>${escapeHtml(x.status||'—')}</span></div><div class="ticket-diary-entry-grid"><div><span>Última alteração de status</span><b>${fmtDate(x.statusChange)}</b></div><div><span>Início processo seletivo</span><b>${fmtDate(x.processStart)}</b></div><div><span>Aceite da proposta</span><b>${fmtDate(x.proposalAccepted)}</b></div><div><span>SLA processo</span><b>${x.sla===null||x.sla===undefined?'—':escapeHtml(String(x.sla))+' d'}</b></div><div><span>Congelamento</span><b>${fmtDate(x.freezeDate)}</b></div><div><span>Nome do aprovado</span><b>${escapeHtml(x.approvedName||'—')}</b></div><div><span>Procedência fechamento</span><b>${escapeHtml(x.closingSource||'—')}</b></div><div><span>PCD?</span><b>${escapeHtml(x.pcd||'—')}</b></div><div><span>Previsão de início</span><b>${fmtDate(x.expectedStart)}</b></div><div style="grid-column:1/-1"><span>Atualização / observações</span><b>${escapeHtml(x.update||'—')}</b></div></div></div>`).join('')}</div>`;
 }
 function renderTickets(){
   let list = applyFilters();
@@ -1637,7 +1637,7 @@ function renderTickets(){
   });
   document.getElementById('resultCount').textContent = list.length;
   document.getElementById('resultHint').textContent = list.length===0 ? 'tente ajustar os filtros' :
-    `${list.filter(isCountedOpen).length} em aberto Â· ${list.filter(t=>!isCountedOpen(t)).length} fechadas/canceladas`;
+    `${list.filter(isCountedOpen).length} em aberto · ${list.filter(t=>!isCountedOpen(t)).length} fechadas/canceladas`;
 
   const body = document.getElementById('ticketsBody');
   if(list.length===0){
@@ -1652,31 +1652,31 @@ function renderTickets(){
       <td>${escapeHtml(t.cargo)}</td>
       <td>${escapeHtml(t.emp)}</td>
       <td>${escapeHtml(t.seg)}</td>
-      <td>${escapeHtml(t.tec||'â€”')}</td>
-      <td>${escapeHtml(t.criador||'â€”')}</td>
-      <td>${escapeHtml(t.dir||'â€”')}</td>
-      <td><span class="cat-pill ${t.cat==='Comercial'?'comercial':(t.cat==='PÃ³s-vendas'?'pos-vendas':'demais')}">${escapeHtml(t.cat)}</span></td>
-      <td>${escapeHtml(t.ocor||'â€”')}</td>
-      <td><span class="${statusPillClass(t.desStatus)}">${escapeHtml(t.desStatus||'â€”')}</span></td>
-      <td class="muted-mono">${escapeHtml(t.statusRH||'â€”')}</td>
+      <td>${escapeHtml(t.tec||'—')}</td>
+      <td>${escapeHtml(t.criador||'—')}</td>
+      <td>${escapeHtml(t.dir||'—')}</td>
+      <td><span class="cat-pill ${t.cat==='Comercial'?'comercial':(t.cat==='Pós-vendas'?'pos-vendas':'demais')}">${escapeHtml(t.cat)}</span></td>
+      <td>${escapeHtml(t.ocor||'—')}</td>
+      <td><span class="${statusPillClass(t.desStatus)}">${escapeHtml(t.desStatus||'—')}</span></td>
+      <td class="muted-mono">${escapeHtml(t.statusRH||'—')}</td>
       <td class="muted-mono">${fmtDate(t.dataAb)}</td>
-      <td class="muted-mono">${t.tempoAb ?? 'â€”'}</td>
+      <td class="muted-mono">${t.tempoAb ?? '—'}</td>
       <td class="muted-mono">${faixaTempo(t)}</td>
       <td class="muted-mono">${fmtDate(t.dataFe)}</td>
     </tr>`;
     if(isExp){
       html += `<tr class="detail-row"><td colspan="${TICKET_COLS.length}"><div class="detail-inner">
-        <div class="detail-desc"><b>DescriÃ§Ã£o do chamado</b>${escapeHtml(t.desc||'Sem descriÃ§Ã£o.')}</div>
+        <div class="detail-desc"><b>Descrição do chamado</b>${escapeHtml(t.desc||'Sem descrição.')}</div>
         <div class="detail-grid">
-          <div class="detail-item"><span>NÃºcleo</span><b>${escapeHtml(t.nuc||'â€”')}</b></div>
-          <div class="detail-item"><span>Departamento</span><b>${escapeHtml(t.dept||'â€”')}</b></div>
-          <div class="detail-item"><span>Diretor</span><b>${escapeHtml(t.dir||'â€”')}</b></div>
-          <div class="detail-item"><span>Criador</span><b>${escapeHtml(t.criador||'â€”')}</b></div>
-          <div class="detail-item"><span>OcorrÃªncia</span><b>${escapeHtml(t.ocor||'â€”')}</b></div>
-          <div class="detail-item"><span>Status RH</span><b>${escapeHtml(t.statusRH||'â€”')}</b></div>
-          <div class="detail-item"><span>Status_Tempo</span><b>${escapeHtml(t.statusTempo||'â€”')}</b></div>
+          <div class="detail-item"><span>Núcleo</span><b>${escapeHtml(t.nuc||'—')}</b></div>
+          <div class="detail-item"><span>Departamento</span><b>${escapeHtml(t.dept||'—')}</b></div>
+          <div class="detail-item"><span>Diretor</span><b>${escapeHtml(t.dir||'—')}</b></div>
+          <div class="detail-item"><span>Criador</span><b>${escapeHtml(t.criador||'—')}</b></div>
+          <div class="detail-item"><span>Ocorrência</span><b>${escapeHtml(t.ocor||'—')}</b></div>
+          <div class="detail-item"><span>Status RH</span><b>${escapeHtml(t.statusRH||'—')}</b></div>
+          <div class="detail-item"><span>Status_Tempo</span><b>${escapeHtml(t.statusTempo||'—')}</b></div>
           <div class="detail-item"><span>Vencimento</span><b>${fmtDate(t.dataVe)}</b></div>
-          <div class="detail-item"><span>Substituindo</span><b>${escapeHtml(t.subst||'â€”')}</b></div>
+          <div class="detail-item"><span>Substituindo</span><b>${escapeHtml(t.subst||'—')}</b></div>
         </div>
         ${renderTicketDiaryHistory(t.id)}
       </div></td></tr>`;
@@ -1743,7 +1743,7 @@ document.getElementById('exportCsv').addEventListener('click', ()=>{
 document.querySelector('#filterCategoria button').classList.add('active');
 document.querySelector('#filterAberto button').classList.add('active');
 
-// ================= SUGESTÃƒO AUTOMÃTICA =================
+// ================= SUGESTÃO AUTOMÁTICA =================
 function buildAutoSuggestion(){
   const openTix = TICKETS.filter(isCountedOpen);
   const closedTix = TICKETS.filter(t=>t.desStatus==='Concluido');
@@ -1768,21 +1768,21 @@ function buildAutoSuggestion(){
 
   const lines = [];
   if(closedTix.length){
-    lines.push(`â€¢ SLA: ${pct(forDoPrazo.length, closedTix.length)}% das vagas fechadas na base foram fechadas fora do prazo (${forDoPrazo.length} de ${closedTix.length}). Vale revisar o prazo padrÃ£o ou o processo das vagas que mais estouram.`);
+    lines.push(`• SLA: ${pct(forDoPrazo.length, closedTix.length)}% das vagas fechadas na base foram fechadas fora do prazo (${forDoPrazo.length} de ${closedTix.length}). Vale revisar o prazo padrão ou o processo das vagas que mais estouram.`);
   }
   if(gestorTix.length && andamentoTix.length){
-    lines.push(`â€¢ Gargalo na fase do gestor: as vagas em avaliaÃ§Ã£o do gestor/proposta/admissÃ£o ficam em mÃ©dia ${avgDays(gestorTix)} dias abertas, contra ${avgDays(andamentoTix)} dias nas etapas de triagem/entrevista com RH. Sugiro alinhar um SLA de resposta com os gestores para essa etapa.`);
+    lines.push(`• Gargalo na fase do gestor: as vagas em avaliação do gestor/proposta/admissão ficam em média ${avgDays(gestorTix)} dias abertas, contra ${avgDays(andamentoTix)} dias nas etapas de triagem/entrevista com RH. Sugiro alinhar um SLA de resposta com os gestores para essa etapa.`);
   }
   if(topEmpresa){
-    lines.push(`â€¢ ConcentraÃ§Ã£o: ${topEmpresa[0]} responde por ${topEmpresa[1]} das ${openTix.length} vagas em aberto (${pct(topEmpresa[1], openTix.length)}%)${topCargoInEmpresa ? `, boa parte em ${topCargoInEmpresa[0]} (${topCargoInEmpresa[1]} vagas nessa unidade)` : ''}. Pode valer uma aÃ§Ã£o de captaÃ§Ã£o dedicada para essa unidade/cargo.`);
+    lines.push(`• Concentração: ${topEmpresa[0]} responde por ${topEmpresa[1]} das ${openTix.length} vagas em aberto (${pct(topEmpresa[1], openTix.length)}%)${topCargoInEmpresa ? `, boa parte em ${topCargoInEmpresa[0]} (${topCargoInEmpresa[1]} vagas nessa unidade)` : ''}. Pode valer uma ação de captação dedicada para essa unidade/cargo.`);
   }
   if(congeladaTix.length){
-    lines.push(`â€¢ ${congeladaTix.length} vaga(s) estÃ£o congeladas hÃ¡ em mÃ©dia ${avgDays(congeladaTix)} dias. Vale confirmar com os gestores se ainda sÃ£o prioridade ou se podem ser encerradas.`);
+    lines.push(`• ${congeladaTix.length} vaga(s) estão congeladas há em média ${avgDays(congeladaTix)} dias. Vale confirmar com os gestores se ainda são prioridade ou se podem ser encerradas.`);
   }
   if(topTec){
-    lines.push(`â€¢ DistribuiÃ§Ã£o de carga: ${topTec[0]} estÃ¡ com o maior volume de vagas em aberto (${topTec[1]}). Se fizer sentido, redistribuir algumas pode ajudar a destravar o funil.`);
+    lines.push(`• Distribuição de carga: ${topTec[0]} está com o maior volume de vagas em aberto (${topTec[1]}). Se fizer sentido, redistribuir algumas pode ajudar a destravar o funil.`);
   }
-  return lines.length ? lines.join('\n\n') : 'Sem dados suficientes na base carregada para gerar uma sugestÃ£o automÃ¡tica.';
+  return lines.length ? lines.join('\n\n') : 'Sem dados suficientes na base carregada para gerar uma sugestão automática.';
 }
 
 // ================= LINHA DO TEMPO =================
@@ -1804,13 +1804,13 @@ function initTimelineRef(){
   if(seg){ seg.innerHTML='<option value="">Todos os segmentos</option>'+segmentos.map(x=>`<option value="${escapeHtml(x)}">${escapeHtml(x)}</option>`).join(''); seg.addEventListener('change',renderTimeline); }
 }
 function timelineRowsHtml(list, dateKey, extraCols){
-  if(!list.length) return `<tr><td colspan="5"><div class="empty-state">Nenhuma vaga nessa condiÃ§Ã£o no perÃ­odo.</div></td></tr>`;
+  if(!list.length) return `<tr><td colspan="5"><div class="empty-state">Nenhuma vaga nessa condição no período.</div></td></tr>`;
   return list.slice().sort((a,b)=>String(b[dateKey]).localeCompare(String(a[dateKey]))).map(t=>`
     <tr>
       <td class="mono-id">#${t.id}</td>
       <td>${escapeHtml(t.cargo)}</td>
       <td>${escapeHtml(t.emp)}</td>
-      <td>${escapeHtml(t.seg||'â€”')}</td>
+      <td>${escapeHtml(t.seg||'—')}</td>
       <td class="muted-mono">${fmtDate(t[dateKey])}</td>
     </tr>`).join('');
 }
@@ -1838,9 +1838,9 @@ function renderTimeline(){
     mk('abriram', abriram.length, 'Abriram', `Desde ${fmtDate(ref)} (data de abertura)`) +
     mk('fecharam', fecharam.length, 'Fecharam (contratadas)', `Desde ${fmtDate(ref)} (data de fechamento)`) +
     mk('canceladas', canceladas.length, 'Canceladas', `Desde ${fmtDate(ref)} (data de fechamento)`) +
-    mk('congeladas', congeladasHoje.length, 'Congeladas hoje', `Foto atual â€” total, nÃ£o Ã© do perÃ­odo`) +
-    mk('admissao', admissaoHoje.length, 'Em admissÃ£o hoje', `Foto atual â€” nÃ£o conta como aberta`) +
-    mk('evoluiram', faseFinalHoje.length, 'Na fase final hoje', `AvaliaÃ§Ã£o gestor / proposta â€” foto atual`);
+    mk('congeladas', congeladasHoje.length, 'Congeladas hoje', `Foto atual — total, não é do período`) +
+    mk('admissao', admissaoHoje.length, 'Em admissão hoje', `Foto atual — não conta como aberta`) +
+    mk('evoluiram', faseFinalHoje.length, 'Na fase final hoje', `Avaliação gestor / proposta — foto atual`);
 
   document.getElementById('timelineAbriramBody').innerHTML = timelineRowsHtml(abriram, 'dataAb');
   document.getElementById('timelineFecharamBody').innerHTML = timelineRowsHtml(fecharam, 'dataFe');
@@ -1861,7 +1861,7 @@ function meanClosedDays(list){ const a=list.filter(t=>t.desStatus==='Concluido' 
 function currentYearForMonth(m){ return m ? m.slice(0,4) : String(new Date().getFullYear()); }
 function metricTableHtml(rows, firstLabel){
   if(!rows.length) return '<div class="empty-state">Sem dados para este recorte.</div>';
-  return `<table class="metric-table"><thead><tr><th>${firstLabel}</th><th>Saldo</th><th>No prazo</th><th>Fora prazo</th><th>SLA mÃ©dio</th><th>Abert. mÃªs</th><th>Fech. mÃªs</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${escapeHtml(r.label)}</td><td class="num-mono">${r.saldo}</td><td>${r.noPrazo}</td><td>${r.fora}</td><td>${r.sla} d</td><td>${r.abert}</td><td>${r.fech}</td></tr>`).join('')}</tbody></table>`;
+  return `<table class="metric-table"><thead><tr><th>${firstLabel}</th><th>Saldo</th><th>No prazo</th><th>Fora prazo</th><th>SLA médio</th><th>Abert. mês</th><th>Fech. mês</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${escapeHtml(r.label)}</td><td class="num-mono">${r.saldo}</td><td>${r.noPrazo}</td><td>${r.fora}</td><td>${r.sla} d</td><td>${r.abert}</td><td>${r.fech}</td></tr>`).join('')}</tbody></table>`;
 }
 function buildMetricRows(base, keyFn, month){
   const labels=[...new Set(base.map(keyFn).filter(Boolean))];
@@ -1894,8 +1894,8 @@ function renderIndicatorHistory(){
   const delta=totalOpen-totalClose-totalCancel-totalFreeze;
   const currentOpen=base.filter(isCountedOpen).length;
   const frozenWithoutDate=base.filter(t=>isCongelada(t)&&!freezeMovementMonth(t)).length;
-  summary.innerHTML=`<div class="history-pill">Abertas no perÃ­odo<br><b>${totalOpen}</b></div><div class="history-pill">Fechadas no perÃ­odo<br><b>${totalClose}</b></div><div class="history-pill">Canceladas no perÃ­odo<br><b>${totalCancel}</b></div><div class="history-pill">Congeladas no perÃ­odo<br><b>${totalFreeze}</b></div><div class="history-pill">Î” lÃ­quido<br><b>${delta>0?'+':''}${delta}</b></div><div class="history-pill">Saldo atual<br><b>${currentOpen}</b></div>${frozenWithoutDate?`<div class="history-pill">Congeladas sem data<br><b>${frozenWithoutDate}</b></div>`:''}<div class="history-pill">Meses exibidos<br><b>${rows.length}</b></div>`;
-  chart.innerHTML=rows.length?rows.map(r=>`<div class="month-col"><div class="delta-badge ${r.delta>0?'pos':r.delta<0?'neg':''}">Î” ${r.delta>0?'+':''}${r.delta}</div><div class="month-bars"><div class="month-bar open" style="height:${Math.max(2,r.open/max*165)}px"><span>${r.open}</span></div><div class="month-bar close" style="height:${Math.max(2,r.close/max*165)}px"><span>${r.close}</span></div><div class="month-bar cancel" style="height:${Math.max(2,r.cancel/max*165)}px"><span>${r.cancel}</span></div><div class="month-bar freeze" style="height:${Math.max(2,r.freeze/max*165)}px"><span>${r.freeze}</span></div></div><div class="month-label">${monthLabel(r.m)}</div></div>`).join(''):'<div class="empty-state" style="width:100%">Sem histÃ³rico mensal para este recorte.</div>';
+  summary.innerHTML=`<div class="history-pill">Abertas no período<br><b>${totalOpen}</b></div><div class="history-pill">Fechadas no período<br><b>${totalClose}</b></div><div class="history-pill">Canceladas no período<br><b>${totalCancel}</b></div><div class="history-pill">Congeladas no período<br><b>${totalFreeze}</b></div><div class="history-pill">Δ líquido<br><b>${delta>0?'+':''}${delta}</b></div><div class="history-pill">Saldo atual<br><b>${currentOpen}</b></div>${frozenWithoutDate?`<div class="history-pill">Congeladas sem data<br><b>${frozenWithoutDate}</b></div>`:''}<div class="history-pill">Meses exibidos<br><b>${rows.length}</b></div>`;
+  chart.innerHTML=rows.length?rows.map(r=>`<div class="month-col"><div class="delta-badge ${r.delta>0?'pos':r.delta<0?'neg':''}">Δ ${r.delta>0?'+':''}${r.delta}</div><div class="month-bars"><div class="month-bar open" style="height:${Math.max(2,r.open/max*165)}px"><span>${r.open}</span></div><div class="month-bar close" style="height:${Math.max(2,r.close/max*165)}px"><span>${r.close}</span></div><div class="month-bar cancel" style="height:${Math.max(2,r.cancel/max*165)}px"><span>${r.cancel}</span></div><div class="month-bar freeze" style="height:${Math.max(2,r.freeze/max*165)}px"><span>${r.freeze}</span></div></div><div class="month-label">${monthLabel(r.m)}</div></div>`).join(''):'<div class="empty-state" style="width:100%">Sem histórico mensal para este recorte.</div>';
 }
 function renderIndicators(){
   const segEl=document.getElementById('indicatorSegment'), monEl=document.getElementById('indicatorMonth'); if(!segEl||!monEl) return;
@@ -1903,8 +1903,8 @@ function renderIndicators(){
   const base=scopeTicketsBySegment(indicatorSegment), open=base.filter(isCountedOpen), abert=base.filter(t=>t.mesAb===indicatorMonth), fech=base.filter(t=>t.mesFe===indicatorMonth&&t.desStatus==='Concluido'), fora=open.filter(statusPrazoFora);
   const mk=(l,v,f)=>`<div class="indicator-card"><div class="ic-label">${l}</div><div class="ic-value">${v}</div><div class="ic-foot">${f}</div></div>`;
   const assetsFoot = ACTIVE_ASSETS_COUNT === null ? 'envie a base no upload' : 'base de ativos carregada';
-  document.getElementById('indicatorKpis').innerHTML=mk('Saldo em aberto',open.length,'foto atual')+mk('Aberturas no mÃªs',abert.length,monthLabel(indicatorMonth))+mk('Fechamentos no mÃªs',fech.length,monthLabel(indicatorMonth))+mk('Abertas fora do prazo',fora.length,`${pct(fora.length,open.length)}% do saldo`)+mk('SLA mÃ©dio abertas',avgDays(open)+' d','dias em aberto')+mk('Ativos na base',ACTIVE_ASSETS_COUNT===null?'â€”':ACTIVE_ASSETS_COUNT.toLocaleString('pt-BR'),assetsFoot);
-  document.getElementById('indicatorScopeHint').textContent=indicatorSegment?`Recorte: ${indicatorSegment}`:'VisÃ£o consolidada do Grupo';
+  document.getElementById('indicatorKpis').innerHTML=mk('Saldo em aberto',open.length,'foto atual')+mk('Aberturas no mês',abert.length,monthLabel(indicatorMonth))+mk('Fechamentos no mês',fech.length,monthLabel(indicatorMonth))+mk('Abertas fora do prazo',fora.length,`${pct(fora.length,open.length)}% do saldo`)+mk('SLA médio abertas',avgDays(open)+' d','dias em aberto')+mk('Ativos na base',ACTIVE_ASSETS_COUNT===null?'—':ACTIVE_ASSETS_COUNT.toLocaleString('pt-BR'),assetsFoot);
+  document.getElementById('indicatorScopeHint').textContent=indicatorSegment?`Recorte: ${indicatorSegment}`:'Visão consolidada do Grupo';
   document.getElementById('indicatorBySegment').innerHTML=metricTableHtml(buildMetricRows(base,t=>t.seg||'Sem segmento',indicatorMonth),'Segmento');
   document.getElementById('indicatorByGroup').innerHTML=metricTableHtml(buildMetricRows(base,getGrupoCargo,indicatorMonth),'Grupo de cargo');
   renderIndicatorHistory();
@@ -1913,11 +1913,11 @@ function renderIndicators(){
 function renderIndicatorDimension(){
   const el=document.getElementById('indicatorDimension'); if(!el) return;
   const dim=el.value, base=scopeTicketsBySegment(indicatorSegment), year=currentYearForMonth(indicatorMonth);
-  const cfg={nuc:['RegiÃ£o / NÃºcleo',t=>t.nuc],emp:['Empresa',t=>t.emp],criador:['LÃ­der solicitante',t=>t.criador],tec:['Analista',t=>t.tec],dir:['Diretoria',t=>t.dir],procedencia:['ProcedÃªncia do fechamento',t=>t.procedencia]}[dim];
-  document.getElementById('indicatorDimensionTitle').textContent='Detalhamento â€” '+cfg[0];
+  const cfg={nuc:['Região / Núcleo',t=>t.nuc],emp:['Empresa',t=>t.emp],criador:['Líder solicitante',t=>t.criador],tec:['Analista',t=>t.tec],dir:['Diretoria',t=>t.dir],procedencia:['Procedência do fechamento',t=>t.procedencia]}[dim];
+  document.getElementById('indicatorDimensionTitle').textContent='Detalhamento — '+cfg[0];
   let labels=[...new Set(base.map(cfg[1]).filter(Boolean))];
   let rows=labels.map(label=>{ const list=base.filter(t=>cfg[1](t)===label), open=list.filter(isCountedOpen), yearList=list.filter(t=>(t.mesAb||'').startsWith(year)||(t.mesFe||'').startsWith(year)); return {label,abert:list.filter(t=>(t.mesAb||'').startsWith(year)).length,fech:list.filter(t=>(t.mesFe||'').startsWith(year)&&t.desStatus==='Concluido').length,saldo:open.length,sla:meanClosedDays(yearList),prazo:pctClosedOnTime(yearList)}; }).sort((a,b)=>b.saldo-a.saldo||b.fech-a.fech||a.label.localeCompare(b.label));
-  document.getElementById('indicatorDimensionTable').innerHTML=rows.length?`<table class="metric-table"><thead><tr><th>${cfg[0]}</th><th>Aberturas ${year}</th><th>Fechadas ${year}</th><th>Saldo aberto</th><th>SLA mÃ©dio</th><th>% no prazo</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${escapeHtml(r.label)}</td><td>${r.abert}</td><td>${r.fech}</td><td class="num-mono">${r.saldo}</td><td>${r.sla} d</td><td>${r.prazo}%</td></tr>`).join('')}</tbody></table>`:'<div class="empty-state">Sem dados para este recorte.</div>';
+  document.getElementById('indicatorDimensionTable').innerHTML=rows.length?`<table class="metric-table"><thead><tr><th>${cfg[0]}</th><th>Aberturas ${year}</th><th>Fechadas ${year}</th><th>Saldo aberto</th><th>SLA médio</th><th>% no prazo</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${escapeHtml(r.label)}</td><td>${r.abert}</td><td>${r.fech}</td><td class="num-mono">${r.saldo}</td><td>${r.sla} d</td><td>${r.prazo}%</td></tr>`).join('')}</tbody></table>`:'<div class="empty-state">Sem dados para este recorte.</div>';
 }
 function initIndicators(){
   renderIndicatorFilters(); renderIndicators();
@@ -1927,7 +1927,7 @@ function initIndicators(){
   document.getElementById('indicatorHistoryMonths')?.addEventListener('change',renderIndicatorHistory);
 }
 
-// ================= DIÃRIO DE BORDO =================
+// ================= DIÁRIO DE BORDO =================
 const DIARY_KEY='centralVagas.diarioBordo.v3';
 let diaryEntries=[];
 let diarySelectedTicketId='';
@@ -1954,16 +1954,16 @@ async function loadDiary(){
         id:r.id,date:r.data_acompanhamento,analyst:r.analyst_name||'',segment:r.segment||'',ticket:r.chamado_id||'',status:r.status||'',
         statusChange:r.data_ultima_mudanca_status||'',processStart:r.data_inicio_processo||'',proposalAccepted:r.data_aceite_proposta||'',freezeDate:r.data_congelamento||'',
         sla:r.sla_processo,approvedName:r.nome_aprovado||'',closingSource:r.procedencia_fechamento||'',pcd:r.pcd||'',expectedStart:r.data_previsao_inicio||'',
-        update:r.update_text||r.notes||[r.action,r.bottleneck,r.next_step].filter(Boolean).join(' Â· ')||'',updatedAt:r.updated_at||r.created_at,createdBy:r.created_by,updatedBy:r.updated_by,rowVersion:r.row_version||1
+        update:r.update_text||r.notes||[r.action,r.bottleneck,r.next_step].filter(Boolean).join(' · ')||'',updatedAt:r.updated_at||r.created_at,createdBy:r.created_by,updatedBy:r.updated_by,rowVersion:r.row_version||1
       }));
       return;
     }
-    console.error('Erro ao carregar diÃ¡rio',error);
+    console.error('Erro ao carregar diário',error);
   }
   try{
     diaryEntries=JSON.parse(localStorage.getItem(DIARY_KEY)||localStorage.getItem('centralVagas.diarioBordo.v2')||localStorage.getItem('centralVagas.diarioBordo.v1')||'[]');
     if(!Array.isArray(diaryEntries))diaryEntries=[];
-    diaryEntries=diaryEntries.map(x=>({...x,update:x.update||x.notes||[x.action,x.bottleneck,x.next].filter(Boolean).join(' Â· ')||''}));
+    diaryEntries=diaryEntries.map(x=>({...x,update:x.update||x.notes||[x.action,x.bottleneck,x.next].filter(Boolean).join(' · ')||''}));
   }catch(e){diaryEntries=[];}
 }
 function saveDiary(){ try{ localStorage.setItem(DIARY_KEY,JSON.stringify(diaryEntries)); }catch(e){} }
@@ -2015,8 +2015,8 @@ function renderDiaryTicketList(){
   const list=TICKETS.filter(t=>(!fs||t.seg===fs)&&(!fa||t.tec===fa)&&(!fo||(fo==='aberta'?isCountedOpen(t):!isCountedOpen(t)))&&(!q||normalize([t.id,t.cargo,t.emp,t.seg,t.nuc,t.tec,t.criador,t.dept,t.dir,t.desc,t.statusRH,t.desStatus].join(' ')).includes(q))).slice().sort((a,b)=>{
     const ao=isCountedOpen(a)?0:1, bo=isCountedOpen(b)?0:1; if(ao!==bo)return ao-bo; return String(b.dataAb||'').localeCompare(String(a.dataAb||''));
   });
-  document.getElementById('diaryTicketCount').textContent=`${list.length} chamados Â· ${list.filter(isCountedOpen).length} em aberto`;
-  body.innerHTML=list.length?list.map(t=>`<tr data-diary-ticket="${escapeHtml(t.id)}" class="${String(t.id)===String(diarySelectedTicketId)?'selected':''}"><td class="mono-id">#${escapeHtml(t.id)}</td><td>${escapeHtml(t.cargo||'â€”')}</td><td>${escapeHtml(t.emp||'â€”')}</td><td>${escapeHtml(t.seg||'â€”')}</td><td>${escapeHtml(t.tec||'â€”')}</td><td><span class="${statusPillClass(t.desStatus)}">${escapeHtml(t.desStatus||'â€”')}</span></td><td>${escapeHtml(t.statusRH||'â€”')}</td><td class="muted-mono">${fmtDate(t.dataAb)}</td><td class="muted-mono">${t.tempoAb??'â€”'}</td></tr>`).join(''):'<tr><td colspan="9"><div class="empty-state">Nenhum chamado encontrado.</div></td></tr>';
+  document.getElementById('diaryTicketCount').textContent=`${list.length} chamados · ${list.filter(isCountedOpen).length} em aberto`;
+  body.innerHTML=list.length?list.map(t=>`<tr data-diary-ticket="${escapeHtml(t.id)}" class="${String(t.id)===String(diarySelectedTicketId)?'selected':''}"><td class="mono-id">#${escapeHtml(t.id)}</td><td>${escapeHtml(t.cargo||'—')}</td><td>${escapeHtml(t.emp||'—')}</td><td>${escapeHtml(t.seg||'—')}</td><td>${escapeHtml(t.tec||'—')}</td><td><span class="${statusPillClass(t.desStatus)}">${escapeHtml(t.desStatus||'—')}</span></td><td>${escapeHtml(t.statusRH||'—')}</td><td class="muted-mono">${fmtDate(t.dataAb)}</td><td class="muted-mono">${t.tempoAb??'—'}</td></tr>`).join(''):'<tr><td colspan="9"><div class="empty-state">Nenhum chamado encontrado.</div></td></tr>';
   body.querySelectorAll('tr[data-diary-ticket]').forEach(tr=>tr.onclick=()=>selectDiaryTicket(tr.dataset.diaryTicket));
 }
 function selectDiaryTicket(id){
@@ -2033,8 +2033,8 @@ function renderDiarySelectedTicket(){
   if(!t){card.classList.remove('visible');card.innerHTML='';return;}
   const hist=getDiaryByTicket(t.id), sla=daysBetweenIso(t.dataInicioPS,t.dataAceite);
   card.classList.add('visible');
-  card.innerHTML=`<div class="diary-selected-head"><div><div class="diary-selected-id">Chamado #${escapeHtml(t.id)}</div><div class="diary-selected-title">${escapeHtml(t.cargo||'Sem cargo')} Â· ${escapeHtml(t.emp||'â€”')}</div></div><span class="${statusPillClass(t.desStatus)}">${escapeHtml(t.desStatus||'â€”')}</span></div>
-  <div class="diary-selected-grid"><div class="diary-selected-item"><span>Segmento</span><b>${escapeHtml(t.seg||'â€”')}</b></div><div class="diary-selected-item"><span>Analista</span><b>${escapeHtml(t.tec||'â€”')}</b></div><div class="diary-selected-item"><span>Status RH</span><b>${escapeHtml(t.statusRH||'â€”')}</b></div><div class="diary-selected-item"><span>Ãšlt. mudanÃ§a status</span><b>${fmtDate(t.dataMudancaStatus)}</b></div><div class="diary-selected-item"><span>InÃ­cio processo</span><b>${fmtDate(t.dataInicioPS)}</b></div><div class="diary-selected-item"><span>Aceite proposta</span><b>${fmtDate(t.dataAceite)}</b></div><div class="diary-selected-item"><span>SLA processo</span><b>${sla===null?'â€”':sla+' d'}</b></div><div class="diary-selected-item"><span>Registros no diÃ¡rio</span><b>${hist.length}</b></div></div>`;
+  card.innerHTML=`<div class="diary-selected-head"><div><div class="diary-selected-id">Chamado #${escapeHtml(t.id)}</div><div class="diary-selected-title">${escapeHtml(t.cargo||'Sem cargo')} · ${escapeHtml(t.emp||'—')}</div></div><span class="${statusPillClass(t.desStatus)}">${escapeHtml(t.desStatus||'—')}</span></div>
+  <div class="diary-selected-grid"><div class="diary-selected-item"><span>Segmento</span><b>${escapeHtml(t.seg||'—')}</b></div><div class="diary-selected-item"><span>Analista</span><b>${escapeHtml(t.tec||'—')}</b></div><div class="diary-selected-item"><span>Status RH</span><b>${escapeHtml(t.statusRH||'—')}</b></div><div class="diary-selected-item"><span>Últ. mudança status</span><b>${fmtDate(t.dataMudancaStatus)}</b></div><div class="diary-selected-item"><span>Início processo</span><b>${fmtDate(t.dataInicioPS)}</b></div><div class="diary-selected-item"><span>Aceite proposta</span><b>${fmtDate(t.dataAceite)}</b></div><div class="diary-selected-item"><span>SLA processo</span><b>${sla===null?'—':sla+' d'}</b></div><div class="diary-selected-item"><span>Registros no diário</span><b>${hist.length}</b></div></div>`;
 }
 function renderDiary(){
   const body=document.getElementById('diaryBody'); if(!body)return;
@@ -2042,14 +2042,14 @@ function renderDiary(){
   const q=normalize(document.getElementById('diaryFilterText')?.value||'');
   if(!diarySelectedTicketId){
     if(badge) badge.textContent='Selecione um chamado acima';
-    body.innerHTML='<tr><td colspan="15"><div class="empty-state">Selecione um chamado na tabela acima para visualizar o histÃ³rico dele.</div></td></tr>';
+    body.innerHTML='<tr><td colspan="15"><div class="empty-state">Selecione um chamado na tabela acima para visualizar o histórico dele.</div></td></tr>';
     return;
   }
   if(badge) badge.textContent='#'+diarySelectedTicketId;
   const list=diaryEntries.filter(x=>String(x.ticket)===String(diarySelectedTicketId)&&(!q||normalize([x.status,x.approvedName,x.closingSource,x.pcd,x.update,x.analyst].join(' ')).includes(q))).slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))||String(b.updatedAt).localeCompare(String(a.updatedAt)));
-  body.innerHTML=list.length?list.map(x=>`<tr><td>${fmtDate(x.date)}</td><td>${escapeHtml(x.analyst||'â€”')}</td><td class="mono-id">#${escapeHtml(x.ticket||'â€”')}</td><td>${escapeHtml(x.status||'â€”')}</td><td>${fmtDate(x.statusChange)}</td><td>${fmtDate(x.processStart)}</td><td>${fmtDate(x.proposalAccepted)}</td><td>${x.sla===null||x.sla===undefined?'â€”':escapeHtml(String(x.sla))+' d'}</td><td>${fmtDate(x.freezeDate)}</td><td>${escapeHtml(x.approvedName||'â€”')}</td><td>${escapeHtml(x.closingSource||'â€”')}</td><td>${escapeHtml(x.pcd||'â€”')}</td><td>${fmtDate(x.expectedStart)}</td><td style="min-width:300px;white-space:normal">${escapeHtml(x.update||'â€”')}</td><td class="diary-row-actions"><button data-edit="${x.id}">Editar</button><button class="delete" data-del="${x.id}">Excluir</button></td></tr>`).join(''):'<tr><td colspan="15"><div class="empty-state">Ainda nÃ£o hÃ¡ registros para o chamado #'+escapeHtml(diarySelectedTicketId)+'.</div></td></tr>';
+  body.innerHTML=list.length?list.map(x=>`<tr><td>${fmtDate(x.date)}</td><td>${escapeHtml(x.analyst||'—')}</td><td class="mono-id">#${escapeHtml(x.ticket||'—')}</td><td>${escapeHtml(x.status||'—')}</td><td>${fmtDate(x.statusChange)}</td><td>${fmtDate(x.processStart)}</td><td>${fmtDate(x.proposalAccepted)}</td><td>${x.sla===null||x.sla===undefined?'—':escapeHtml(String(x.sla))+' d'}</td><td>${fmtDate(x.freezeDate)}</td><td>${escapeHtml(x.approvedName||'—')}</td><td>${escapeHtml(x.closingSource||'—')}</td><td>${escapeHtml(x.pcd||'—')}</td><td>${fmtDate(x.expectedStart)}</td><td style="min-width:300px;white-space:normal">${escapeHtml(x.update||'—')}</td><td class="diary-row-actions"><button data-edit="${x.id}">Editar</button><button class="delete" data-del="${x.id}">Excluir</button></td></tr>`).join(''):'<tr><td colspan="15"><div class="empty-state">Ainda não há registros para o chamado #'+escapeHtml(diarySelectedTicketId)+'.</div></td></tr>';
   body.querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>editDiary(b.dataset.edit));
-  body.querySelectorAll('[data-del]').forEach(b=>b.onclick=async()=>{const id=b.dataset.del;if(isSharedDiaryMode()){const cur=diaryEntries.find(x=>x.id===id);const res=await sb.from('diario_bordo').delete().eq('id',id).eq('row_version',cur?.rowVersion||1).select().maybeSingle();if(res.error){alert('NÃ£o foi possÃ­vel excluir: '+res.error.message);return;}if(!res.data){await loadDiary();alert('Esse registro foi alterado por outra pessoa antes da exclusÃ£o. A versÃ£o mais recente foi recarregada e nada foi apagado.');renderDiary();return;}await loadDiary();}else{diaryEntries=diaryEntries.filter(x=>x.id!==id);saveDiary();}renderDiary();renderDiarySelectedTicket();renderTickets();});
+  body.querySelectorAll('[data-del]').forEach(b=>b.onclick=async()=>{const id=b.dataset.del;if(isSharedDiaryMode()){const cur=diaryEntries.find(x=>x.id===id);const res=await sb.from('diario_bordo').delete().eq('id',id).eq('row_version',cur?.rowVersion||1).select().maybeSingle();if(res.error){alert('Não foi possível excluir: '+res.error.message);return;}if(!res.data){await loadDiary();alert('Esse registro foi alterado por outra pessoa antes da exclusão. A versão mais recente foi recarregada e nada foi apagado.');renderDiary();return;}await loadDiary();}else{diaryEntries=diaryEntries.filter(x=>x.id!==id);saveDiary();}renderDiary();renderDiarySelectedTicket();renderTickets();});
 }
 let diaryEditingVersion=null;
 function editDiary(id){
@@ -2060,7 +2060,7 @@ function editDiary(id){
 async function updateCurrentTicketSafely(x){
   if(!isSharedDiaryMode()) return {ok:true};
   const user=(await sb.auth.getUser()).data.user;
-  if(!user) throw new Error('SessÃ£o expirada. Entre novamente.');
+  if(!user) throw new Error('Sessão expirada. Entre novamente.');
   const applyFields=(payload)=>({...payload,statusRH:x.status||payload.statusRH,dataMudancaStatus:x.statusChange||payload.dataMudancaStatus,dataInicioPS:x.processStart||payload.dataInicioPS,dataAceite:x.proposalAccepted||payload.dataAceite,dataCongelamento:x.freezeDate||payload.dataCongelamento,slaProcesso:x.sla,aprovado:x.approvedName||payload.aprovado,procedencia:x.closingSource||payload.procedencia,pcd:x.pcd||payload.pcd,dataPrevInicio:x.expectedStart||payload.dataPrevInicio});
   for(let attempt=0;attempt<2;attempt++){
     const cur=await sb.from('chamados').select('chamado_id,payload,row_version,updated_at').eq('chamado_id',String(x.ticket)).maybeSingle();
@@ -2084,14 +2084,14 @@ async function saveDiaryForm(){
     let res;
     if(x.id){
       res=await sb.from('diario_bordo').update(row).eq('id',x.id).eq('row_version',diaryEditingVersion||1).select().maybeSingle();
-      if(!res.error&&!res.data){await loadDiary();alert('Esse registro foi alterado por outra pessoa enquanto vocÃª editava. A versÃ£o mais recente foi carregada para evitar sobrescrever informaÃ§Ãµes.');renderDiary();renderDiarySelectedTicket();return;}
+      if(!res.error&&!res.data){await loadDiary();alert('Esse registro foi alterado por outra pessoa enquanto você editava. A versão mais recente foi carregada para evitar sobrescrever informações.');renderDiary();renderDiarySelectedTicket();return;}
     }else{
       row.created_by=u?.id||null;
       res=await sb.from('diario_bordo').insert(row).select().single();
     }
-    if(res.error){alert('NÃ£o foi possÃ­vel salvar: '+res.error.message);return;}
+    if(res.error){alert('Não foi possível salvar: '+res.error.message);return;}
     const currentRes=await updateCurrentTicketSafely(x);
-    if(currentRes.conflict){await loadOnlineWorkspace();alert('O histÃ³rico foi salvo, mas o estado atual do chamado recebeu outra atualizaÃ§Ã£o simultÃ¢nea. Recarreguei a versÃ£o mais recente sem perder o registro feito.');}
+    if(currentRes.conflict){await loadOnlineWorkspace();alert('O histórico foi salvo, mas o estado atual do chamado recebeu outra atualização simultânea. Recarreguei a versão mais recente sem perder o registro feito.');}
     await loadDiary();
     diaryEditingVersion=null;
   }else{
@@ -2101,12 +2101,12 @@ async function saveDiaryForm(){
   clearDiaryForm(true); renderDiary();renderDiarySelectedTicket();renderTickets();
 }
 function exportDiaryCsv(){
-  if(!diarySelectedTicketId){alert('Selecione um chamado antes de exportar o histÃ³rico.');return;}
+  if(!diarySelectedTicketId){alert('Selecione um chamado antes de exportar o histórico.');return;}
   const rows=diaryEntries.filter(x=>String(x.ticket)===String(diarySelectedTicketId));
   const cols=['date','analyst','ticket','status','statusChange','processStart','proposalAccepted','sla','freezeDate','approvedName','closingSource','pcd','expectedStart','update'];
   const esc=v=>'"'+String(v??'').replace(/"/g,'""')+'"';
-  const csv=[['Data','Analista','Chamado','Status','Ãšltima alteraÃ§Ã£o status','InÃ­cio processo seletivo','Aceite proposta','SLA','Congelamento','Nome aprovado','ProcedÃªncia fechamento','PCD?','PrevisÃ£o inÃ­cio','AtualizaÃ§Ã£o / observaÃ§Ãµes'].map(esc).join(';'),...rows.map(x=>cols.map(k=>esc(x[k])).join(';'))].join('\n');
-  const blob=new Blob(['ï»¿'+csv],{type:'text/csv;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='diario_chamado_'+diarySelectedTicketId+'.csv';a.click();URL.revokeObjectURL(a.href);
+  const csv=[['Data','Analista','Chamado','Status','Última alteração status','Início processo seletivo','Aceite proposta','SLA','Congelamento','Nome aprovado','Procedência fechamento','PCD?','Previsão início','Atualização / observações'].map(esc).join(';'),...rows.map(x=>cols.map(k=>esc(x[k])).join(';'))].join('\n');
+  const blob=new Blob(['﻿'+csv],{type:'text/csv;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='diario_chamado_'+diarySelectedTicketId+'.csv';a.click();URL.revokeObjectURL(a.href);
 }
 async function initDiary(){
   await loadDiary();populateDiarySelects();clearDiaryForm();renderDiary();renderDiaryTicketList();
@@ -2158,7 +2158,7 @@ function readWorkbook(file){
   return file.arrayBuffer().then(buf => XLSX.read(buf, {type:'array', cellDates:true}));
 }
 function pickAssetsSheet(wb){
-  const preferred = wb.SheetNames.find(name => /ativo|colaborador|funcionario|funcionÃ¡rio/i.test(name));
+  const preferred = wb.SheetNames.find(name => /ativo|colaborador|funcionario|funcionário/i.test(name));
   const name = preferred || wb.SheetNames.find(n => XLSX.utils.sheet_to_json(wb.Sheets[n], {defval:null}).length) || wb.SheetNames[0];
   return name ? XLSX.utils.sheet_to_json(wb.Sheets[name], {defval:null}) : [];
 }
@@ -2179,14 +2179,14 @@ async function processUploadedFiles(mainFile, rhFile, assetsFile){
     if(!mainFile) throw new Error('Selecione ao menos a base principal (planilha exportada).');
     const mainWb = await readWorkbook(mainFile);
     const mainRows = pickSheet(mainWb);
-    if(!mainRows.length) throw new Error('NÃ£o encontrei linhas na planilha enviada.');
-    if(!('Chamado' in mainRows[0])) throw new Error('Essa planilha nÃ£o parece ter a coluna "Chamado" â€” confira se Ã© a base certa (aba "Export").');
+    if(!mainRows.length) throw new Error('Não encontrei linhas na planilha enviada.');
+    if(!('Chamado' in mainRows[0])) throw new Error('Essa planilha não parece ter a coluna "Chamado" — confira se é a base certa (aba "Export").');
 
     let assetsCount = null;
     if(assetsFile){
       const assetsWb = await readWorkbook(assetsFile);
       const assetsRows = pickAssetsSheet(assetsWb);
-      if(!assetsRows.length) throw new Error('NÃ£o encontrei linhas na base de ativos enviada.');
+      if(!assetsRows.length) throw new Error('Não encontrei linhas na base de ativos enviada.');
       assetsCount = countActiveAssets(assetsRows);
     }
 
@@ -2216,9 +2216,9 @@ async function processUploadedFiles(mainFile, rhFile, assetsFile){
       const dVe = r['Data do Vencimento'];
       const categoria = classifyTicket(cargo, r['Departamento']);
       const aberto = !!desStatus && desStatus!=='Concluido' && desStatus!=='Cancelamento';
-      // Se a base principal jÃ¡ vier com a coluna DES_STATUSRH (arquivo jÃ¡ mesclado),
-      // usa ela direto. SÃ³ recorre ao mapa do arquivo separado (rhFile) quando a
-      // prÃ³pria linha nÃ£o tem essa coluna.
+      // Se a base principal já vier com a coluna DES_STATUSRH (arquivo já mesclado),
+      // usa ela direto. Só recorre ao mapa do arquivo separado (rhFile) quando a
+      // própria linha não tem essa coluna.
       const statusRH = r.hasOwnProperty('DES_STATUSRH')
         ? (r['DES_STATUSRH'] ?? null)
         : (rhMap.hasOwnProperty(cid) ? rhMap[cid] : null);
@@ -2231,7 +2231,7 @@ async function processUploadedFiles(mainFile, rhFile, assetsFile){
         sal: r['Salario'],
         ocor: r['Ocorrencia'],
         criador: r['Criador'],
-        tec: r['TÃ©cnico'],
+        tec: r['Técnico'],
         subst: r['Funcionario_Substituido'],
         statusSubst: r['Status_Substituido'],
         dept: r['Departamento'],
@@ -2241,7 +2241,7 @@ async function processUploadedFiles(mainFile, rhFile, assetsFile){
         tempoAb: (typeof r['Tempo em Aberto']==='number') ? r['Tempo em Aberto'] : null,
         dataFe: excelCellToIso(dFe),
         dataVe: excelCellToIso(dVe),
-        desc: r['DescriÃ§Ã£o'],
+        desc: r['Descrição'],
         desStatus: desStatus,
         sig: r['SIGILOSO'],
         cat: categoria,
@@ -2250,20 +2250,20 @@ async function processUploadedFiles(mainFile, rhFile, assetsFile){
         aberto: aberto,
         statusRH: statusRH,
         grupoCargo: r['grupo de cargo'] ?? r['Grupo de cargo'] ?? null,
-        dataMudancaStatus: excelCellToIso(r['data de ultima mudanÃ§a de status vaga']),
+        dataMudancaStatus: excelCellToIso(r['data de ultima mudança de status vaga']),
         dataInicioPS: excelCellToIso(r['data de inicio do processo seletivo']),
         dataAceite: excelCellToIso(r['data de aceite da proposta']),
         dataCongelamento: excelCellToIso(r['data de congelamento']),
         slaProcesso: daysBetweenIso(excelCellToIso(r['data de inicio do processo seletivo']), excelCellToIso(r['data de aceite da proposta'])),
         aprovado: r['nome do aprovado'] ?? null,
-        procedencia: r['ProcedÃªncia fechamento (aprovado)'] ?? null,
-        pcd: r['Ã‰ PCD?'] ?? null,
-        dataPrevInicio: excelCellToIso(r['data previsÃ£o de inicio']),
-        diarioBase: r['DiÃ¡rio de bordo'] ?? null,
+        procedencia: r['Procedência fechamento (aprovado)'] ?? null,
+        pcd: r['É PCD?'] ?? null,
+        dataPrevInicio: excelCellToIso(r['data previsão de inicio']),
+        diarioBase: r['Diário de bordo'] ?? null,
       });
     });
 
-    if(!newTickets.length) throw new Error('Nenhum chamado vÃ¡lido encontrado nessa planilha (conferi a coluna "Chamado").');
+    if(!newTickets.length) throw new Error('Nenhum chamado válido encontrado nessa planilha (conferi a coluna "Chamado").');
 
     TICKETS = newTickets;
     if(sharedMode){ statusEl.textContent='Salvando base na nuvem...'; await syncTicketsToSupabase(newTickets); }
@@ -2273,18 +2273,18 @@ async function processUploadedFiles(mainFile, rhFile, assetsFile){
     const mergedFromMain = newTickets.some(t=>t.statusRH!==null) && !rhFile;
     if(assetsCount !== null){
       ACTIVE_ASSETS_COUNT = assetsCount;
-      try { localStorage.setItem('centralVagasActiveAssetsCount', String(assetsCount)); } catch(e) { /* nÃ£o impede a atualizaÃ§Ã£o do painel */ }
+      try { localStorage.setItem('centralVagasActiveAssetsCount', String(assetsCount)); } catch(e) { /* não impede a atualização do painel */ }
     }
     let msg = `Base atualizada: ${newTickets.length} chamado(s) carregado(s)`;
     if(skipped) msg += `, ${skipped} linha(s) ignorada(s)`;
-    if(rhFile) msg += ` Â· Status RH mesclado do arquivo separado para ${Object.keys(rhMap).length} chamado(s)`;
-    else if(mergedFromMain) msg += ` Â· Status RH jÃ¡ vinha na prÃ³pria planilha`;
-    if(assetsCount !== null) msg += ` Â· Base de ativos: ${assetsCount.toLocaleString('pt-BR')} pessoa(s)`;
+    if(rhFile) msg += ` · Status RH mesclado do arquivo separado para ${Object.keys(rhMap).length} chamado(s)`;
+    else if(mergedFromMain) msg += ` · Status RH já vinha na própria planilha`;
+    if(assetsCount !== null) msg += ` · Base de ativos: ${assetsCount.toLocaleString('pt-BR')} pessoa(s)`;
     statusEl.textContent = msg;
     statusEl.className = 'upload-status ok';
   } catch(err){
     console.error(err);
-    statusEl.textContent = 'NÃ£o consegui processar: ' + err.message;
+    statusEl.textContent = 'Não consegui processar: ' + err.message;
     statusEl.className = 'upload-status error';
   }
 }
@@ -2296,7 +2296,7 @@ function rebuildDashboard(){
   const baseUpdate = LAST_BASE_UPDATE || (onlineUpdates.length ? onlineUpdates[onlineUpdates.length-1] : null);
   document.getElementById('dataBase').textContent = baseUpdate
     ? new Date(baseUpdate).toLocaleString('pt-BR', {day:'2-digit', month:'2-digit', year:'numeric', hour:'2-digit', minute:'2-digit'})
-    : 'â€”';
+    : '—';
 
   expandedCritId = null;
   expandedId = null;
@@ -2352,7 +2352,7 @@ document.getElementById('totalChamados').textContent = TICKETS.length;
   const baseUpdate = LAST_BASE_UPDATE || (onlineUpdates.length ? onlineUpdates[onlineUpdates.length-1] : null);
   document.getElementById('dataBase').textContent = baseUpdate
     ? new Date(baseUpdate).toLocaleString('pt-BR', {day:'2-digit', month:'2-digit', year:'numeric', hour:'2-digit', minute:'2-digit'})
-    : 'â€”';
+    : '—';
 })();
 renderKpis();
 renderTorre();
