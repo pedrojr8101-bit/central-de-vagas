@@ -155,10 +155,31 @@ html[data-theme="light"] .ms-panel{box-shadow:0 12px 32px rgba(20,25,30,.14);}
 html[data-theme="light"] .modal-overlay{background:rgba(50,55,60,.32);}
 html[data-theme="light"] .modal-box{box-shadow:0 24px 60px rgba(20,25,30,.18);}
 </style>
+<style>
+/* Indicadores executivos: referência visual enviada em 15/10/2026. */
+.ie-dashboard{--ie-bg:#0b0b0a;--ie-panel:#1a1a18;--ie-inset:#0c0c0b;--ie-border:#343430;--ie-text:#f2f1ee;--ie-muted:#92918a;--ie-blue:#3989e7;--ie-purple:#9382e6;--ie-orange:#dc591f;--ie-green:#18a47d;--ie-yellow:#ce9400;color:var(--ie-text);font-family:var(--font-body);}
+.ie-heading{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:22px;}.ie-heading h2{font-size:25px;margin:6px 0;font-weight:650;letter-spacing:-.03em;}.ie-heading p{font-size:12px;color:var(--ie-muted);margin:0;}.ie-eyebrow{color:var(--gold);font-size:10px;letter-spacing:.13em;}.ie-version{font-size:10px;color:var(--ie-muted);border:1px solid var(--ie-border);padding:7px 11px;border-radius:30px;white-space:nowrap;}
+.ie-filters{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px;margin-bottom:20px;padding:15px 16px;background:var(--ie-panel);border:1px solid var(--ie-border);border-radius:8px;}.ie-filters label{display:flex;flex-direction:column;gap:6px;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--ie-muted);}.ie-filters select,.ie-filters button{font-family:inherit;background:var(--ie-inset);border:1px solid var(--ie-border);color:var(--ie-text);padding:9px 11px;border-radius:6px;font-size:12px;max-width:240px;min-height:36px;}.ie-filters button{cursor:pointer;}.ie-filters button:hover{border-color:var(--ie-blue);}.ie-scope{font-size:11px;color:var(--ie-muted);margin:auto 0 9px auto;}
+.ie-kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:15px;margin-bottom:10px;}.ie-kpi{background:var(--ie-panel);border:1px solid var(--ie-border);border-radius:7px;padding:17px 16px;min-height:132px;}.ie-kpi-label{font-size:12px;color:var(--ie-muted);display:flex;align-items:center;gap:7px;}.ie-kpi-label i{width:9px;height:9px;border-radius:2px;}.ie-number{font-family:Georgia,'Times New Roman',serif;font-size:34px;line-height:1.1;font-weight:400;letter-spacing:-.02em;margin:8px 0;}.ie-foot{font-size:11px;line-height:1.6;color:var(--ie-muted);}.ie-foot b{color:var(--ie-text);font-weight:600;}
+.ie-panel{background:var(--ie-panel);border:1px solid var(--ie-border);border-radius:8px;margin:25px 0;padding:19px 17px;}.ie-panel h3{font-size:14px;margin:0 0 9px;font-weight:650;}.ie-sub{font-size:11.5px;line-height:1.6;color:var(--ie-muted);margin:0 0 15px;}.ie-composition-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;}.ie-mini{background:var(--ie-inset);border:1px solid #292926;border-radius:8px;padding:12px;min-height:81px;}.ie-mini .ie-number{font-size:26px;margin:0 0 2px;}.ie-mini.growth{border:2px solid var(--ie-blue);padding:11px;}.ie-composition-bar{display:flex;height:29px;overflow:hidden;border-radius:6px;margin:16px 0;min-width:0;background:#444;}.ie-composition-bar div{display:flex;align-items:center;white-space:nowrap;overflow:hidden;font-size:10px;min-width:0;color:#050505;font-weight:700;box-sizing:border-box;}.ie-composition-bar div span{padding:0 8px;}.ie-context{background:var(--ie-inset);border:1px solid #2b2b27;border-left:3px solid var(--ie-yellow);border-radius:5px;padding:10px 12px;font-size:11px;color:var(--ie-muted);line-height:1.65;}.ie-context b{color:#e8ad00;}.ie-data-note{font-size:10.5px;color:var(--ie-muted);line-height:1.6;margin:8px 0 0;}.ie-data-note:empty{display:none;}
+.ie-legend{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--ie-muted);margin:15px 0;}.ie-legend span{display:inline-flex;gap:5px;align-items:center;}.ie-legend i{width:10px;height:10px;display:inline-block;border-radius:2px;}.ie-legend .ie-line-key{height:2px;width:17px;background:#eee;position:relative;}.ie-line-key:after{content:'';position:absolute;left:6px;top:-2px;width:6px;height:6px;border-radius:50%;background:#eee;}.ie-chart-scroll{overflow-x:auto;}.ie-monthly-svg{display:block;width:100%;min-width:760px;height:auto;}.ie-monthly-svg text{font-family:var(--font-body);}.ie-panel-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;}.ie-map-modes{display:flex;gap:6px;flex-wrap:wrap;}.ie-map-modes button{font:inherit;font-size:11px;background:transparent;border:1px solid var(--ie-border);border-radius:20px;padding:4px 9px;color:var(--ie-muted);cursor:pointer;white-space:nowrap;}.ie-map-modes button.active{background:#f3f2ed;border-color:#f3f2ed;color:#111;}.ie-geography{display:grid;grid-template-columns:minmax(320px,1fr) minmax(500px,1.2fr);gap:30px;}.ie-map{position:relative;max-width:640px;width:100%;justify-self:center;}.ie-brazil-svg{display:block;width:100%;max-height:570px;}.ie-brazil-svg path{stroke:#1c1c1a;stroke-width:.8;transition:fill .18s;cursor:pointer;}.ie-brazil-svg path:hover,.ie-brazil-svg path:focus{stroke:#fff;stroke-width:1.8;outline:none;}.ie-brazil-svg path.selected{stroke:#fff;stroke-width:2;}.ie-brazil-svg text{font-family:var(--font-body);font-size:11px;fill:#fff;stroke:#202019;stroke-width:2.6;paint-order:stroke;stroke-linejoin:round;text-anchor:middle;pointer-events:none;font-weight:600;}.ie-map-scale{position:absolute;bottom:12%;right:5%;font-size:10px;color:var(--ie-muted);display:flex;gap:7px;align-items:center;}.ie-map-scale div{display:flex;gap:1px;}.ie-map-scale i{width:18px;height:8px;display:block;background:#24425e;}.ie-map-scale i:nth-child(2){background:#285988;}.ie-map-scale i:nth-child(3){background:#2d6eae;}.ie-map-scale i:nth-child(4){background:#337fcf;}.ie-map-scale i:nth-child(5){background:#3989e7;}.ie-regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:17px;}.ie-regions .ie-mini{padding:10px;}.ie-regions .ie-number{font-size:25px;}.ie-regions .ie-foot{font-size:10px;}.ie-table-scroll{overflow-x:auto;}.ie-table{width:100%;border-collapse:collapse;font-size:11px;white-space:nowrap;}.ie-table th{font-weight:400;color:var(--ie-muted);text-align:right;padding:9px 7px;border-bottom:1px solid var(--ie-border);}.ie-table th:first-child,.ie-table th:nth-child(2){text-align:left;}.ie-table td{text-align:right;padding:9px 7px;border-bottom:1px solid #343430;color:var(--ie-text);}.ie-table td:first-child,.ie-table td:nth-child(2){text-align:left;}.ie-table tr[data-ie-uf]{cursor:pointer;}.ie-table tr[data-ie-uf]:hover,.ie-table tr.is-selected{background:#232b32;}.ie-table tfoot td{font-weight:650;}.ie-details summary{cursor:pointer;font-size:13px;color:var(--ie-text);font-weight:600;}.ie-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin:24px 0;}.ie-empty{padding:36px 15px;text-align:center;color:var(--ie-muted);font-size:12px;}
+@media(max-width:1200px){.ie-geography{grid-template-columns:minmax(280px,.9fr) minmax(430px,1.1fr);gap:15px;}.ie-regions{gap:6px;}.ie-kpis{gap:9px;}.ie-kpi{padding:14px 12px;}.ie-scope{display:none;}}
+@media(max-width:950px){.ie-geography{grid-template-columns:1fr;}.ie-map{max-width:500px;}.ie-kpis{grid-template-columns:repeat(3,minmax(0,1fr));}.ie-panel-head{flex-direction:column;}.ie-map-modes{margin-bottom:15px;}.ie-detail-grid{grid-template-columns:1fr;}.ie-version{display:none;}}
+@media(max-width:600px){.ie-kpis{grid-template-columns:repeat(2,minmax(0,1fr));}.ie-kpis .ie-kpi:first-child{grid-column:span 2;}.ie-composition-cards{grid-template-columns:repeat(2,minmax(0,1fr));}.ie-panel{padding:15px 12px;margin:18px 0;}.ie-regions{grid-template-columns:1fr;}.ie-regions .ie-mini{min-height:65px;}.ie-regions .ie-number{font-size:23px;}.ie-filters label{flex:1 1 42%;}.ie-filters select{max-width:100%;width:100%;}.ie-heading h2{font-size:23px;}.ie-scope{display:none;}}
+.ie-split{display:grid;grid-template-columns:1fr 1fr;gap:16px;}.ie-split .ie-panel{margin:0;}.ie-stage-bars{display:flex;flex-direction:column;gap:12px;margin-top:17px;}.ie-stage-row{display:grid;grid-template-columns:170px 1fr 32px;align-items:center;gap:12px;font-size:11px;color:var(--ie-muted);}.ie-stage-track{height:14px;}.ie-stage-track i{height:100%;display:block;border-radius:3px;background:var(--ie-blue);min-width:2px;}.ie-stage-row b{color:var(--ie-text);text-align:right;}.ie-inline-control{display:flex;align-items:center;gap:12px;white-space:nowrap;font-size:11px;color:var(--ie-muted);}.ie-inline-control select,.ie-search{font:inherit;color:var(--ie-text);background:var(--ie-inset);border:1px solid var(--ie-border);padding:8px 10px;border-radius:7px;}.ie-search{min-width:260px;font-size:12px;}.ie-small-btn{font:inherit;font-size:11px;background:transparent;border:1px solid var(--ie-border);color:var(--ie-muted);border-radius:6px;padding:8px 10px;cursor:pointer;}.ie-small-btn:hover{color:var(--ie-text);border-color:var(--ie-blue);}.ie-small-btn[hidden]{display:none;}.ie-job-bars{display:flex;flex-direction:column;gap:13px;margin:7px 0 18px;}.ie-job-row{display:grid;grid-template-columns:230px 1fr 45px;align-items:center;gap:16px;font-size:11px;}.ie-job-row>span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}.ie-job-row>b{text-align:right;}.ie-stacked-track{height:14px;display:flex;border-radius:4px;overflow:hidden;}.ie-stacked-track i{display:block;height:100%;min-width:0;}.ie-mini-stack{height:4px;display:flex;width:110px;margin:4px 0 0 auto;border-radius:3px;overflow:hidden;}.ie-mini-stack i{height:100%;display:block;}.ie-rich-table{font-size:10.5px;}.ie-rich-table th:not(:first-child),.ie-rich-table td:not(:first-child){text-align:right;}.ie-rich-table .ie-negative{color:#ff6360;}.ie-rich-table tr[data-ie-tower],.ie-rich-table tr[data-ie-unit]{cursor:pointer;}.ie-rich-table tr[data-ie-tower]:hover,.ie-rich-table tr[data-ie-unit]:hover{background:#252522;}.ie-sort-btn{border:0;background:none;color:inherit;font:inherit;cursor:pointer;padding:0;white-space:nowrap;}.ie-pyramid-layout{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:20px;}.ie-pyramid-row{display:grid;grid-template-columns:150px 1fr;align-items:center;gap:12px;margin-bottom:8px;min-height:34px;font-size:11px;color:var(--ie-muted);}.ie-pyramid-row>span{text-align:right;}.ie-pyramid-track{display:flex;justify-content:center;}.ie-pyramid-bar{min-width:15px;background:var(--ie-blue);min-height:35px;position:relative;border-radius:4px;display:flex;justify-content:center;align-items:center;}.ie-pyramid-bar b{white-space:nowrap;color:#fff;text-shadow:1px 1px 2px #111;font-size:11px;}.ie-scroll-list{max-height:510px;overflow:auto;}.ie-scroll-list thead{position:sticky;top:0;background:var(--ie-panel);z-index:1;}.ie-unit-modal[hidden]{display:none;}.ie-unit-modal{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.8);display:flex;justify-content:center;align-items:center;padding:25px;}.ie-unit-dialog{background:var(--ie-panel);border:1px solid var(--ie-border);border-radius:12px;padding:23px;width:min(1200px,100%);max-height:90vh;overflow:auto;box-shadow:0 20px 70px #000;}.ie-unit-dialog h3{font-size:18px;margin:0 0 9px;}.ie-unit-dialog .ie-scroll-list{max-height:65vh;}
+@media(max-width:950px){.ie-split,.ie-pyramid-layout{grid-template-columns:1fr;}.ie-split{gap:18px;}.ie-job-row{grid-template-columns:180px 1fr 40px;gap:10px;}.ie-pyramid-layout{gap:15px;}}
+@media(max-width:600px){.ie-stage-row{grid-template-columns:125px 1fr 25px;gap:7px;}.ie-job-row{grid-template-columns:125px 1fr 30px;font-size:10px;gap:7px;}.ie-inline-control{white-space:normal;}.ie-search{min-width:0;width:100%;}.ie-pyramid-row{grid-template-columns:125px 1fr;}.ie-unit-modal{padding:8px;}.ie-unit-dialog{padding:15px;}}
+.ie-geography>*,.ie-split>*,.ie-pyramid-layout>*{min-width:0;}.ie-table-scroll{max-width:100%;}.ie-dashboard select:focus,.ie-dashboard button:focus-visible,.ie-dashboard input:focus{outline:2px solid var(--ie-blue);outline-offset:2px;}
+@media(max-width:860px){body:has(#view-indicadores.active) .tabs{max-width:100%;min-width:0;box-sizing:border-box;overflow-x:auto;flex:1 1 100%;}body:has(#view-indicadores.active) .tab-btn{flex:0 0 auto;}}
+#ieUnitTable .ie-table th:nth-child(2),#ieUnitTable .ie-table th:nth-child(3),#ieUnitTable .ie-table td:nth-child(2),#ieUnitTable .ie-table td:nth-child(3){text-align:left;}
+
+body:has(#view-indicadores.active){background:#0b0b0a;}
+
+</style>
 </head>
 <style>
 /* ---- KPI odometers ---- */
-.kpi-row{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+.kpi-row{display:grid; grid-template-columns:repeat(4,1fr); gap:18px;}
 .kpi-card{
   background:linear-gradient(180deg, var(--surface-2), var(--surface));
   border:1px solid var(--line); border-radius:14px; padding:20px 22px;
@@ -444,7 +465,8 @@ table.tickets-table tbody tr.expanded{background:rgba(198,161,91,0.1);}
 .status-pill.retorno-de-usuario{background:rgba(217,164,65,0.16); color:var(--amber);}
 .cat-pill{font-size:10px; font-weight:600; padding:2px 7px; border-radius:5px; border:1px solid var(--line);}
 .cat-pill.comercial{color:var(--gold-bright); border-color:rgba(198,161,91,0.4);}
-.cat-pill.outras{color:var(--text-faint);}
+.cat-pill.pos-vendas{color:#8FB3D9; border-color:rgba(143,179,217,0.4);}
+.cat-pill.demais{color:var(--text-faint);}
 .detail-row td{background:#17150F; padding:0; border-bottom:1px solid var(--line);}
 .detail-inner{padding:18px 24px; display:grid; grid-template-columns:2fr 1fr; gap:24px;}
 .detail-desc{font-size:13px; line-height:1.6; color:var(--text-muted);}
@@ -462,6 +484,9 @@ table.tickets-table tbody tr.expanded{background:rgba(198,161,91,0.1);}
 .manager-select,.diary-input,.diary-select,.diary-textarea{background:var(--surface-2);border:1px solid var(--line);color:var(--text);font-family:var(--font-body);font-size:12.5px;padding:9px 11px;border-radius:8px;}
 .manager-select:focus,.diary-input:focus,.diary-select:focus,.diary-textarea:focus{outline:none;border-color:var(--gold);}
 .indicator-kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:24px;}
+.staff-kpis{grid-template-columns:repeat(2,minmax(220px,1fr));margin:0 0 20px;}
+.staff-kpis .indicator-card{min-height:122px;border-top:2px solid var(--gold);}
+.staff-source-note{font-size:11px;color:var(--text-faint);margin:-8px 0 18px;}
 .indicator-card{background:linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:12px;padding:16px 17px;}
 .indicator-card .ic-label{font-size:10.5px;color:var(--text-faint);text-transform:uppercase;font-family:var(--font-mono);letter-spacing:.04em;}
 .indicator-card .ic-value{font-family:var(--font-mono);font-size:27px;font-weight:700;color:var(--gold-bright);margin-top:8px;}
@@ -574,12 +599,17 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
     <div class="modal-body">
       <p class="modal-hint">Envie a planilha exportada do sistema (aba "Export") pra recalcular todo o painel — Volume Geral, Vagas Críticas, Funil, Ranking e Busca. Se a planilha já tiver a coluna "DES_STATUSRH" (base e Status RH já mesclados), é só subir esse único arquivo. Não precisa me pedir de novo: é só subir o arquivo aqui sempre que tiver uma base nova.</p>
       <div class="upload-field">
-        <label>Base principal (obrigatória)</label>
+        <label>Base principal (para atualizar as vagas)</label>
         <input type="file" id="fileMain" accept=".xlsx,.xls">
       </div>
       <div class="upload-field">
         <label>Status RH (opcional — só se vier em arquivo separado; mescla pelo nº do chamado)</label>
         <input type="file" id="fileRH" accept=".xlsx,.xls">
+      </div>
+      <div class="upload-field">
+        <label>Base de ativos (opcional — Excel ou CSV)</label>
+        <input type="file" id="fileAtivos" accept=".xlsx,.xls,.csv">
+        <small>Usada para atualizar o total de ativos nos indicadores gerenciais.</small>
       </div>
       <div id="uploadStatus" class="upload-status"></div>
     </div>
@@ -677,48 +707,71 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
   </section>
 
   <!-- ===================== INDICADORES GERENCIAIS ===================== -->
-  <section class="view" id="view-indicadores">
-    <div class="section-head">
-      <div><div class="section-eyebrow">Indicadores</div><div class="section-title">Visão gerencial de vagas</div></div>
-      <div class="section-note">Indicadores inspirados no Painel de Controle: saldo, movimentação, prazo, SLA e cortes gerenciais. Todos recalculados pela base carregada.</div>
+  <section class="view ie-dashboard" id="view-indicadores" data-indicadores-version="mapa-20261016-v5-area">
+    <div class="ie-heading">
+      <div><div class="ie-eyebrow">GRUPO MÔNACO · GENTE E GESTÃO</div><h2>Status das vagas</h2><p>Acompanhe a carteira, o motivo das aberturas e a distribuição por estado.</p></div>
+      <span class="ie-version">Visão executiva · mapa por UF</span>
     </div>
-    <div class="manager-filter">
-      <label for="indicatorSegment">Segmento</label>
-      <select id="indicatorSegment" class="manager-select"><option value="">Todos os segmentos</option></select>
-      <label for="indicatorMonth">Mês</label>
-      <select id="indicatorMonth" class="manager-select"></select>
-      <span class="save-hint" id="indicatorScopeHint"></span>
+    <div class="ie-filters">
+      <label>Torre / segmento<select id="indicatorSegment"><option value="">Todas as torres</option></select></label>
+      <label>Área<select id="ieArea"><option value="">Todas as áreas</option><option value="Comercial">Comercial</option><option value="Pós-vendas">Pós-vendas</option><option value="Demais">Demais</option></select></label>
+      <label>Categoria<select id="ieCategory"><option value="">Todas as categorias</option></select></label>
+      <label>De<select id="ieFrom"></select></label><label>Até<select id="ieTo"></select></label>
+      <label>Estado<select id="ieUf"><option value="">Todos os estados</option></select></label>
+      <button type="button" id="ieReset">Limpar filtros</button>
+      <span id="indicatorScopeHint" class="ie-scope"></span>
     </div>
-    <div class="indicator-kpis" id="indicatorKpis"></div>
-    <div class="history-panel">
-      <div class="history-head">
-        <div>
-          <div class="metric-title">Evolução mensal · Movimentação da carteira</div>
-          <div class="metric-sub">O Δ mensal considera Abertas − Fechadas − Canceladas − Congeladas. O saldo atual é exibido separadamente.</div>
-        </div>
-        <div class="history-controls">
-          <label for="indicatorHistoryMonths">Período</label>
-          <select id="indicatorHistoryMonths" class="manager-select">
-            <option value="6">6 meses</option><option value="12" selected>12 meses</option><option value="24">24 meses</option><option value="all">Todo histórico</option>
-          </select>
-        </div>
+    <div class="ie-kpis" id="indicatorKpis"></div>
+    <p class="ie-data-note" id="ieStatusNote"></p>
+
+    <div class="ie-panel">
+      <h3>Substituição × aumento de quadro</h3>
+      <p class="ie-sub">Pela Ocorrência da RP no SisMônaco, sobre as vagas abertas no período. Segue os filtros de torre, categoria e estado.</p>
+      <div class="ie-composition-cards" id="ieCompositionCards"></div>
+      <div class="ie-composition-bar" id="ieCompositionBar"></div>
+      <div class="ie-context" id="ieContext"></div>
+    </div>
+
+    <div class="ie-panel">
+      <h3>Evolução mensal</h3>
+      <p class="ie-sub">Aberturas por mês de criação; fechadas e canceladas pelo mês de fechamento. Congeladas sem data de congelamento são alocadas no mês de abertura.</p>
+      <div class="ie-legend"><span><i style="background:#3989e7"></i>Abertura · substituição</span><span><i style="background:#9382e6"></i>Abertura · aumento de quadro</span><span><i style="background:#666"></i>Abertura · sem informação</span><span><i style="background:#dc591f"></i>Fechadas</span><span><i style="background:#ce9400"></i>Canceladas</span><span><i style="background:#18a47d"></i>Congeladas</span><span><i class="ie-line-key"></i>Saldo em aberto (fim do mês)</span></div>
+      <div class="ie-chart-scroll"><div id="indicatorHistoryChart"></div></div>
+      <p class="ie-data-note" id="ieHistoryNotes"></p>
+    </div>
+
+    <div class="ie-split">
+      <div class="ie-panel"><h3>Composição por situação</h3><p class="ie-sub">Como as vagas abertas no período se dividem na situação atual.</p><div class="ie-composition-bar" id="ieStatusBar"></div><div class="ie-legend" id="ieStatusLegend"></div></div>
+      <div class="ie-panel"><h3>Vagas em aberto por etapa</h3><p class="ie-sub">Status RH; “aguardando autorização” vem do status do chamado.</p><div id="ieStageBars" class="ie-stage-bars"></div></div>
+    </div>
+    <div class="ie-panel"><h3>Por torre</h3><p class="ie-sub">Clique em uma torre para filtrar a página. Barra sob o total: em aberto, fechadas, suspensas e canceladas.</p><div class="ie-table-scroll" id="ieTowerTable"></div></div>
+    <div class="ie-panel">
+      <div class="ie-panel-head"><div><h3>Cargos com mais vagas</h3><p class="ie-sub">Segue os filtros da página. Barra dividida por situação.</p></div><label class="ie-inline-control">Ordenar por <select id="ieJobSort"><option value="total">Total de vagas</option><option value="open">Em aberto</option><option value="closed">Fechadas</option><option value="growth">Aumento de quadro</option><option value="late">Abertas fora do prazo</option></select></label></div>
+      <div id="ieJobBars" class="ie-job-bars"></div><button type="button" id="ieJobMore" class="ie-small-btn">Mostrar 25</button>
+    </div>
+    <div class="ie-panel">
+      <div class="ie-panel-head"><div><h3>Pirâmide por grupo de cargo</h3><p class="ie-sub">Grupo definido pela classificação cargo → grupo. Segue os filtros da página.</p></div><div class="ie-map-modes" role="group" aria-label="Métrica da pirâmide"><button type="button" class="active" data-ie-pyramid="total">Abertura no período</button><button type="button" data-ie-pyramid="open">Em aberto hoje</button></div></div>
+      <div class="ie-pyramid-layout"><div id="iePyramid"></div><div class="ie-table-scroll" id="iePyramidTable"></div></div>
+    </div>
+    <div class="ie-panel ie-map-panel">
+      <div class="ie-panel-head"><div><h3>Vagas por estado</h3><p class="ie-sub">Estado da unidade pela cidade da loja. Clique no mapa ou na tabela para filtrar por UF.</p></div>
+        <div class="ie-map-modes" role="group" aria-label="Métrica do mapa"><button type="button" class="active" data-ie-map="opened">Abertura no período</button><button type="button" data-ie-map="closed">Fechadas</button><button type="button" data-ie-map="open">Em aberto hoje</button></div>
       </div>
-      <div class="history-summary" id="indicatorHistorySummary"></div>
-      <div class="history-chart-scroll"><div class="history-chart" id="indicatorHistoryChart"></div></div>
-      <div class="history-legend"><span><i class="leg-open"></i>Abertas</span><span><i class="leg-close"></i>Fechadas</span><span><i class="leg-cancel"></i>Canceladas</span><span><i class="leg-freeze"></i>Congeladas</span><span><i class="leg-delta"></i>Δ do mês</span></div>
+      <div class="ie-geography"><div class="ie-map"><div id="ieBrazilMap"></div><div class="ie-map-scale"><span>menos</span><div><i></i><i></i><i></i><i></i><i></i></div><span>mais</span></div></div>
+        <div class="ie-geo-data"><div class="ie-regions" id="ieRegionCards"></div><div class="ie-table-scroll" id="ieStateTable"></div><p class="ie-data-note" id="ieGeoNote"></p></div>
+      </div>
     </div>
-    <div class="metric-grid">
-      <div class="metric-table-wrap"><div class="metric-title">Por segmento / torre</div><div class="metric-sub">Saldo, prazo, SLA e movimentação do mês selecionado.</div><div id="indicatorBySegment"></div></div>
-      <div class="metric-table-wrap"><div class="metric-title">Por grupo de cargo</div><div class="metric-sub">Quando a coluna “grupo de cargo” estiver na base, a classificação do painel é preservada.</div><div id="indicatorByGroup"></div></div>
-    </div>
-    <div class="manager-filter">
-      <label for="indicatorDimension">Detalhar por</label>
-      <select id="indicatorDimension" class="manager-select">
-        <option value="nuc">Região / Núcleo</option><option value="emp">Empresa</option><option value="criador">Líder solicitante</option><option value="tec">Analista</option><option value="dir">Diretoria</option><option value="procedencia">Procedência do fechamento</option>
-      </select>
-    </div>
-    <div class="metric-table-wrap"><div class="metric-title" id="indicatorDimensionTitle">Detalhamento</div><div class="metric-sub">Aberturas e fechamentos no ano, saldo atual, SLA médio e percentual de fechamentos no prazo.</div><div id="indicatorDimensionTable"></div></div>
+
+    <div class="ie-panel"><h3>Vagas recorrentes</h3><p class="ie-sub">Mesmo cargo aberto três vezes ou mais na mesma unidade no período. Consulte o motivo para distinguir reposição de aumento do quadro.</p><div class="ie-table-scroll ie-scroll-list" id="ieRecurringTable"></div></div>
+    <div class="ie-panel"><div class="ie-panel-head"><div><h3>Por unidade</h3><p class="ie-sub" id="ieUnitHint">Clique numa unidade para ver as vagas dela.</p></div><input type="search" id="ieUnitSearch" class="ie-search" placeholder="Buscar unidade, torre ou núcleo" aria-label="Buscar unidade, torre ou núcleo"></div><div class="ie-table-scroll ie-scroll-list" id="ieUnitTable"></div></div>
+    <details class="ie-panel ie-details"><summary>Outros detalhamentos gerenciais</summary>
+      <div class="ie-detail-grid"><div><h3>Por torre / segmento</h3><div class="ie-table-scroll" id="indicatorBySegment"></div></div><div><h3>Por grupo de cargo</h3><div class="ie-table-scroll" id="indicatorByGroup"></div></div></div>
+      <div class="ie-filters"><label>Detalhar por<select id="indicatorDimension"><option value="nuc">Região / Núcleo</option><option value="emp">Empresa</option><option value="criador">Líder solicitante</option><option value="tec">Analista</option><option value="dir">Diretoria</option><option value="procedencia">Procedência do fechamento</option></select></label></div>
+      <h3 id="indicatorDimensionTitle">Detalhamento</h3><div class="ie-table-scroll" id="indicatorDimensionTable"></div>
+    </details>
+    <div class="ie-unit-modal" id="ieUnitModal" hidden><div class="ie-unit-dialog" role="dialog" aria-modal="true" aria-labelledby="ieUnitTitle"><div class="ie-panel-head"><div><h3 id="ieUnitTitle">Vagas da unidade</h3><p id="ieUnitModalHint" class="ie-sub"></p></div><button type="button" id="ieUnitClose" class="ie-small-btn">Fechar ×</button></div><div class="ie-table-scroll ie-scroll-list" id="ieUnitTickets"></div></div></div>
   </section>
+
 
   <!-- ===================== LINHA DO TEMPO ===================== -->
   <section class="view" id="view-timeline">
@@ -816,7 +869,8 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
         <div class="chip-toggle" id="filterCategoria">
           <button data-val="">Todas</button>
           <button data-val="Comercial">Comercial</button>
-          <button data-val="Outras">Outras</button>
+          <button data-val="Pós-vendas">Pós-vendas</button>
+          <button data-val="Demais">Demais</button>
         </div>
         <div class="chip-toggle" id="filterAberto">
           <button data-val="">Todas</button>
@@ -901,8 +955,15 @@ footer{max-width:1400px; margin:0 auto; padding:20px 28px 40px; color:var(--text
 
 <footer>Central de Vagas · Base online protegida por autenticação · Histórico persistente por chamado.</footer>
 <script>let TICKETS = [];
-const CLASSIFICATION = 
-{"Agente De Patio": "Outras", "Ajudante De Motorista": "Outras", "Analista Administrativo De Locacao": "Outras", "Analista Administrativo De Pessoas": "Outras", "Analista Administrativo De Pos Venda": "Outras", "Analista Administrativo Financeiro": "Outras", "Analista Cobranca": "Outras", "Analista De Bi": "Outras", "Analista De Indicadores": "Outras", "Analista De Projeto": "Outras", "Analista De Ti": "Outras", "Analista Fiscal": "Outras", "Analista Gestao De Pessoas": "Outras", "Analista Marketing": "Outras", "Aprendiz Administrativo": "Outras", "Aprendiz Estoque": "Outras", "Assistente Administrativo": "Outras", "Assistente Administrativo De Compras": "Outras", "Assistente Administrativo De Pessoas": "Outras", "Assistente Administrativo De Vendas": "Outras", "Assistente Administrativo Financeiro": "Outras", "Assistente Administrativo Logistica": "Outras", "Assistente Adminstrativo De Pos Vendas": "Outras", "Assistente Compras": "Outras", "Assistente Credito E Cadastro": "Outras", "Assistente De Compras De Pecas": "Outras", "Assistente De Crm": "Outras", "Assistente De E Commerce De Pecas": "Outras", "Assistente De Estoque": "Outras", "Assistente De Gestao De Pessoas": "Outras", "Assistente De Pos Venda": "Outras", "Assistente Faturamento": "Outras", "Assistente Financeiro": "Outras", "Assistente Garantia": "Outras", "Atendente Administrativo Cnh": "Outras", "Atendente De Cnh": "Outras", "Auditor Interno": "Outras", "Auxiliar Administrativo": "Outras", "Auxiliar Administrativo De F&I": "Outras", "Auxiliar Administrativo De Logistica": "Outras", "Auxiliar Administrativo De Pessoal": "Outras", "Auxiliar Administrativo Financeiro": "Outras", "Auxiliar Administrativo Pos Venda": "Outras", "Auxiliar Administrativo Vendas": "Outras", "Auxiliar Compras": "Outras", "Auxiliar Estoque": "Outras", "Auxiliar Financeiro": "Outras", "Auxiliar Funilaria/Pintura": "Outras", "Auxiliar Garantia": "Outras", "Auxiliar Logistica": "Outras", "Auxiliar Mecanico": "Outras", "Auxiliar Servicos Gerais": "Outras", "Auxiliar Tecnologia Da Informacao": "Outras", "Avaliador De Motos": "Outras", "Chefe De Oficina": "Outras", "Comprador Pecas": "Outras", "Consultor De Pecas E Commerce": "Comercial", "Consultor De Vendas De Leads": "Comercial", "Consultor De Vendas Locacao": "Comercial", "Consultor E-Commerce": "Comercial", "Consultor Pecas": "Comercial", "Consultor Pos Vendas": "Comercial", "Consultor Tecnico": "Outras", "Consultor Vendas": "Comercial", "Consultor Vendas Direta": "Comercial", "Controlador De Produtividade": "Outras", "Controller De Pos Venda": "Outras", "Controller De Vendas": "Comercial", "Coordenador De Gestao De Pessoas": "Outras", "Coordenador De Pos Venda": "Outras", "Coordenador De Seguranca Do Trabalho": "Outras", "Coordenador Marketing": "Outras", "Coordenador Tecnologia Da Informacao": "Outras", "Encarregado Administrativo Logistica": "Outras", "Encarregado Estoque": "Outras", "Encarregado Estoque De Pecas": "Outras", "Encarregado Logistica": "Outras", "Entregador Tecnico": "Outras", "Entregador Tecnico De Veiculos": "Outras", "Estagiario": "Outras", "Estagiario Em Seguranca Do Trabalho": "Outras", "Estoquista": "Outras", "Estoquista De Motos": "Outras", "Ferramenteiro": "Outras", "Funileiro": "Outras", "Garantista": "Outras", "Gerente Comercial": "Comercial", "Gerente Pos Venda": "Outras", "Instrutor De Treinamento Tecnico": "Outras", "Instrutor Motorista Man": "Outras", "Lavador Autos": "Outras", "Lavador Motocicletas": "Outras", "Lider De Estoque": "Outras", "Mecanico": "Outras", "Mecanico A": "Outras", "Mecanico B": "Outras", "Mecanico C": "Outras", "Mecanico D": "Outras", "Mecanico Lider": "Outras", "Mecanico Motos": "Outras", "Monitor De Treinamento": "Outras", "Monitor Pos Venda": "Outras", "Montador": "Outras", "Montador Motos": "Outras", "Motorista": "Outras", "Motorista Caminhao": "Outras", "Oficial De Manutencao Predial": "Outras", "Operador Caixa": "Outras", "Operador Telemarketing": "Outras", "Orçamentista": "Outras", "Pintor": "Outras", "Pintor Preparador": "Outras", "Preparador De Veiculos": "Outras", "Qualificador De Lead": "Comercial", "Recepcionista Vendas": "Outras", "Supervisor Assistencia Tecnica": "Outras", "Supervisor De Crm": "Outras", "Supervisor E-Commerce": "Comercial", "Supervisor Pecas": "Outras", "Supervisor Pos Vendas": "Outras", "Supervisor Vendas": "Comercial", "Tecnico Seguranca Do Trabalho": "Outras", "Tecnico Servico Expresso": "Outras", "Vendedor Acessorios": "Comercial", "Vendedor De Consorcio": "Comercial", "Vendedor Motos Externo": "Comercial", "Vendedor Motos Interno": "Comercial", "Vendedor Pecas": "Comercial", "Vendedor Pecas Balcao": "Comercial", "Vendedor Pecas/Externo": "Comercial", "Vendedor Seguro": "Comercial", "Vendedor Veiculos": "Comercial", "Auxiliar Faturamento": "Outras", "Auxiliar Administrativo Cnh": "Outras", "Assistente Administrativo De Cnh": "Outras", "Analista De Comunicacao Interna": "Outras"};</script>
+let ACTIVE_ASSETS_COUNT = 1861;
+let ACTIVE_ASSETS_FROM_UPLOAD = false;
+const TURNOVER_ACCUMULATED_PCT = 44;
+const HR_BASE_REFERENCE = '2026-09';
+try {
+  const savedAssetsCount = localStorage.getItem('centralVagasActiveAssetsCount');
+  if (savedAssetsCount !== null && Number.isFinite(Number(savedAssetsCount))) { ACTIVE_ASSETS_COUNT = Number(savedAssetsCount); ACTIVE_ASSETS_FROM_UPLOAD = true; }
+} catch(e) { /* armazenamento local indisponível */ }
+const CLASSIFICATION = {"Agente De Patio":"Demais","Ajudante De Motorista":"Demais","Analista Administrativo De Locacao":"Demais","Analista Administrativo De Pessoas":"Demais","Analista Administrativo De Pos Venda":"Pós-vendas","Analista Administrativo Financeiro":"Demais","Analista Cobranca":"Demais","Analista De Bi":"Demais","Analista De Indicadores":"Demais","Analista De Projeto":"Demais","Analista De Ti":"Demais","Analista Fiscal":"Demais","Analista Gestao De Pessoas":"Demais","Analista Marketing":"Demais","Aprendiz Administrativo":"Demais","Aprendiz Estoque":"Demais","Assistente Administrativo":"Demais","Assistente Administrativo De Compras":"Demais","Assistente Administrativo De Pessoas":"Demais","Assistente Administrativo De Vendas":"Demais","Assistente Administrativo Financeiro":"Demais","Assistente Administrativo Logistica":"Demais","Assistente Adminstrativo De Pos Vendas":"Pós-vendas","Assistente Compras":"Demais","Assistente Credito E Cadastro":"Demais","Assistente De Compras De Pecas":"Demais","Assistente De Crm":"Demais","Assistente De E Commerce De Pecas":"Demais","Assistente De Estoque":"Demais","Assistente De Gestao De Pessoas":"Demais","Assistente De Pos Venda":"Pós-vendas","Assistente Faturamento":"Demais","Assistente Financeiro":"Demais","Assistente Garantia":"Demais","Atendente Administrativo Cnh":"Demais","Atendente De Cnh":"Demais","Auditor Interno":"Demais","Auxiliar Administrativo":"Demais","Auxiliar Administrativo De F&I":"Demais","Auxiliar Administrativo De Logistica":"Demais","Auxiliar Administrativo De Pessoal":"Demais","Auxiliar Administrativo Financeiro":"Demais","Auxiliar Administrativo Pos Venda":"Pós-vendas","Auxiliar Administrativo Vendas":"Demais","Auxiliar Compras":"Demais","Auxiliar Estoque":"Demais","Auxiliar Financeiro":"Demais","Auxiliar Funilaria/Pintura":"Pós-vendas","Auxiliar Garantia":"Pós-vendas","Auxiliar Logistica":"Demais","Auxiliar Mecanico":"Pós-vendas","Auxiliar Servicos Gerais":"Demais","Auxiliar Tecnologia Da Informacao":"Demais","Avaliador De Motos":"Demais","Chefe De Oficina":"Pós-vendas","Comprador Pecas":"Demais","Consultor De Pecas E Commerce":"Comercial","Consultor De Vendas De Leads":"Comercial","Consultor De Vendas Locacao":"Comercial","Consultor E-Commerce":"Comercial","Consultor Pecas":"Pós-vendas","Consultor Pos Vendas":"Pós-vendas","Consultor Tecnico":"Pós-vendas","Consultor Vendas":"Comercial","Consultor Vendas Direta":"Comercial","Controlador De Produtividade":"Pós-vendas","Controller De Pos Venda":"Pós-vendas","Controller De Vendas":"Comercial","Coordenador De Gestao De Pessoas":"Demais","Coordenador De Pos Venda":"Pós-vendas","Coordenador De Seguranca Do Trabalho":"Demais","Coordenador Marketing":"Demais","Coordenador Tecnologia Da Informacao":"Demais","Encarregado Administrativo Logistica":"Demais","Encarregado Estoque":"Demais","Encarregado Estoque De Pecas":"Pós-vendas","Encarregado Logistica":"Demais","Entregador Tecnico":"Pós-vendas","Entregador Tecnico De Veiculos":"Pós-vendas","Estagiario":"Demais","Estagiario Em Seguranca Do Trabalho":"Demais","Estoquista":"Demais","Estoquista De Motos":"Demais","Ferramenteiro":"Pós-vendas","Funileiro":"Pós-vendas","Garantista":"Pós-vendas","Gerente Comercial":"Comercial","Gerente Pos Venda":"Pós-vendas","Instrutor De Treinamento Tecnico":"Pós-vendas","Instrutor Motorista Man":"Demais","Lavador Autos":"Pós-vendas","Lavador Motocicletas":"Pós-vendas","Lider De Estoque":"Demais","Mecanico":"Pós-vendas","Mecanico A":"Pós-vendas","Mecanico B":"Pós-vendas","Mecanico C":"Pós-vendas","Mecanico D":"Pós-vendas","Mecanico Lider":"Pós-vendas","Mecanico Motos":"Pós-vendas","Monitor De Treinamento":"Demais","Monitor Pos Venda":"Pós-vendas","Montador":"Pós-vendas","Montador Motos":"Pós-vendas","Motorista":"Demais","Motorista Caminhao":"Demais","Oficial De Manutencao Predial":"Demais","Operador Caixa":"Demais","Operador Telemarketing":"Demais","Orçamentista":"Pós-vendas","Pintor":"Pós-vendas","Pintor Preparador":"Pós-vendas","Preparador De Veiculos":"Pós-vendas","Qualificador De Lead":"Comercial","Recepcionista Vendas":"Demais","Supervisor Assistencia Tecnica":"Pós-vendas","Supervisor De Crm":"Demais","Supervisor E-Commerce":"Comercial","Supervisor Pecas":"Pós-vendas","Supervisor Pos Vendas":"Pós-vendas","Supervisor Vendas":"Comercial","Tecnico Seguranca Do Trabalho":"Demais","Tecnico Servico Expresso":"Pós-vendas","Vendedor Acessorios":"Comercial","Vendedor De Consorcio":"Comercial","Vendedor Motos Externo":"Comercial","Vendedor Motos Interno":"Comercial","Vendedor Pecas":"Comercial","Vendedor Pecas Balcao":"Comercial","Vendedor Pecas/Externo":"Comercial","Vendedor Seguro":"Comercial","Vendedor Veiculos":"Comercial","Auxiliar Faturamento":"Demais","Auxiliar Administrativo Cnh":"Demais","Assistente Administrativo De Cnh":"Demais","Analista De Comunicacao Interna":"Demais","Tecnico Seguranca Do Trabalho E Meio Ambiente":"Demais","Instalador De Acessorios":"Pós-vendas","Operador F&I":"Comercial","Consultor De Peças Atacado":"Pós-vendas","Assistente Fiscal":"Demais","Assistente Controladoria":"Demais","Gerente Vendas":"Comercial"};</script>
 <script>
 // ================= ONLINE / AUTENTICAÇÃO =================
 const SUPABASE_URL='https://cmcyvcgvoqmcntdlkhah.supabase.co';
@@ -1099,6 +1160,12 @@ function escapeHtml(s){ return (s===null||s===undefined)?'':String(s).replace(/[
 function pct(n, d){ return d ? Math.round(n/d*100) : 0; }
 function avgDays(list){ return list.length ? Math.round(list.reduce((s,t)=>s+(t.tempoAb||0),0)/list.length) : 0; }
 function normalize(s){ return (s||'').toString().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+const CLASSIFICATION_NORMALIZED = Object.fromEntries(Object.entries(CLASSIFICATION).map(([cargo, category])=>[normalize(cargo), category]));
+const POS_VENDAS_DEPARTMENTS = new Set(['assistencia tecnica','pecas']);
+function classifyTicket(cargo, departamento){
+  if(POS_VENDAS_DEPARTMENTS.has(normalize(departamento).trim())) return 'Pós-vendas';
+  return CLASSIFICATION[cargo] || CLASSIFICATION_NORMALIZED[normalize(cargo).trim()] || 'Demais';
+}
 
 const isOpen = t => t.aberto === true;
 
@@ -1220,12 +1287,8 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
 function renderKpis(){
   const open = TICKETS.filter(isCountedOpen);
   const comercial = open.filter(t=>t.cat==='Comercial').length;
-  const outras = open.filter(t=>t.cat==='Outras').length;
-  const naoClassificada = open.filter(t=>t.cat==='Nao Classificado').length;
-  // O total precisa ser o total REAL de vagas abertas (open.length), não apenas
-  // comercial+outras — senão uma vaga cujo cargo ainda não está no mapa de
-  // classificação some do card sem aviso, e o total deixa de bater com o funil
-  // (que usa isCountedOpen diretamente, sem depender da classificação).
+  const posVendas = open.filter(t=>t.cat==='Pós-vendas').length;
+  const demais = open.filter(t=>t.cat==='Demais').length;
   const total = open.length;
   const mk = (label,val,extraClass,foot) => `
     <div class="kpi-card ${extraClass||''}">
@@ -1235,9 +1298,9 @@ function renderKpis(){
     </div>`;
   document.getElementById('kpiRow').innerHTML =
     mk('Vagas Comerciais', comercial, '', `${((comercial/total)*100||0).toFixed(0)}% do total em aberto`) +
-    mk('Demais Vagas (Adm/Operacional)', outras, '', `${((outras/total)*100||0).toFixed(0)}% do total em aberto`) +
-    mk('Total Geral em Aberto', total, 'total', `${TICKETS.length} chamados na base ao todo` +
-      (naoClassificada ? ` · ${naoClassificada} sem cargo classificado (incluída(s) no total)` : ''));
+    mk('Vagas de Pós-vendas', posVendas, '', `${((posVendas/total)*100||0).toFixed(0)}% do total em aberto`) +
+    mk('Demais Vagas', demais, '', `${((demais/total)*100||0).toFixed(0)}% do total em aberto`) +
+    mk('Total Geral em Aberto', total, 'total', `${TICKETS.length} chamados na base ao todo`);
 }
 
 // ================= TORRE DE NEGÓCIOS =================
@@ -1248,10 +1311,13 @@ function renderTorre(){
   const total = open.length || 1;
   const rows = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
   document.getElementById('torreRow').innerHTML = rows.length ? rows.map(([seg,n])=>{
-    const comercialN = open.filter(t=>(t.seg||'Sem torre informada')===seg && t.cat==='Comercial').length;
+    const inSegment = open.filter(t=>(t.seg||'Sem torre informada')===seg);
+    const comercialN = inSegment.filter(t=>t.cat==='Comercial').length;
+    const posVendasN = inSegment.filter(t=>t.cat==='Pós-vendas').length;
+    const demaisN = inSegment.filter(t=>t.cat==='Demais').length;
     return `
     <div class="breakdown-row">
-      <div class="breakdown-label">${escapeHtml(seg)}<span class="breakdown-sub">${comercialN} comercial · ${n-comercialN} demais</span></div>
+      <div class="breakdown-label">${escapeHtml(seg)}<span class="breakdown-sub">${comercialN} comercial · ${posVendasN} pós-vendas · ${demaisN} demais</span></div>
       <div class="breakdown-track"><div class="breakdown-fill" style="width:${(n/total*100)}%"></div></div>
       <div class="breakdown-val">${n}<span class="pct">${Math.round(n/total*100)}%</span></div>
     </div>`;
@@ -1639,7 +1705,7 @@ function renderTickets(){
       <td>${escapeHtml(t.tec||'—')}</td>
       <td>${escapeHtml(t.criador||'—')}</td>
       <td>${escapeHtml(t.dir||'—')}</td>
-      <td><span class="cat-pill ${t.cat==='Comercial'?'comercial':'outras'}">${escapeHtml(t.cat)}</span></td>
+      <td><span class="cat-pill ${t.cat==='Comercial'?'comercial':(t.cat==='Pós-vendas'?'pos-vendas':'demais')}">${escapeHtml(t.cat)}</span></td>
       <td>${escapeHtml(t.ocor||'—')}</td>
       <td><span class="${statusPillClass(t.desStatus)}">${escapeHtml(t.desStatus||'—')}</span></td>
       <td class="muted-mono">${escapeHtml(t.statusRH||'—')}</td>
@@ -1831,84 +1897,278 @@ function renderTimeline(){
   document.getElementById('timelineCanceladasBody').innerHTML = timelineRowsHtml(canceladas, 'dataFe');
 }
 
-// ================= INDICADORES GERENCIAIS =================
+const IE_STATES = [{"uf":"AC","name":"Acre","path":"M5.1,171.6L17.4,177.1L47.2,183.8L68.5,195.0L95.9,206.6L95.8,207.2L90.4,211.6L85.6,212.9L85.3,213.9L82.2,215.9L81.8,217.2L79.8,216.3L77.6,216.5L74.4,220.9L70.9,222.4L68.7,222.9L68.1,221.0L59.5,220.0L55.4,220.7L52.6,220.0L48.0,221.9L46.3,221.5L45.1,220.1L43.9,221.0L43.9,205.7L45.1,204.7L44.2,202.2L44.8,202.4L45.6,200.5L42.3,202.2L36.2,207.6L23.7,208.0L24.0,205.4L22.5,204.8L22.7,202.9L21.4,201.4L16.7,200.3L10.2,200.3L13.5,196.9L13.8,194.8L11.5,191.4L9.2,190.0L9.4,188.2L7.9,188.1L6.0,186.5L4.8,182.2L3.0,180.8L4.1,179.1L0.1,176.0L1.1,175.0L0.5,173.5L1.8,173.9L3.9,173.0L2.6,170.4L5.1,171.6Z","label":[46.2,199.0]},{"uf":"AL","name":"Alagoas","path":"M501.0,192.7L504.7,193.5L504.8,194.4L498.0,203.6L490.5,211.5L488.9,214.5L488.1,213.3L486.7,213.4L486.1,211.5L482.0,209.7L481.1,207.7L470.8,203.3L467.0,200.7L465.4,200.5L464.9,199.3L466.8,197.2L468.3,196.9L471.1,193.1L471.9,194.9L474.6,194.5L478.0,198.1L479.6,198.1L481.7,200.0L482.7,198.5L486.4,199.4L488.3,197.8L491.1,197.2L490.5,196.3L492.4,195.4L493.2,193.9L496.7,193.0L497.3,193.9L501.0,192.7Z","label":[485.9,201.7]},{"uf":"AM","name":"Amazonas","path":"M86.8,51.6L87.3,53.5L89.0,54.0L89.7,55.5L89.9,62.8L92.9,62.0L99.9,68.2L102.9,68.1L107.4,65.0L109.4,64.9L110.6,66.4L109.3,68.6L110.0,69.6L111.5,68.8L112.7,65.9L114.8,65.8L115.6,63.0L116.9,63.4L117.5,62.0L118.7,62.0L119.5,60.9L120.3,62.1L124.8,58.1L125.5,58.5L124.8,59.9L125.6,60.3L125.9,59.1L128.8,57.0L129.2,52.9L130.3,52.1L134.3,51.8L135.0,50.6L137.4,50.4L138.2,49.2L139.3,50.0L141.2,49.8L142.1,51.5L146.8,52.8L146.6,55.7L145.5,57.3L147.7,59.3L148.9,63.4L149.9,63.9L150.1,67.8L149.0,69.0L149.1,71.5L150.2,73.1L150.5,76.8L153.6,82.3L152.0,84.7L152.2,86.5L150.7,87.5L149.6,86.9L149.5,88.2L155.8,92.8L157.4,96.1L160.7,96.6L162.8,98.5L160.8,94.9L161.9,91.9L161.8,88.5L163.4,86.2L166.1,85.3L166.2,84.5L170.0,85.2L172.2,89.2L173.3,89.6L175.1,89.4L175.8,88.0L178.0,87.4L176.8,84.6L181.5,74.6L196.4,74.6L196.7,82.5L198.6,83.7L198.8,86.8L202.4,89.6L202.4,91.3L203.8,92.9L204.7,92.7L205.9,94.0L207.8,92.4L208.6,96.3L215.9,100.4L218.9,100.4L220.6,102.9L224.6,104.4L224.0,106.2L225.2,106.8L227.2,105.8L229.8,105.9L232.7,104.3L231.5,106.2L228.9,107.6L228.0,109.5L228.8,109.9L204.6,162.1L201.8,165.1L202.4,167.8L205.3,170.7L206.2,173.6L205.2,175.0L205.4,177.1L203.0,179.9L204.3,183.7L202.3,191.1L203.8,191.4L202.2,192.4L161.4,192.4L159.7,190.9L158.1,191.5L157.8,193.1L156.8,193.5L154.4,192.4L153.6,189.7L151.6,189.9L151.1,186.9L148.8,186.7L147.2,183.4L145.2,181.9L134.9,181.6L133.0,186.2L131.7,185.7L130.7,186.3L130.3,188.3L131.0,189.5L130.2,189.6L129.6,191.3L128.1,191.7L128.1,194.5L119.1,194.9L118.1,195.6L118.1,197.9L115.9,200.5L114.6,200.5L113.8,198.3L111.2,199.1L111.4,201.1L109.2,200.4L106.7,202.6L104.4,200.4L98.7,200.3L98.9,201.5L97.5,203.2L93.5,205.6L68.5,195.0L47.2,183.8L17.4,177.1L2.6,170.4L4.8,165.7L11.2,162.6L11.6,161.3L10.1,158.9L9.9,156.4L13.5,151.5L14.5,145.2L15.4,144.4L17.8,143.7L21.7,140.1L23.5,139.9L27.5,136.7L30.9,136.1L31.2,136.9L32.4,135.8L35.1,135.9L35.4,135.0L39.7,135.0L41.5,132.4L43.1,132.6L43.5,131.6L43.9,132.5L47.8,131.9L48.1,133.8L49.4,134.8L50.0,133.6L51.4,134.6L52.6,133.7L59.9,92.6L56.9,87.9L57.7,86.3L57.1,84.7L51.3,80.5L51.4,70.7L54.5,70.6L56.0,69.3L57.1,69.8L58.7,68.4L60.3,70.0L63.5,69.7L62.6,68.5L62.9,65.7L61.5,64.1L54.0,63.9L54.1,55.6L57.8,54.7L59.9,55.6L76.0,55.5L74.5,54.2L75.3,52.5L76.2,52.2L78.8,54.2L81.0,51.5L83.0,51.7L85.7,48.8L86.5,49.3L86.8,51.6Z","label":[120.9,132.4]},{"uf":"AP","name":"Amapá","path":"M296.6,25.9L298.0,27.4L297.8,33.2L298.8,38.4L301.1,43.7L300.9,45.7L302.1,46.2L302.9,50.2L306.1,49.3L308.9,54.6L313.0,55.8L313.4,62.6L310.8,68.9L307.5,69.3L306.3,70.2L304.2,74.8L299.9,77.0L298.2,79.0L296.2,79.5L290.1,88.3L289.8,91.9L287.5,93.2L286.2,92.6L285.1,94.1L284.5,92.9L280.4,91.6L280.8,89.4L279.0,89.1L279.2,85.7L277.7,85.6L277.0,81.9L273.9,79.9L270.7,73.0L271.6,69.1L267.7,65.9L267.0,63.3L267.9,62.7L267.5,61.8L266.0,62.2L266.0,60.6L264.5,60.6L264.6,59.7L261.9,59.9L259.9,58.2L259.0,58.7L258.1,56.6L257.5,56.9L256.0,55.4L250.3,54.9L249.4,51.2L250.1,49.4L248.6,46.4L251.1,46.2L251.4,47.7L254.3,49.3L257.5,49.7L263.3,47.1L263.4,48.0L266.0,48.7L268.6,47.4L270.0,48.4L269.5,49.8L272.0,49.2L273.6,49.9L278.8,45.3L278.8,43.6L281.7,38.1L281.4,37.2L283.5,35.1L287.0,28.8L290.6,25.5L291.8,20.6L295.4,23.1L296.6,25.9Z","label":[286.6,59.2]},{"uf":"BA","name":"Bahia","path":"M451.3,189.3L452.0,191.2L457.5,192.2L459.3,194.7L460.8,192.7L461.9,193.2L461.7,195.0L464.2,195.3L463.8,196.5L465.4,200.5L467.9,201.2L468.0,206.9L470.2,208.0L471.4,212.1L469.8,213.5L470.4,217.0L468.0,217.9L465.2,217.2L465.0,219.9L468.3,223.5L468.3,226.1L470.4,227.7L472.2,228.4L472.5,227.7L473.8,228.2L476.5,227.0L467.4,242.2L463.5,246.4L461.6,247.2L460.0,246.1L459.5,247.4L455.5,250.5L456.5,255.4L455.0,256.6L455.9,259.5L454.2,269.8L455.8,281.6L456.9,284.2L454.7,289.5L453.1,296.2L453.6,297.6L452.2,301.2L453.2,308.0L447.6,313.2L446.3,316.5L439.1,311.7L438.6,311.0L439.7,310.1L439.1,308.5L433.9,304.3L434.9,302.7L434.6,299.8L435.6,297.5L438.3,297.7L438.7,296.5L437.5,296.2L438.4,293.5L439.9,293.5L440.7,291.5L441.1,292.0L443.1,289.7L443.9,287.5L443.0,285.9L439.8,284.8L439.0,283.4L436.9,283.7L436.1,282.8L434.7,283.4L431.4,281.4L430.5,282.0L429.5,281.4L427.2,283.0L424.7,282.7L424.4,279.5L418.8,274.4L414.8,275.4L413.8,274.1L411.4,274.3L403.8,269.2L400.4,268.4L396.1,270.6L391.5,268.5L392.8,264.4L387.2,263.0L382.1,264.7L375.8,269.8L374.5,269.6L371.1,272.4L369.6,272.3L367.6,274.5L364.6,274.8L363.3,276.4L362.7,276.1L364.4,272.9L363.3,270.8L364.3,267.1L363.8,265.4L365.2,264.6L360.6,261.3L361.3,260.2L360.3,257.3L361.9,254.7L360.9,254.3L360.8,252.6L363.5,250.5L360.4,251.5L359.7,250.3L360.3,247.4L362.5,245.9L360.0,246.3L360.4,241.6L362.0,240.3L360.7,240.4L359.4,238.4L358.8,234.4L361.8,232.7L359.1,232.3L359.9,229.2L362.9,229.1L357.8,227.7L356.0,224.8L357.9,223.5L358.8,220.9L360.3,219.8L361.3,216.4L366.2,213.7L367.9,211.4L367.6,210.0L369.2,209.4L371.9,213.8L371.3,216.1L373.8,218.7L376.1,218.9L377.9,220.1L381.3,217.9L381.3,216.9L382.5,216.1L383.5,216.4L385.6,215.1L388.3,216.3L389.6,213.4L391.1,213.5L393.0,209.0L394.4,208.1L393.8,206.8L394.5,205.9L392.8,204.9L391.9,202.2L396.7,198.4L399.3,200.5L403.2,200.2L403.7,201.7L406.1,203.0L406.6,201.9L409.6,201.4L412.2,199.0L418.0,198.2L419.5,195.3L421.9,194.5L424.0,191.2L427.5,191.1L428.7,193.0L430.1,192.9L431.3,196.0L433.3,197.1L431.9,200.9L433.9,201.3L437.6,199.6L438.8,195.7L440.3,196.4L442.6,195.6L443.4,192.8L446.3,192.2L446.0,190.6L450.0,188.9L451.3,189.3Z","label":[419.6,240.2]},{"uf":"CE","name":"Ceará","path":"M441.8,114.9L451.6,119.8L459.3,125.8L461.9,126.2L466.5,132.0L471.0,135.2L472.8,137.8L476.8,139.1L477.7,140.7L472.7,142.0L469.3,149.5L466.9,151.7L467.4,152.5L465.9,155.3L464.0,157.1L462.7,156.7L460.5,159.6L460.2,161.1L461.3,161.3L459.6,163.6L460.0,166.3L458.1,167.8L458.1,169.0L459.3,169.6L459.1,171.5L461.1,172.8L459.5,176.3L455.9,178.8L455.4,180.0L453.8,180.2L453.1,178.3L451.0,177.6L450.9,176.0L446.4,173.0L438.8,174.6L437.9,173.9L434.9,174.1L437.2,166.4L432.5,164.5L431.6,162.1L431.9,160.2L430.2,156.6L430.0,145.4L427.3,143.6L425.8,141.3L426.7,138.7L425.9,137.4L427.8,132.2L427.1,131.6L427.5,130.5L425.7,130.5L426.1,129.2L425.1,127.7L425.9,126.2L424.5,125.8L424.2,124.3L425.1,123.4L423.5,121.8L425.7,118.1L424.8,116.0L434.3,115.0L435.4,114.2L441.8,114.9Z","label":[447.0,144.2]},{"uf":"ES","name":"Espírito Santo","path":"M432.6,348.9L429.6,354.9L427.8,353.8L423.2,353.8L419.7,352.6L419.4,348.6L417.6,348.0L418.6,344.3L417.8,342.8L419.2,340.7L423.7,340.7L425.0,337.3L426.6,336.6L426.8,333.7L428.5,332.4L428.4,331.3L429.7,331.1L430.0,327.5L428.2,325.7L428.8,324.6L425.8,323.0L426.0,322.4L430.1,322.6L429.7,320.9L428.3,320.2L428.7,317.9L426.6,317.7L426.9,316.0L428.6,314.0L430.3,313.4L432.0,314.0L430.5,311.6L433.4,312.2L435.3,310.6L439.1,311.7L446.3,316.3L445.3,321.1L446.0,329.6L444.5,333.4L441.7,335.0L440.2,337.2L439.5,340.7L438.2,341.7L436.5,346.3L433.8,348.9L433.6,348.2L432.6,348.9Z","label":[433.3,332.5]},{"uf":"GO","name":"Goiás","path":"M309.9,239.4L308.0,244.7L312.8,246.4L320.2,250.6L320.6,247.9L323.5,244.3L325.3,246.4L327.0,244.5L328.5,246.9L330.2,247.8L330.4,251.1L331.4,248.7L332.3,250.8L335.7,248.9L335.9,251.0L337.0,250.1L338.4,251.1L340.3,251.0L342.2,253.1L342.9,252.0L342.8,248.4L344.8,249.4L345.5,250.8L346.1,250.0L347.3,250.4L348.0,249.5L349.9,249.4L354.2,246.6L358.1,246.6L358.6,244.7L359.3,246.9L362.5,245.9L359.8,248.3L360.4,251.5L363.5,250.5L360.8,252.6L360.9,254.3L361.9,254.7L360.3,257.3L361.3,260.2L360.6,261.3L365.2,264.6L363.8,265.4L364.2,268.1L362.9,272.2L360.3,272.1L359.8,270.6L357.5,269.2L356.6,270.2L357.5,273.7L352.1,273.6L351.8,276.0L353.1,277.2L351.7,280.3L352.9,281.1L353.4,284.5L349.9,285.5L349.2,285.0L346.9,286.5L346.1,285.8L346.9,280.7L345.6,279.5L335.4,279.5L334.4,286.7L347.0,286.7L346.7,289.3L345.0,292.5L347.8,294.7L348.4,297.8L349.4,298.7L346.4,301.2L345.3,303.5L344.3,303.3L344.0,304.9L347.5,306.8L346.2,309.8L347.3,312.8L338.6,318.5L334.6,316.3L334.0,317.0L330.7,316.2L327.2,316.9L325.8,316.0L324.0,317.4L322.3,317.3L319.9,320.4L318.0,318.4L314.7,320.4L311.6,319.8L311.0,320.7L308.7,320.8L305.4,324.2L305.0,326.3L303.2,326.8L301.2,329.0L301.1,331.5L297.9,329.0L293.5,327.1L290.5,326.8L286.8,324.6L284.9,324.4L283.6,323.0L281.7,322.8L279.1,320.5L276.3,321.0L274.1,320.3L273.5,319.0L276.1,316.5L271.7,316.1L271.1,313.1L272.1,311.8L269.9,308.3L269.8,305.6L272.8,297.2L275.8,295.6L276.4,293.7L277.9,292.9L277.1,289.9L278.9,289.4L279.3,287.7L281.5,287.1L282.7,284.6L287.6,283.7L289.1,281.4L288.9,280.0L289.9,279.3L290.5,275.3L292.0,273.9L294.6,272.6L295.9,273.5L297.9,271.9L299.5,266.8L299.3,263.8L300.1,261.4L301.2,261.2L300.7,256.4L304.1,251.1L304.1,247.7L305.2,246.7L305.8,243.2L307.3,241.0L309.9,239.4Z","label":[316.9,286.5]},{"uf":"MA","name":"Maranhão","path":"M350.6,194.8L352.2,192.9L352.1,189.6L353.5,187.2L356.8,186.2L357.9,182.9L356.1,180.6L350.4,182.7L345.5,175.9L343.3,174.7L344.7,173.8L344.5,172.8L342.7,173.0L341.3,171.6L344.1,168.7L346.1,159.5L344.5,149.8L340.0,147.9L338.9,146.1L335.7,146.4L333.3,145.2L331.1,145.6L330.1,147.4L328.2,147.5L340.7,137.6L342.9,137.4L346.2,133.2L346.8,130.7L349.9,128.1L350.5,124.3L355.2,118.2L355.2,115.5L356.5,114.9L355.3,113.1L358.6,110.9L358.4,107.1L360.4,106.0L361.3,101.8L359.8,100.9L362.0,99.8L361.7,97.2L362.7,95.4L362.0,93.9L364.5,91.6L364.7,94.1L366.0,91.6L365.2,93.1L365.8,92.9L365.2,93.9L366.0,93.7L365.8,94.7L366.5,93.1L366.1,94.7L366.9,94.6L367.4,92.7L368.2,92.8L367.3,94.1L368.0,94.5L367.5,95.5L368.2,95.5L367.7,96.2L369.5,94.3L369.4,95.0L370.2,94.5L369.8,95.6L370.5,94.8L370.3,96.4L371.7,94.8L370.7,96.6L371.2,98.1L371.2,96.8L371.6,96.4L371.7,97.3L372.9,95.1L373.2,96.5L372.0,97.3L372.1,98.1L373.1,97.4L372.4,100.6L373.0,98.8L373.8,99.1L375.0,97.0L375.3,97.9L375.6,95.7L375.7,97.7L376.1,96.8L376.0,97.7L377.8,97.7L379.4,96.4L378.3,99.0L379.4,98.5L379.6,99.6L379.7,98.6L380.2,99.1L380.9,98.2L380.6,99.0L381.2,98.3L381.6,99.0L381.5,99.7L379.8,99.7L379.7,100.7L380.9,100.6L379.4,101.6L382.3,100.7L381.7,102.1L382.5,101.4L382.5,102.2L383.1,101.9L382.2,102.7L383.1,102.4L383.7,103.3L383.5,105.8L384.9,106.8L385.4,108.4L384.6,109.4L385.8,110.5L389.8,109.2L388.7,110.0L390.3,110.1L390.3,111.4L395.0,106.8L396.5,108.8L398.1,108.2L400.7,108.9L406.3,111.2L406.9,112.4L406.8,111.2L409.8,113.3L415.3,112.9L415.7,113.9L415.8,113.3L418.3,113.3L417.8,115.5L418.6,116.6L416.8,119.4L414.2,120.6L414.8,120.9L413.3,122.7L409.5,122.8L407.1,126.0L406.6,128.8L403.1,133.0L403.5,135.0L405.0,136.3L403.6,139.0L405.6,144.9L405.3,147.5L401.7,151.2L402.0,156.7L405.2,160.4L403.7,165.2L397.5,167.0L393.8,165.1L389.3,166.0L386.0,170.5L382.7,171.9L381.1,174.1L379.4,173.7L378.0,175.1L372.6,176.5L371.0,177.8L367.1,189.9L364.1,194.0L365.3,199.2L366.8,201.0L364.7,211.4L363.6,210.3L359.2,210.2L358.2,209.0L357.8,206.1L355.6,204.6L357.0,202.2L356.7,201.3L355.8,200.3L354.0,200.2L352.0,195.9L350.1,195.8L350.6,194.8ZM377.4,95.5L377.4,94.6L379.1,95.3L377.4,96.3L376.6,95.4L377.4,95.5Z","label":[373.4,143.8]},{"uf":"MG","name":"Minas Gerais","path":"M387.3,263.2L392.8,264.4L391.6,266.8L391.8,268.8L396.2,270.6L400.4,268.4L403.8,269.2L411.4,274.3L413.8,274.1L414.8,275.4L418.6,274.3L424.4,279.5L424.7,282.7L427.2,283.0L429.5,281.4L430.3,282.0L431.4,281.4L432.0,282.3L432.9,281.7L434.7,283.4L436.0,282.8L436.9,283.7L439.0,283.4L439.8,284.8L443.0,285.9L443.9,287.5L443.1,289.7L441.1,292.0L440.7,291.5L439.9,293.5L438.4,293.5L437.5,296.2L438.5,296.3L438.7,297.2L435.6,297.5L434.6,299.8L434.9,302.7L433.9,304.3L439.1,308.5L439.7,310.1L438.6,311.0L439.1,311.7L435.3,310.6L433.4,312.2L430.5,311.6L432.0,314.0L430.4,313.4L428.6,314.0L426.9,316.0L426.6,317.7L428.7,317.9L428.3,320.2L429.7,320.9L430.1,322.6L426.0,322.4L425.8,323.0L428.8,324.6L428.2,325.7L430.0,327.5L429.7,331.1L428.4,331.3L428.5,332.4L426.8,333.7L426.6,336.6L425.0,337.3L423.7,340.7L419.2,340.7L418.0,342.3L418.5,346.4L416.3,350.2L414.0,350.7L415.0,351.5L413.5,352.9L412.2,357.0L412.7,357.4L411.2,359.0L412.5,360.3L402.2,365.2L398.5,364.0L396.6,365.0L393.0,364.8L386.9,367.5L384.1,367.3L383.1,368.3L376.2,370.1L371.9,372.5L370.9,371.7L368.4,372.5L368.4,371.5L367.7,371.5L368.0,372.5L366.3,373.4L367.7,373.7L367.0,375.0L365.4,375.4L365.2,374.6L362.2,376.0L362.1,375.2L359.5,375.8L359.0,375.3L359.7,374.0L357.8,373.1L358.9,372.6L358.7,371.0L355.3,369.4L354.6,368.0L356.2,365.8L354.6,365.1L356.0,364.2L355.0,361.9L355.9,359.8L357.3,358.9L357.4,357.1L355.6,355.7L350.8,356.4L349.1,350.6L347.9,349.5L349.8,346.6L349.1,344.9L347.2,343.8L348.0,340.8L344.9,337.5L342.9,338.6L341.9,337.7L339.8,337.9L339.4,339.6L338.2,338.5L338.0,339.4L336.5,339.9L334.9,338.4L335.2,339.6L334.5,339.9L327.0,340.2L326.5,343.7L325.4,343.2L325.1,340.1L324.1,340.0L323.3,341.6L322.2,341.9L321.0,339.5L321.7,337.6L319.0,337.7L318.2,336.8L313.4,337.3L307.6,336.3L305.9,335.1L299.0,339.1L298.4,334.5L300.0,332.5L299.5,331.3L301.3,331.3L300.6,330.5L301.2,329.0L303.2,326.8L305.0,326.3L305.4,324.2L308.0,321.1L311.0,320.7L311.6,319.8L314.7,320.4L318.0,318.4L319.9,320.4L322.3,317.3L324.0,317.4L325.8,316.0L327.2,316.9L330.7,316.2L334.0,317.0L334.6,316.3L338.6,318.5L347.3,312.8L346.2,309.8L347.5,306.8L346.7,305.8L344.6,305.8L344.0,304.0L345.3,303.5L346.4,301.2L349.4,298.7L348.4,297.8L347.8,294.7L345.0,292.5L346.8,289.0L347.1,286.2L349.2,285.0L349.9,285.5L353.5,284.4L352.9,281.1L351.7,280.3L353.1,277.2L351.8,276.0L352.1,273.6L357.5,273.7L356.6,270.2L357.9,269.2L359.8,270.6L360.3,272.1L364.0,271.7L364.3,273.5L362.5,275.5L363.3,276.4L364.6,274.8L367.6,274.5L369.6,272.3L371.1,272.4L374.5,269.6L375.8,269.8L382.1,264.7L387.3,263.2Z","label":[381.3,317.9]},{"uf":"MS","name":"Mato Grosso do Sul","path":"M261.6,311.0L264.0,312.2L272.1,312.5L271.1,313.1L271.7,316.1L276.1,316.5L273.5,319.0L274.1,320.3L276.3,321.0L279.1,320.5L284.9,324.4L298.3,329.3L300.0,332.3L298.4,334.5L299.0,339.2L297.7,341.6L294.5,342.6L291.3,346.3L290.9,350.3L287.6,352.8L287.8,355.5L286.4,357.5L285.0,357.7L285.4,359.6L281.1,365.4L273.0,370.4L270.7,373.3L265.1,376.4L263.1,381.7L260.2,383.0L258.3,389.8L256.3,390.9L254.4,388.8L251.2,387.6L247.9,389.5L242.4,389.9L241.2,388.9L241.4,386.3L240.0,385.1L240.2,379.5L239.2,379.0L238.4,375.5L239.0,372.5L236.0,367.7L231.2,367.6L228.9,365.0L227.5,365.2L225.7,367.4L224.9,366.8L223.3,367.9L221.0,366.9L216.9,367.2L213.5,366.3L213.1,365.2L210.6,366.0L208.1,365.2L209.1,362.5L208.4,362.0L209.2,361.0L208.7,360.6L209.5,360.0L208.4,357.8L209.9,355.4L209.0,354.6L210.0,353.9L209.7,351.5L210.4,350.2L208.9,349.7L209.8,348.6L208.5,348.3L209.8,347.6L209.0,346.6L208.2,347.1L208.1,343.7L206.8,342.7L206.8,341.3L205.9,341.4L206.4,340.4L205.8,340.2L209.8,337.6L206.3,334.9L210.8,325.4L212.0,325.1L211.7,323.7L211.0,323.7L213.8,315.1L215.1,315.0L213.5,313.7L210.7,306.2L211.8,306.2L212.1,308.3L215.1,310.7L220.4,308.5L221.2,306.5L222.7,305.8L224.5,303.0L228.2,303.3L233.4,301.2L234.1,302.3L238.7,303.4L240.3,305.3L245.3,307.5L249.1,307.0L252.4,305.1L253.7,305.3L256.1,307.6L259.0,307.0L259.5,305.3L264.0,302.0L263.8,307.6L261.6,308.5L260.6,310.3L261.6,311.0Z","label":[249.0,342.2]},{"uf":"MT","name":"Mato Grosso","path":"M177.3,250.9L178.3,248.0L180.9,245.7L181.1,242.0L183.9,240.2L184.9,238.4L183.4,237.2L182.2,232.9L180.6,231.9L180.5,228.7L183.1,225.5L182.2,222.5L179.3,222.5L178.1,221.7L177.5,222.4L176.1,220.9L161.8,220.8L162.8,218.4L163.0,213.4L161.2,210.1L162.4,206.6L161.5,204.3L162.8,203.1L160.8,198.3L162.2,198.2L161.7,196.5L162.9,193.9L161.4,192.4L202.6,192.3L203.8,191.4L202.3,191.1L204.3,183.7L203.0,179.9L205.4,177.1L205.2,175.0L206.2,173.5L208.4,175.9L210.2,181.6L212.6,184.8L212.1,187.6L213.2,191.7L218.4,194.0L220.5,196.3L220.2,197.4L223.5,198.3L224.1,200.3L225.3,199.8L309.1,205.9L304.2,216.6L304.1,221.9L302.5,226.0L302.4,228.0L303.5,228.7L302.6,230.6L303.7,232.5L303.1,236.6L304.0,239.6L302.8,242.0L303.6,242.5L303.9,244.7L305.5,245.5L304.3,247.0L304.4,250.2L303.4,252.7L300.7,256.4L301.2,261.2L300.1,261.4L299.3,263.8L299.5,266.8L298.5,270.2L297.1,272.8L295.5,273.5L294.6,272.6L290.5,275.3L289.9,279.3L288.9,280.0L289.1,281.4L287.6,283.7L282.7,284.6L281.5,287.1L279.3,287.7L278.9,289.4L277.1,289.9L277.9,292.9L276.4,293.7L275.8,295.6L272.8,297.2L272.3,299.9L270.2,302.9L269.8,308.0L272.1,312.5L264.0,312.2L260.6,310.9L261.9,308.1L263.8,307.6L264.0,302.0L259.5,305.3L259.0,307.0L255.6,307.6L253.7,305.3L252.4,305.1L249.1,307.0L245.3,307.5L240.3,305.3L238.7,303.4L234.8,302.6L232.5,301.2L228.2,303.3L224.5,303.0L222.7,305.8L221.2,306.5L220.4,308.5L215.0,310.7L212.1,308.3L211.5,305.9L209.5,304.8L207.4,305.4L202.9,301.4L201.8,296.4L202.1,294.1L203.7,292.4L203.8,289.4L202.4,290.2L179.8,289.4L178.9,279.1L174.7,274.4L178.8,274.3L178.5,268.1L175.6,262.4L177.0,259.8L175.6,258.1L175.9,257.3L172.7,255.9L173.8,254.4L177.0,252.9L177.3,250.9Z","label":[235.1,246.3]},{"uf":"PA","name":"Pará","path":"M351.6,87.5L351.8,89.4L353.0,87.6L352.9,89.2L353.4,88.8L353.7,89.7L354.2,88.7L354.3,90.0L354.6,88.7L355.2,89.2L355.7,88.2L355.2,90.7L356.5,90.7L356.8,89.7L357.0,90.7L358.5,89.1L357.5,90.6L357.9,91.7L358.6,91.2L358.7,91.8L358.9,90.8L359.2,91.7L359.5,90.9L360.0,92.1L360.6,89.9L361.5,89.6L360.4,93.2L361.8,90.9L361.8,93.0L363.1,91.2L361.9,94.6L362.7,95.4L361.7,97.2L362.0,99.8L359.8,100.9L361.3,101.8L360.4,106.0L358.4,107.1L358.6,110.9L355.3,113.1L356.5,114.9L355.2,115.5L355.2,118.2L350.5,124.3L349.9,128.1L346.8,130.7L346.2,133.2L343.1,137.2L340.7,137.6L328.2,147.5L330.2,148.5L333.0,148.1L333.7,149.5L336.2,150.8L335.5,152.4L334.2,152.6L335.0,155.3L333.7,155.9L334.2,157.3L332.3,158.5L333.0,160.9L331.4,160.6L330.0,161.9L329.5,164.5L324.8,166.2L322.2,168.1L322.6,172.1L320.0,176.1L320.8,177.9L323.1,179.5L322.2,184.6L317.4,192.8L315.3,193.8L311.4,198.9L309.1,205.9L225.3,199.8L224.1,200.3L223.5,198.3L220.2,197.4L220.5,196.3L218.4,194.0L213.2,191.7L212.1,187.6L212.6,184.8L210.2,181.6L209.3,177.8L205.8,173.1L205.3,170.7L202.4,167.8L201.8,165.1L204.6,162.1L228.8,109.9L228.0,109.5L228.9,107.6L231.5,106.2L232.7,104.3L229.8,105.9L227.2,105.8L225.2,106.8L224.0,106.2L224.6,104.4L220.6,102.9L218.9,100.4L215.9,100.4L208.6,96.3L207.8,92.4L205.9,94.0L203.3,92.4L202.4,89.6L198.8,86.8L198.6,83.7L196.7,82.5L196.4,62.0L197.3,62.8L199.0,61.1L201.6,61.5L202.1,60.2L201.4,59.0L203.0,58.9L203.8,57.2L208.0,58.5L208.1,56.4L210.7,55.5L213.8,56.0L217.0,52.0L218.0,52.8L219.9,51.6L220.8,53.1L223.6,53.9L224.6,53.0L228.3,52.6L234.6,54.0L235.3,51.5L232.2,48.6L232.9,47.1L233.6,47.7L234.3,45.1L237.7,46.8L242.0,46.6L242.8,45.3L245.2,44.6L245.7,45.2L247.0,44.3L249.7,47.9L249.4,51.2L250.3,54.9L256.0,55.4L257.5,56.9L258.1,56.6L259.0,58.7L259.9,58.2L261.9,59.9L264.6,59.7L264.5,60.6L266.0,60.6L266.0,62.2L267.5,61.8L267.9,62.7L267.0,63.3L267.7,65.9L271.6,69.1L270.7,73.0L273.9,79.9L277.0,81.9L277.7,85.6L279.2,85.7L279.0,89.1L280.8,89.4L280.4,91.6L284.5,92.9L285.1,94.1L286.2,92.6L287.5,93.2L289.8,91.9L290.1,88.3L296.2,79.5L303.3,75.6L306.3,70.2L310.0,68.8L311.5,70.5L311.2,73.6L313.3,74.0L316.2,73.2L319.8,77.8L326.1,81.0L332.6,81.3L332.9,82.8L331.9,84.5L338.0,87.2L339.3,85.2L340.1,85.6L339.8,86.9L340.6,85.1L341.0,86.3L341.9,85.0L342.9,87.1L343.4,85.7L344.0,85.9L344.7,87.9L344.8,85.7L345.6,85.7L345.4,86.5L346.8,85.7L348.2,86.3L347.8,87.2L348.8,86.6L348.8,88.1L349.9,86.6L350.2,88.5L350.4,87.5L351.6,87.5Z","label":[272.2,129.7]},{"uf":"PB","name":"Paraíba","path":"M478.1,156.5L479.0,158.0L476.2,160.3L475.8,162.7L474.7,163.2L474.7,165.2L477.3,165.0L478.0,166.7L481.0,165.2L481.6,166.3L483.2,165.5L484.5,166.9L484.0,168.2L484.7,168.8L487.4,166.6L487.2,163.8L488.3,163.8L487.1,161.8L488.9,159.8L490.1,159.7L490.8,161.7L493.2,161.3L494.3,162.4L498.4,161.8L504.8,163.3L507.4,162.3L509.7,171.0L509.3,176.1L507.5,176.0L506.2,174.2L504.1,173.9L501.5,175.2L500.5,174.9L500.3,177.4L494.0,179.6L491.2,178.9L490.7,179.8L488.5,179.6L488.2,180.9L486.1,181.3L485.7,183.5L481.6,185.9L478.9,184.2L478.5,181.5L476.4,181.7L479.2,178.7L478.7,176.7L481.2,175.3L480.7,174.0L478.0,172.6L474.5,173.8L474.1,175.1L471.5,176.5L471.4,177.6L469.9,177.4L468.4,179.1L467.1,179.0L467.0,179.8L465.9,179.1L464.3,179.8L463.4,177.8L460.3,178.8L458.7,176.9L461.1,172.8L459.1,171.5L459.3,169.6L458.1,169.0L458.1,167.8L460.0,166.3L459.6,163.6L461.3,161.3L460.3,160.9L462.1,160.3L461.7,161.2L466.5,162.8L471.2,159.8L471.3,158.5L478.1,156.5Z","label":[483.2,170.6]},{"uf":"PE","name":"Pernambuco","path":"M478.7,173.0L480.7,174.0L481.2,175.3L478.7,176.7L479.2,178.7L476.4,181.7L478.5,181.5L478.9,184.2L481.1,185.9L485.7,183.5L486.1,181.3L488.2,180.9L488.5,179.6L490.7,179.8L491.2,178.9L494.0,179.6L500.3,177.4L500.5,174.9L501.5,175.2L504.1,173.9L506.2,174.2L507.5,176.0L509.2,176.1L509.4,180.9L505.0,193.9L501.0,192.6L497.3,193.9L496.7,193.0L495.4,193.1L492.4,194.4L492.6,195.2L490.5,196.3L491.1,197.2L488.3,197.8L486.4,199.4L482.7,198.5L481.6,200.0L479.6,198.1L478.0,198.1L474.6,194.5L471.9,194.9L471.1,193.1L468.3,196.9L466.8,197.2L464.9,199.3L463.8,196.5L464.2,195.3L461.7,195.0L461.8,193.0L460.7,192.7L459.3,194.7L457.5,192.2L452.0,191.2L451.3,189.3L450.0,188.9L446.0,190.6L446.0,192.4L443.4,192.8L442.6,195.6L440.3,196.4L438.8,195.7L437.6,199.6L433.9,201.3L431.9,200.9L433.3,197.1L431.3,196.0L430.1,192.9L428.7,193.0L427.5,191.1L424.3,191.2L426.2,190.4L429.0,187.2L430.0,187.8L430.4,186.6L431.4,186.7L431.8,185.3L434.3,183.8L435.0,180.3L433.2,178.9L433.6,176.8L432.7,175.1L434.9,174.1L437.9,173.9L438.8,174.6L446.4,173.0L450.9,176.0L451.0,177.6L453.1,178.3L453.8,180.2L455.4,180.0L455.9,178.8L458.6,177.1L460.3,178.8L463.4,177.8L464.3,179.8L465.9,179.1L467.0,179.8L467.1,179.0L468.4,179.1L469.9,177.4L471.4,177.6L471.5,176.5L474.1,175.1L474.5,173.8L477.4,172.6L478.7,173.0Z","label":[468.0,186.2]},{"uf":"PI","name":"Piauí","path":"M419.4,114.5L421.3,115.8L424.8,116.0L425.7,117.1L423.5,121.8L425.1,123.4L424.2,124.3L424.5,125.8L425.9,126.2L425.1,127.7L426.1,129.2L425.7,130.5L427.5,130.5L427.1,131.6L427.8,132.2L425.9,137.4L426.7,138.7L425.8,141.3L427.3,143.6L430.0,145.4L430.2,156.6L431.9,160.2L431.6,162.1L432.5,164.5L437.2,166.4L434.9,174.1L432.7,175.1L433.6,176.8L433.2,178.9L435.0,180.3L434.3,183.8L431.8,185.3L431.4,186.7L430.4,186.6L430.0,187.8L429.0,187.2L426.2,190.4L424.0,191.2L421.9,194.5L419.5,195.3L418.0,198.2L412.2,199.0L409.6,201.4L406.6,201.9L406.1,203.0L403.7,201.7L403.2,200.2L399.3,200.5L396.5,198.5L391.9,202.2L392.8,204.9L394.5,205.9L393.8,206.8L394.4,208.1L393.0,209.0L391.1,213.5L389.6,213.4L388.3,216.3L385.6,215.1L383.5,216.4L382.5,216.1L381.3,216.9L381.3,217.9L377.9,220.1L376.1,218.9L373.8,218.7L371.3,216.1L371.9,213.8L369.3,209.4L367.6,210.0L366.7,211.5L364.7,211.4L366.8,201.0L365.2,198.9L364.1,194.2L364.5,192.6L367.1,189.9L370.6,178.7L372.6,176.5L378.0,175.1L379.4,173.7L381.1,174.1L382.7,171.9L386.0,170.5L389.3,166.0L393.8,165.1L397.5,167.0L403.7,165.2L405.2,160.4L402.0,156.7L401.7,151.2L405.3,147.5L405.6,144.9L403.6,139.0L405.0,136.3L403.5,135.0L403.1,133.0L406.6,128.8L407.1,126.0L409.4,122.9L413.3,122.7L414.8,120.9L414.2,120.6L416.1,120.1L418.3,117.3L418.0,114.1L418.4,113.6L419.4,114.5Z","label":[403.4,174.0]},{"uf":"PR","name":"Paraná","path":"M285.2,370.9L291.7,373.1L295.6,372.7L297.0,373.8L300.4,374.3L302.4,376.5L303.4,375.6L307.9,376.4L312.2,375.7L313.2,377.7L315.6,378.4L317.6,382.5L316.8,383.7L317.9,386.1L317.1,388.1L322.4,394.5L320.9,397.2L321.0,398.7L330.4,398.7L331.5,399.6L330.4,403.7L331.1,404.3L332.7,402.7L333.7,403.9L334.7,402.7L336.0,404.9L335.5,405.5L336.5,406.3L337.7,406.0L335.2,409.1L334.0,409.4L334.1,410.4L332.3,411.4L330.3,415.7L322.7,416.0L317.8,419.1L312.8,416.1L312.4,416.8L312.1,416.1L310.6,416.8L309.8,416.3L309.6,417.0L308.7,416.4L307.6,417.7L304.6,416.0L304.8,416.8L303.8,416.8L302.7,419.2L300.7,419.1L300.3,419.8L299.9,419.0L299.7,419.7L297.9,419.0L295.8,420.2L295.1,421.4L296.0,424.0L293.7,425.3L292.4,423.6L287.6,423.8L283.6,421.8L278.2,421.4L276.4,420.4L271.8,421.1L269.3,419.2L265.8,419.8L264.6,419.3L262.1,415.4L261.5,411.1L260.6,411.4L259.8,410.3L258.7,411.0L258.8,409.4L257.3,410.1L257.7,410.6L255.1,410.7L254.5,412.0L252.3,410.7L252.0,408.9L254.4,405.1L254.0,403.5L256.7,394.7L255.6,391.5L258.6,389.5L260.2,383.0L263.1,381.7L265.1,376.4L273.3,371.4L276.9,372.2L278.2,371.4L279.5,372.2L282.8,372.0L283.1,372.8L284.0,372.4L284.4,370.7L285.2,370.9Z","label":[291.0,398.3]},{"uf":"RJ","name":"Rio de Janeiro","path":"M383.3,380.8L380.5,381.8L378.6,380.2L379.7,376.8L383.6,375.0L386.3,374.9L387.9,372.8L384.9,371.4L383.4,372.3L381.8,371.9L379.7,369.0L383.1,368.3L384.1,367.3L386.9,367.5L393.0,364.8L396.6,365.0L398.5,364.0L402.2,365.2L412.5,360.3L411.2,359.0L412.7,357.4L412.2,357.0L413.5,352.9L415.0,351.5L414.0,350.7L416.3,350.2L417.7,347.9L419.7,349.3L419.7,352.6L423.2,353.8L427.8,353.8L429.6,354.9L428.0,357.7L428.9,358.9L429.1,364.2L420.0,367.9L416.5,370.9L416.1,373.1L417.8,373.8L415.6,375.7L415.8,377.0L409.4,376.1L402.3,376.8L401.2,376.2L402.7,373.6L401.9,372.8L399.4,374.1L401.0,375.9L400.5,376.9L395.8,378.0L393.8,377.7L395.5,377.5L392.1,375.7L389.6,376.8L389.4,376.2L387.6,377.7L386.7,377.6L386.8,376.9L385.4,377.4L386.1,376.4L384.6,376.2L384.4,377.3L381.0,378.1L380.7,380.0L381.6,379.4L381.0,380.3L382.0,380.0L381.6,380.9L382.4,380.0L383.3,380.8ZM387.0,378.2L388.8,379.3L385.5,379.9L385.1,379.2L387.0,378.2Z","label":[407.5,366.5]},{"uf":"RN","name":"Rio Grande do Norte","path":"M479.0,142.2L481.6,142.0L485.0,144.2L494.4,143.5L500.6,145.1L503.6,149.2L507.4,162.3L504.8,163.3L498.4,161.8L494.3,162.4L493.2,161.3L490.8,161.7L490.1,159.7L488.9,159.8L487.1,161.8L488.3,163.8L487.2,163.8L487.4,166.6L484.7,168.8L484.0,168.2L484.5,166.9L483.2,165.5L481.6,166.3L481.0,165.2L478.0,166.7L477.3,165.0L474.7,165.2L474.7,163.2L475.8,162.7L476.2,160.3L479.0,158.0L478.7,156.6L471.3,158.5L471.2,159.8L466.5,162.8L461.7,161.2L462.1,160.3L460.5,160.5L462.2,157.1L464.0,157.1L465.9,155.3L467.4,152.5L466.9,151.7L469.3,149.5L472.7,142.0L477.7,140.8L479.0,142.2Z","label":[485.2,153.9]},{"uf":"RO","name":"Rondônia","path":"M98.0,206.4L96.4,206.8L93.5,205.6L97.5,203.2L98.9,201.5L98.7,200.3L104.4,200.4L106.7,202.6L109.2,200.4L111.4,201.1L111.2,199.1L113.8,198.3L114.6,200.5L115.7,200.6L118.1,197.9L118.1,195.6L119.1,194.9L128.1,194.5L128.1,191.7L129.6,191.3L130.2,189.6L131.0,189.5L130.3,188.3L130.7,186.3L131.7,185.7L133.0,186.2L134.9,181.6L145.0,181.8L147.2,183.4L148.8,186.7L151.1,186.9L151.6,189.9L153.6,189.7L154.4,192.4L157.2,193.4L158.1,191.5L159.7,190.9L162.9,193.9L161.7,196.5L162.2,198.2L160.8,198.3L162.8,203.1L161.5,204.3L162.4,206.6L161.2,210.1L163.0,213.4L162.8,218.4L161.8,220.8L176.1,220.9L177.5,222.4L178.1,221.7L179.3,222.5L182.2,222.5L183.0,226.4L180.5,228.7L180.6,231.9L182.2,232.9L183.4,237.2L184.9,238.4L183.9,240.2L181.1,242.0L180.9,245.7L178.3,248.0L177.0,252.9L173.8,254.4L172.8,256.0L170.0,254.0L168.9,254.1L168.8,253.3L158.1,254.1L154.5,250.4L153.8,248.5L150.6,248.7L147.5,246.5L146.0,247.2L144.4,245.1L142.8,244.8L141.0,242.0L139.2,242.9L132.9,239.6L130.7,240.9L127.0,239.9L126.2,240.5L123.5,238.8L123.4,236.9L120.7,236.3L120.8,235.1L120.1,236.0L120.1,235.2L119.1,235.5L119.1,234.1L116.5,233.8L115.9,230.2L114.7,230.8L113.6,230.2L114.3,227.9L113.0,227.5L112.6,225.6L113.2,225.1L112.3,224.3L112.9,223.7L112.3,222.8L113.7,220.8L112.2,218.3L112.5,216.7L111.6,216.1L111.4,214.3L113.3,210.9L112.7,208.7L113.3,205.9L111.9,203.9L111.2,203.7L109.7,206.0L106.9,204.5L106.7,205.3L105.0,204.8L98.0,206.4Z","label":[145.0,219.8]},{"uf":"RR","name":"Roraima","path":"M183.1,37.1L182.1,43.1L183.3,47.2L185.6,48.4L185.2,53.8L186.4,53.7L186.0,55.1L187.9,55.5L191.3,59.7L196.5,61.6L196.4,74.6L181.5,74.6L176.8,84.6L178.1,87.2L175.8,88.0L175.1,89.4L172.2,89.2L170.0,85.2L167.9,84.5L166.2,84.5L166.1,85.3L163.4,86.2L162.0,87.8L161.9,91.9L160.8,94.9L162.6,98.5L160.7,96.6L157.4,96.1L155.8,92.8L149.5,88.2L149.6,86.9L150.7,87.5L152.2,86.5L152.0,84.7L153.6,82.3L150.5,76.8L150.2,73.1L149.1,71.5L149.0,69.0L150.1,67.8L149.9,63.9L148.9,63.4L147.7,59.3L145.5,57.3L146.6,55.7L146.8,52.8L142.1,51.5L141.2,49.8L139.0,49.9L137.8,48.8L137.7,46.3L133.8,47.1L129.2,45.5L130.2,42.5L129.1,39.8L127.0,37.6L126.7,33.4L127.6,31.7L126.3,29.9L123.4,28.5L119.3,22.6L121.1,22.8L122.7,24.7L127.8,24.3L130.5,27.7L131.8,26.7L134.3,27.1L134.1,25.8L136.4,28.0L137.4,27.7L137.4,26.3L140.3,26.6L140.1,28.2L141.6,28.6L143.5,31.1L145.1,29.4L146.4,30.1L146.3,25.5L148.8,25.8L148.8,24.6L150.3,23.6L154.1,25.0L156.2,23.7L156.9,24.7L159.1,22.7L161.7,22.7L163.0,20.3L164.9,20.4L164.8,19.0L169.1,19.3L170.2,16.8L172.2,16.2L174.4,13.7L172.6,10.1L176.4,10.6L179.4,9.5L182.1,12.4L181.6,16.9L179.9,19.4L184.7,19.9L186.1,21.0L185.6,23.7L187.0,24.3L186.6,25.1L188.3,26.7L186.3,29.9L183.9,31.1L184.5,34.4L183.1,37.1Z","label":[163.8,50.9]},{"uf":"RS","name":"Rio Grande do Sul","path":"M285.4,488.5L284.5,488.3L284.8,489.2L285.3,488.8L285.1,489.8L283.1,490.7L282.7,491.9L285.2,494.5L284.7,496.1L282.0,498.7L277.8,508.6L267.8,516.8L266.2,516.0L266.0,515.0L267.4,513.5L267.2,509.4L268.8,507.7L269.6,508.4L270.4,507.5L271.4,504.3L272.1,504.8L273.2,503.5L273.0,504.4L275.1,505.9L276.6,504.8L278.4,500.8L277.0,498.2L277.9,495.9L276.0,496.7L275.3,498.3L276.4,499.3L273.7,500.2L272.0,502.5L267.8,501.6L264.6,499.0L263.3,495.0L260.4,492.9L258.7,493.1L254.1,489.5L252.4,487.0L249.1,486.7L246.9,484.5L246.0,485.3L243.9,484.4L242.5,481.5L239.5,478.8L238.4,479.3L238.4,480.4L233.9,482.1L233.7,478.2L223.5,469.3L220.1,469.1L218.2,471.8L214.2,471.7L212.6,470.4L215.0,469.4L216.8,467.6L217.4,465.6L219.6,464.8L223.5,461.2L226.4,456.5L228.6,456.0L230.3,452.2L234.0,449.8L233.7,448.8L235.6,448.1L235.8,446.6L238.0,447.5L238.3,446.3L237.0,445.1L239.1,443.5L239.8,444.1L240.6,443.0L241.2,443.3L244.3,440.2L246.6,440.1L245.9,439.2L247.8,439.1L249.4,435.9L251.1,436.5L252.4,434.9L253.2,435.6L254.6,434.3L256.4,434.8L257.6,432.4L259.0,432.9L261.6,430.7L264.3,431.1L264.7,431.9L268.3,430.2L269.2,430.7L269.0,431.8L272.1,431.0L272.6,430.0L273.3,431.9L273.5,431.1L274.9,431.2L277.0,432.7L280.4,431.8L281.1,432.9L282.9,432.4L282.4,432.9L283.1,433.3L283.7,432.5L284.7,433.5L285.9,433.3L287.4,435.8L290.9,435.4L291.6,436.6L292.8,436.4L293.4,437.5L294.0,437.1L295.9,439.1L297.9,439.8L303.9,447.1L308.8,447.6L310.0,448.5L310.3,447.6L310.7,448.3L315.1,448.0L316.0,450.0L314.8,449.9L314.1,451.3L312.8,451.5L313.0,454.7L311.9,455.9L312.6,456.1L311.8,457.4L310.7,457.1L310.8,457.9L310.2,457.5L309.8,458.2L311.5,459.6L310.5,458.4L312.4,457.6L315.8,459.2L311.4,465.7L307.7,474.5L302.0,482.4L295.8,488.4L287.5,493.4L284.9,496.0L285.8,493.1L284.7,491.9L287.9,492.3L288.8,491.5L287.8,491.4L290.4,491.0L292.7,488.3L293.3,489.1L293.4,487.2L294.1,487.9L295.7,487.2L296.9,484.8L296.8,481.9L299.3,481.5L299.4,479.6L300.2,479.8L302.9,477.7L302.5,472.8L303.9,473.1L303.9,472.3L304.3,473.2L303.5,473.8L304.6,474.1L305.0,471.3L304.2,470.5L303.4,470.6L303.4,471.8L300.0,472.3L299.9,473.7L298.2,473.0L298.5,471.5L295.8,470.4L296.0,468.6L295.2,468.0L295.1,471.8L297.8,473.0L297.2,474.1L296.9,473.3L295.6,474.1L295.2,477.8L294.9,476.4L294.0,476.5L294.2,479.4L293.2,479.3L292.5,480.4L293.3,482.1L290.8,483.0L291.0,484.5L286.9,485.1L285.6,490.0L285.4,488.5Z","label":[268.9,464.2]},{"uf":"SC","name":"Santa Catarina","path":"M263.6,423.3L264.6,419.3L266.7,419.9L268.1,419.1L271.8,421.1L276.4,420.4L278.2,421.4L283.6,421.8L287.6,423.8L292.4,423.6L293.7,425.3L296.0,424.0L295.1,421.4L295.8,420.2L297.9,419.0L299.7,419.7L299.9,419.0L300.3,419.8L300.7,419.1L302.7,419.2L303.8,416.8L304.8,416.8L304.6,416.0L307.6,417.7L308.7,416.4L309.6,417.0L309.8,416.3L310.6,416.8L312.1,416.1L312.4,416.8L312.8,416.1L317.8,419.1L322.7,416.0L329.6,415.4L330.3,415.7L330.4,418.0L331.6,419.0L329.1,425.3L330.4,426.2L329.6,427.7L330.6,429.1L330.2,430.7L332.0,430.9L331.8,431.7L330.0,432.2L331.2,433.9L329.6,435.3L330.6,436.7L329.6,437.4L330.5,440.7L328.4,448.5L327.5,449.9L320.9,453.7L315.8,459.2L312.4,457.6L310.5,458.4L311.5,459.6L309.8,458.2L312.5,456.5L312.8,455.7L311.9,455.9L313.0,454.7L312.8,451.5L314.1,451.3L314.8,449.9L316.0,450.1L315.1,448.0L310.7,448.3L310.3,447.6L310.0,448.5L308.8,447.6L303.9,447.1L297.9,439.8L295.9,439.1L294.0,437.1L293.4,437.5L292.8,436.4L291.6,436.6L290.9,435.4L287.4,435.8L285.9,433.3L284.7,433.5L283.7,432.5L283.1,433.3L282.4,432.9L282.9,432.4L281.1,432.9L280.4,431.8L277.0,432.7L274.9,431.2L273.5,431.1L273.3,431.9L272.6,430.0L272.1,431.0L269.0,431.8L269.2,430.7L268.3,430.2L266.4,430.8L266.6,431.6L262.4,431.3L262.6,429.6L264.3,428.3L263.2,425.4L263.6,423.3ZM332.7,434.1L333.3,434.8L331.7,439.3L330.6,439.9L330.7,436.7L331.4,436.2L330.9,435.0L332.7,434.1Z","label":[305.6,432.2]},{"uf":"SE","name":"Sergipe","path":"M468.5,201.9L481.1,207.7L482.0,209.7L486.1,211.5L486.7,213.4L488.1,213.3L488.9,214.5L483.4,217.2L476.7,226.8L474.3,228.1L472.5,227.7L472.1,228.4L468.7,226.5L468.3,223.5L465.0,219.9L465.2,217.2L468.0,217.9L470.4,217.0L469.8,213.5L471.4,212.3L470.2,208.0L468.0,206.9L468.4,205.6L467.5,203.9L468.2,203.4L467.5,202.4L468.5,201.9Z","label":[475.2,215.6]},{"uf":"SP","name":"São Paulo","path":"M362.2,388.2L361.6,389.9L360.3,390.6L359.0,389.6L358.8,390.4L351.8,393.6L350.9,395.4L340.5,402.3L339.1,405.1L336.7,407.0L337.7,406.0L336.5,406.3L335.5,405.5L336.0,404.9L334.7,402.7L333.7,403.9L332.7,402.7L331.1,404.3L330.4,403.7L331.5,399.7L330.4,398.7L321.0,398.7L320.9,397.2L322.4,394.5L317.1,388.1L317.9,386.1L316.8,383.7L317.6,382.5L316.2,379.1L313.2,377.7L312.2,375.7L307.9,376.4L303.4,375.6L302.4,376.5L300.4,374.3L297.0,373.8L295.6,372.7L291.7,373.1L284.7,370.7L283.1,372.8L282.8,372.0L279.5,372.2L278.5,371.4L276.9,372.2L273.3,371.4L271.9,372.6L271.6,371.8L281.1,365.4L285.4,359.6L285.0,357.7L286.4,357.5L287.8,355.5L287.6,352.8L290.9,350.3L291.3,346.3L294.5,342.6L297.7,341.6L299.4,338.4L303.5,336.8L304.5,335.6L305.9,335.1L307.6,336.3L313.4,337.3L318.2,336.8L319.0,337.7L321.6,337.5L321.0,339.0L321.6,341.4L322.7,342.0L324.1,340.0L325.1,340.1L325.4,343.2L326.3,343.7L327.0,340.2L334.5,339.9L335.2,339.6L334.9,338.4L336.5,339.9L338.0,339.4L338.2,338.5L339.4,339.6L339.8,337.9L341.9,337.7L342.9,338.6L344.9,337.5L348.0,340.8L347.2,343.8L349.1,344.9L349.8,346.6L347.9,349.5L349.1,350.6L350.8,356.4L355.6,355.7L357.4,357.1L357.3,358.9L355.9,359.8L355.0,361.9L356.0,364.2L354.6,365.1L356.2,365.8L354.6,368.0L355.3,369.4L358.7,371.0L358.9,372.6L357.8,373.1L359.7,374.0L359.0,375.3L359.5,375.8L362.1,375.2L362.2,376.0L365.2,374.6L365.4,375.4L366.7,375.1L367.7,373.7L366.3,373.4L368.0,372.5L367.7,371.5L368.4,371.5L368.4,372.5L370.8,371.7L371.9,372.5L375.4,370.4L379.5,369.3L381.8,371.9L383.4,372.3L384.9,371.4L387.9,372.8L386.3,374.9L383.6,375.0L379.8,376.7L378.4,379.9L380.6,381.8L378.2,381.3L376.2,382.5L376.8,383.0L375.9,383.8L374.8,383.4L374.3,384.6L371.7,385.1L371.7,387.7L366.0,386.8L362.2,388.2ZM372.8,388.9L371.0,388.9L372.6,386.4L374.0,387.1L373.2,388.3L374.1,389.2L372.8,388.9Z","label":[328.5,367.4]},{"uf":"TO","name":"Tocantins","path":"M350.6,194.8L350.1,195.8L352.0,195.9L354.0,200.2L355.8,200.3L356.7,201.3L357.0,202.2L355.6,204.6L357.8,206.1L358.2,209.0L359.2,210.2L363.6,210.3L364.0,211.4L366.7,211.5L367.9,210.2L367.6,212.1L366.2,213.7L361.3,216.4L360.3,219.8L358.8,220.9L357.9,223.5L356.0,224.8L357.8,227.7L362.9,229.1L359.9,229.2L359.1,232.3L361.8,232.7L358.8,234.4L359.4,238.4L360.7,240.4L362.0,240.3L360.4,241.6L360.0,246.3L362.4,246.1L359.3,246.9L358.6,244.7L358.1,246.6L354.2,246.6L349.9,249.4L348.0,249.5L347.3,250.4L346.1,250.0L345.5,250.8L344.8,249.4L342.8,248.4L342.9,252.0L342.2,253.1L340.3,251.0L338.4,251.1L337.3,250.1L335.9,251.0L335.7,248.9L332.3,250.8L331.4,248.7L330.4,251.1L330.2,247.8L328.5,246.9L327.0,244.5L325.3,246.4L323.5,244.3L322.0,245.4L320.4,248.3L320.2,250.6L312.8,246.4L308.0,244.7L308.1,242.8L310.2,239.1L307.2,241.1L305.4,245.2L303.9,244.7L303.6,242.5L302.8,242.0L304.0,239.6L303.1,236.6L303.7,232.5L302.6,230.6L303.5,228.7L302.4,228.0L302.4,226.7L304.1,221.9L304.2,216.6L306.6,212.6L306.9,209.7L310.1,203.9L311.4,198.9L315.3,193.8L317.4,192.8L321.5,186.5L323.1,179.5L320.8,177.9L320.0,176.1L322.6,172.1L322.2,168.1L324.8,166.2L329.4,164.6L329.6,162.6L331.4,160.6L333.0,160.9L332.3,158.5L334.2,157.3L333.7,155.9L335.0,155.3L334.2,152.6L335.5,152.4L336.3,151.0L333.7,149.5L333.0,148.1L330.2,148.5L328.2,147.5L330.1,147.4L331.1,145.6L333.3,145.2L335.7,146.4L338.9,146.1L340.0,147.9L344.5,149.8L346.1,159.5L344.1,168.7L341.3,171.6L342.7,173.0L344.5,172.8L344.7,173.8L343.3,174.7L345.5,175.9L350.4,182.7L356.1,180.6L357.9,182.9L356.8,186.2L353.5,187.2L352.1,189.6L352.2,192.9L350.6,194.8Z","label":[333.7,209.9]},{"uf":"DF","name":"Distrito Federal","path":"M347.0,286.5L334.4,286.7L335.4,279.5L345.6,279.5L346.9,280.7L346.1,285.8L347.0,286.5Z","label":[340.6,283.2]}];
+const IE_UNITS = {"dieselaguaboa":{"uf":"MT","region":"Centro-Oeste","city":"Água Boa"},"dieselananindeua":{"uf":"PA","region":"Norte","city":"Ananindeua"},"dieselbacabal":{"uf":"MA","region":"Nordeste","city":"Bacabal"},"dieselcuiaba":{"uf":"MT","region":"Centro-Oeste","city":"Cuiabá"},"dieselmacapa":{"uf":"AP","region":"Norte","city":"Macapá"},"dieselparticipacoes":{"uf":"PA","region":"Norte","city":"Belém (holding)"},"dieselportovelho":{"uf":"RO","region":"Norte","city":"Porto Velho"},"dieselrondoniajiparana":{"uf":"RO","region":"Norte","city":"Ji-Paraná"},"dieselrondonopolis":{"uf":"MT","region":"Centro-Oeste","city":"Rondonópolis"},"dieselsaoluis":{"uf":"MA","region":"Nordeste","city":"São Luís"},"dieselsinop":{"uf":"MT","region":"Centro-Oeste","city":"Sinop"},"dieselteresina":{"uf":"PI","region":"Nordeste","city":"Teresina"},"dieselurucui":{"uf":"PI","region":"Nordeste","city":"Uruçuí"},"dieselvilhena":{"uf":"RO","region":"Norte","city":"Vilhena"},"gidrondonopolis":{"uf":"MT","region":"Centro-Oeste","city":"Rondonópolis"},"gidltda":{"uf":"PA","region":"Norte","city":"Pará (núcleo Locação Pará)"},"gidltdateresina":{"uf":"PI","region":"Nordeste","city":"Teresina"},"monacojeeprambarradogarca":{"uf":"MT","region":"Centro-Oeste","city":"Barra do Garças"},"monacoleapmotorbelem":{"uf":"PA","region":"Norte","city":"Belém"},"monacoveiculosaltamira":{"uf":"PA","region":"Norte","city":"Altamira"},"motocenterbelem":{"uf":"PA","region":"Norte","city":"Belém"},"motocentercapanema":{"uf":"PA","region":"Norte","city":"Capanema"},"motocentercuiaba":{"uf":"MT","region":"Centro-Oeste","city":"Cuiabá"},"motocenterlucasdorioverde":{"uf":"MT","region":"Centro-Oeste","city":"Lucas do Rio Verde"},"motocentermacapalagoa":{"uf":"AP","region":"Norte","city":"Macapá"},"motocentermacapalagoafilial":{"uf":"AP","region":"Norte","city":"Macapá"},"motocentersinop":{"uf":"MT","region":"Centro-Oeste","city":"Sinop"},"motocentersorriso":{"uf":"MT","region":"Centro-Oeste","city":"Sorriso"},"motocentertangara":{"uf":"MT","region":"Centro-Oeste","city":"Tangará da Serra"},"veiculosbr":{"uf":"PA","region":"Norte","city":"Pará (núcleo Fiat Pará)"},"veiculosdoca":{"uf":"PA","region":"Norte","city":"Belém"},"veiculosaguaboa":{"uf":"MT","region":"Centro-Oeste","city":"Água Boa"},"veiculosbarradogarcas":{"uf":"MT","region":"Centro-Oeste","city":"Barra do Garças"},"veiculosconfresa":{"uf":"MT","region":"Centro-Oeste","city":"Confresa"},"veiculosjatai":{"uf":"GO","region":"Centro-Oeste","city":"Jataí"},"veiculosmineiros":{"uf":"GO","region":"Centro-Oeste","city":"Mineiros"},"veiculosprimaveradoleste":{"uf":"MT","region":"Centro-Oeste","city":"Primavera do Leste"},"veiculosrondonopolis":{"uf":"MT","region":"Centro-Oeste","city":"Rondonópolis"}};
+const IE_CARGOS = {"vendedormotosexterno":"Profissionais","consultorvendas":"Profissionais","aprendizadministrativo":"Aprendiz","vendedormotosinterno":"Profissionais","consultortecnico":"Profissionais","consultordevendaslocacao":"Profissionais","mecanicod":"Técnicos/Operacionais","auxiliarestoque":"Técnicos/Operacionais","lavadorautos":"Técnicos/Operacionais","chefedeoficina":"Liderança","auxiliaradministrativoposvenda":"Profissionais","estagiario":"Estágio","mecanicolider":"Liderança","vendedorpecasbalcao":"Profissionais","estoquista":"Técnicos/Operacionais","recepcionistavendas":"Técnicos/Operacionais","mecanico":"Técnicos/Operacionais","consultorpecas":"Profissionais","auxiliaradministrativovendas":"Profissionais","analistacobranca":"Profissionais","auxiliargarantia":"Profissionais","controladordeprodutividade":"Profissionais","mecanicoc":"Técnicos/Operacionais","consultorecommerce":"Profissionais","mecanicob":"Técnicos/Operacionais","lavadormotocicletas":"Técnicos/Operacionais","assistenteadminstrativodeposvendas":"Profissionais","orcamentista":"Profissionais","supervisorposvendas":"Liderança","assistenteadministrativofinanceiro":"Profissionais","assistentefinanceiro":"Profissionais","mecanicoa":"Técnicos/Operacionais","assistenteadministrativo":"Profissionais","auxiliarmecanico":"Técnicos/Operacionais","auxiliarservicosgerais":"Técnicos/Operacionais","assistentedeposvenda":"Profissionais","assistentegarantia":"Profissionais","assistenteadministrativodevendas":"Profissionais","operadorcaixa":"Técnicos/Operacionais","vendedorveiculos":"Profissionais","entregadortecnico":"Técnicos/Operacionais","vendedordeconsorcio":"Profissionais","mecanicomotos":"Técnicos/Operacionais","supervisorvendas":"Liderança","auxiliarfinanceiro":"Profissionais","entregadortecnicodeveiculos":"Técnicos/Operacionais","analistagestaodepessoas":"Profissionais","analistamarketing":"Profissionais","analistaadministrativodepessoas":"Profissionais","assistentedecomprasdepecas":"Profissionais","vendedorpecasexterno":"Profissionais","montadormotos":"Técnicos/Operacionais","vendedorseguro":"Profissionais","vendedoracessorios":"Profissionais","assistentecompras":"Profissionais","auxiliaradministrativofinanceiro":"Profissionais","qualificadordelead":"Profissionais","gerenteposvenda":"Liderança","pintor":"Técnicos/Operacionais","auxiliartecnologiadainformacao":"Profissionais","aprendizestoque":"Aprendiz","assistentedeestoque":"Técnicos/Operacionais","preparadordeveiculos":"Técnicos/Operacionais","gerentecomercial":"Liderança","consultordevendasdeleads":"Profissionais","encarregadoestoque":"Liderança","auxiliaradministrativo":"Profissionais","compradorpecas":"Profissionais","vendedorpecas":"Profissionais","assistenteadministrativodepessoas":"Profissionais","monitordetreinamento":"Profissionais","tecnicoservicoexpresso":"Técnicos/Operacionais","assistentecreditoecadastro":"Profissionais","motoristacaminhao":"Técnicos/Operacionais","consultorposvendas":"Profissionais","assistenteadministrativologistica":"Profissionais","ferramenteiro":"Técnicos/Operacionais","auxiliarlogistica":"Técnicos/Operacionais","ajudantedemotorista":"Técnicos/Operacionais","liderdeestoque":"Liderança","pintorpreparador":"Técnicos/Operacionais","supervisorassistenciatecnica":"Liderança","auxiliaradministrativodefi":"Profissionais","avaliadordemotos":"Técnicos/Operacionais","auxiliaradministrativodepessoal":"Profissionais","consultordepecasecommerce":"Profissionais","estagiarioemsegurancadotrabalho":"Estágio","analistaadministrativofinanceiro":"Profissionais","assistentefaturamento":"Profissionais","auxiliarcompras":"Profissionais","assistenteadministrativodecompras":"Profissionais","supervisorpecas":"Liderança","tecnicosegurancadotrabalho":"Técnicos/Operacionais","motorista":"Técnicos/Operacionais","estoquistademotos":"Técnicos/Operacionais","supervisorecommerce":"Liderança","assistentedegestaodepessoas":"Profissionais","funileiro":"Técnicos/Operacionais","analistadeti":"Profissionais","assistentedecrm":"Profissionais","analistafiscal":"Profissionais","analistadebi":"Profissionais","coordenadormarketing":"Liderança","agentedepatio":"Técnicos/Operacionais","encarregadoestoquedepecas":"Liderança","auxiliaradministrativocnh":"Profissionais","analistadecomunicacaointerna":"Profissionais","instaladordeacessorios":"Técnicos/Operacionais","analistadeprojeto":"Profissionais","monitorposvenda":"Profissionais","oficialdemanutencaopredial":"Técnicos/Operacionais","atendenteadministrativocnh":"Profissionais","analistadeindicadores":"Profissionais","analistaadministrativodelocacao":"Profissionais","controllerdeposvenda":"Profissionais","controllerdevendas":"Profissionais","analistaadministrativodeposvenda":"Profissionais","operadortelemarketing":"Técnicos/Operacionais","encarregadoadministrativologistica":"Liderança","encarregadologistica":"Liderança","instrutordetreinamentotecnico":"Profissionais","auditorinterno":"Profissionais","coordenadordeposvenda":"Liderança","instrutormotoristaman":"Técnicos/Operacionais","auxiliarfunilariapintura":"Técnicos/Operacionais","auxiliaradministrativodelogistica":"Profissionais","atendentedecnh":"Técnicos/Operacionais","coordenadordesegurancadotrabalho":"Liderança","coordenadortecnologiadainformacao":"Liderança","consultorvendasdireta":"Profissionais","garantista":"Profissionais","supervisordecrm":"Liderança","assistentedeecommercedepecas":"Profissionais","coordenadordegestaodepessoas":"Liderança","montador":"Técnicos/Operacionais","auxiliarfaturamento":"Profissionais","supervisorsegtrabalhoemeioambiente":"Liderança","tecnicosegurancadotrabalhoemeioambiente":"Técnicos/Operacionais","operadorfi":"Profissionais","coordenadordedesenvolvimentohumanoeorganizacional":"Liderança","consultordepecasatacado":"Profissionais","assistentefiscal":"Profissionais","assistentecontroladoria":"Profissionais","gerentevendas":"Liderança"};
+// ================= INDICADORES EXECUTIVOS · MAPA POR UF =================
+// IE_STATES, IE_UNITS e IE_CARGOS são incorporados ao HTML na montagem.
 let indicatorSegment = '';
 let indicatorMonth = null;
-function scopeTicketsBySegment(seg){ return seg ? TICKETS.filter(t=>t.seg===seg) : TICKETS.slice(); }
-function statusPrazoFora(t){ return normalize(t.statusTempo||'').includes('fora do prazo') || (isCountedOpen(t) && (t.tempoAb||0)>30); }
-function getGrupoCargo(t){ return t.grupoCargo || (t.cat==='Comercial' ? 'Comerciais' : (t.cat==='Outras' ? 'Demais vagas' : 'Não classificado')); }
-function pctClosedOnTime(list){
-  const closed=list.filter(t=>t.desStatus==='Concluido'); if(!closed.length) return 0;
-  return Math.round(closed.filter(t=>normalize(t.statusTempo||'').includes('no prazo') && !normalize(t.statusTempo||'').includes('fora')).length/closed.length*100);
+let ieMapMode = 'opened';
+let iePyramidMode = 'total';
+let ieJobLimit = 10;
+let ieTowerSort = {key:'total',direction:-1};
+let ieUnitSort = {key:'open',direction:-1};
+let ieLastUnitFocus = null;
+let ieFilters = {segment:'',area:'',category:'',uf:'',from:'',to:''};
+const IE_COLORS = {replacement:'#3989e7',growth:'#9382e6',unknown:'#666666',closed:'#dc591f',cancelled:'#ce9400',frozen:'#18a47d'};
+const IE_UF_REGIONS = {AC:'Norte',AP:'Norte',AM:'Norte',PA:'Norte',RO:'Norte',RR:'Norte',TO:'Norte',AL:'Nordeste',BA:'Nordeste',CE:'Nordeste',MA:'Nordeste',PB:'Nordeste',PE:'Nordeste',PI:'Nordeste',RN:'Nordeste',SE:'Nordeste',DF:'Centro-Oeste',GO:'Centro-Oeste',MT:'Centro-Oeste',MS:'Centro-Oeste',ES:'Sudeste',MG:'Sudeste',RJ:'Sudeste',SP:'Sudeste',PR:'Sul',RS:'Sul',SC:'Sul'};
+const ieNum = value => Number(value||0).toLocaleString('pt-BR');
+const ieKey = value => normalize(value).replace(/[^a-z0-9]/g,'');
+const ieText = value => escapeHtml(String(value ?? ''));
+function ieGroup(t){ return t.grupoCargo || IE_CARGOS[ieKey(t.cargo)] || t.cat || 'Sem classificação'; }
+function ieArea(t){ return classifyTicket(t.cargo,t.dept); }
+function ieOccurrence(t){
+  const value=normalize(t.ocor||'');
+  if(/substitui|reposi/.test(value)) return 'replacement';
+  if(/aumento|amplia|expans|nova vaga|novo posto/.test(value)) return 'growth';
+  return 'unknown';
 }
-function meanClosedDays(list){ const a=list.filter(t=>t.desStatus==='Concluido' && Number.isFinite(t.tempoAb)); return a.length?Math.round(a.reduce((s,t)=>s+t.tempoAb,0)/a.length):0; }
-function currentYearForMonth(m){ return m ? m.slice(0,4) : String(new Date().getFullYear()); }
-function metricTableHtml(rows, firstLabel){
-  if(!rows.length) return '<div class="empty-state">Sem dados para este recorte.</div>';
-  return `<table class="metric-table"><thead><tr><th>${firstLabel}</th><th>Saldo</th><th>No prazo</th><th>Fora prazo</th><th>SLA médio</th><th>Abert. mês</th><th>Fech. mês</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${escapeHtml(r.label)}</td><td class="num-mono">${r.saldo}</td><td>${r.noPrazo}</td><td>${r.fora}</td><td>${r.sla} d</td><td>${r.abert}</td><td>${r.fech}</td></tr>`).join('')}</tbody></table>`;
+function ieGeo(t){
+  const mapped=IE_UNITS[ieKey(t.emp)]; if(mapped) return mapped;
+  const explicit=String(t.uf||t.UF||'').toUpperCase().trim();
+  if(IE_UF_REGIONS[explicit]) return {uf:explicit,region:IE_UF_REGIONS[explicit]};
+  const location=normalize([t.emp,t.cidade,t.estado,t.nuc].filter(Boolean).join(' '));
+  const cityRules=[['porto velho|ji.?parana|vilhena|rondonia','RO'],['cuiaba|sinop|sorriso|agua boa|tangara|primavera do leste|barra do garc|rondonopolis|confresa|lucas do rio verde','MT'],['jatai|mineiros|goias','GO'],['macapa|amapa','AP'],['belem|ananindeua|altamira|capanema','PA'],['bacabal|sao luis|maranhao','MA'],['teresina|urucui|piaui','PI']];
+  const matches=cityRules.filter(([pattern])=>new RegExp(pattern).test(location));
+  if(matches.length===1){const uf=matches[0][1];return {uf,region:IE_UF_REGIONS[uf]};}
+  return {uf:'?',region:'Sem região'};
 }
-function buildMetricRows(base, keyFn, month){
-  const labels=[...new Set(base.map(keyFn).filter(Boolean))];
-  return labels.map(label=>{
-    const list=base.filter(t=>keyFn(t)===label), open=list.filter(isCountedOpen);
-    return {label, saldo:open.length, noPrazo:open.filter(t=>!statusPrazoFora(t)).length, fora:open.filter(statusPrazoFora).length, sla:avgDays(open), abert:list.filter(t=>t.mesAb===month).length, fech:list.filter(t=>t.mesFe===month&&t.desStatus==='Concluido').length};
-  }).sort((a,b)=>b.saldo-a.saldo || b.abert-a.abert || a.label.localeCompare(b.label));
+function ieStatus(t){
+  // As mesmas funções de contagem do Painel Mensal, funil, busca e ranking.
+  // O RH concluído é excluído do saldo, mas não antecipa o fechamento geral.
+  if(t.desStatus==='Cancelamento')return 'cancelled';
+  if(t.desStatus==='Concluido')return 'closed';
+  if(isCongelada(t))return 'frozen';
+  if(isEmAdmissao(t))return 'admission';
+  if(isRetornoUsuario(t))return 'return';
+  if(isConcluidaPeloRH(t))return 'rhClosed';
+  return isCountedOpen(t)?'open':'other';
+}
+function ieOnTime(t){
+  const s=normalize(t.statusTempo||'');
+  return s.includes('no prazo')&&!s.includes('fora');
+}
+function statusPrazoFora(t){return normalize(t.statusTempo||'').includes('fora do prazo')||(isCountedOpen(t)&&(t.tempoAb||0)>30);}
+function ieFreezeMonth(t){return monthFromIso(t.dataCongelamento)||monthFromIso(t.dataMudancaStatus)||t.mesAb||monthFromIso(t.dataAb);}
+function ieMonthRange(first,last){
+  const list=[];let d=new Date(first+'-01T12:00:00Z');
+  for(let i=0;i<240&&!Number.isNaN(+d);i++) {const ym=d.toISOString().slice(0,7);if(ym>last)break;list.push(ym);d.setUTCMonth(d.getUTCMonth()+1);}
+  return list;
+}
+function ieAllMonths(){
+  const values=TICKETS.flatMap(t=>[t.mesAb,t.mesFe,monthFromIso(t.dataAb),monthFromIso(t.dataFe)]).filter(v=>/^\d{4}-\d{2}$/.test(v||'')).sort();
+  return values.length?ieMonthRange(values[0],values[values.length-1]):[];
+}
+function ieReadFilters(){
+  for(const [key,id] of Object.entries({segment:'indicatorSegment',area:'ieArea',category:'ieCategory',uf:'ieUf',from:'ieFrom',to:'ieTo'}))ieFilters[key]=document.getElementById(id)?.value||'';
+  if(ieFilters.from&&ieFilters.to&&ieFilters.from>ieFilters.to){ieFilters.to=ieFilters.from;document.getElementById('ieTo').value=ieFilters.to;}
+  indicatorSegment=ieFilters.segment;indicatorMonth=ieFilters.to;
+}
+function ieScope(){return TICKETS.filter(t=>(!ieFilters.segment||t.seg===ieFilters.segment)&&(!ieFilters.area||ieArea(t)===ieFilters.area)&&(!ieFilters.category||ieGroup(t)===ieFilters.category)&&(!ieFilters.uf||ieGeo(t).uf===ieFilters.uf));}
+function scopeTicketsBySegment(seg){return seg?TICKETS.filter(t=>t.seg===seg):TICKETS.slice();}
+function ieInPeriod(month){return !!month&&(!ieFilters.from||month>=ieFilters.from)&&(!ieFilters.to||month<=ieFilters.to);}
+function ieOpened(base){return base.filter(t=>ieInPeriod(t.mesAb||monthFromIso(t.dataAb)));}
+function ieEvents(base,status){return base.filter(t=>ieStatus(t)===status&&ieInPeriod(t.mesFe||monthFromIso(t.dataFe)));}
+function ieFillSelect(id,items,emptyLabel,value){
+  const el=document.getElementById(id);if(!el)return;
+  el.innerHTML=(emptyLabel?`<option value="">${ieText(emptyLabel)}</option>`:'')+items.map(x=>`<option value="${ieText(x.value??x)}">${ieText(x.label??x)}</option>`).join('');
+  el.value=[...el.options].some(x=>x.value===value)?value:(emptyLabel?'':(items[0]?.value??items[0]??''));
 }
 function renderIndicatorFilters(){
-  const seg=document.getElementById('indicatorSegment'), mon=document.getElementById('indicatorMonth'); if(!seg||!mon) return;
-  const oldSeg=indicatorSegment, oldMon=indicatorMonth||selectedMonth;
-  seg.innerHTML='<option value="">Todos os segmentos</option>'+segmentos.map(x=>`<option value="${escapeHtml(x)}">${escapeHtml(x)}</option>`).join(''); seg.value=segmentos.includes(oldSeg)?oldSeg:''; indicatorSegment=seg.value;
-  mon.innerHTML=months.slice().reverse().map(m=>`<option value="${m}">${monthLabel(m)}</option>`).join(''); mon.value=months.includes(oldMon)?oldMon:(selectedMonth||''); indicatorMonth=mon.value;
+  if(!document.getElementById('ieCategory'))return;
+  const all=ieAllMonths(),segments=[...new Set(TICKETS.map(t=>t.seg).filter(Boolean))].sort(),categories=[...new Set(TICKETS.map(ieGroup))].sort();
+  ieFillSelect('indicatorSegment',segments,'Todas as torres',ieFilters.segment);
+  ieFillSelect('ieArea',['Comercial','Pós-vendas','Demais'],'Todas as áreas',ieFilters.area);
+  ieFillSelect('ieCategory',categories,'Todas as categorias',ieFilters.category);
+  const ufs=[...new Set(TICKETS.map(t=>ieGeo(t).uf))].sort().map(uf=>({value:uf,label:uf==='?'?'Sem UF mapeada':uf+' · '+(IE_STATES.find(s=>s.uf===uf)?.name||uf)}));
+  ieFillSelect('ieUf',ufs,'Todos os estados',ieFilters.uf);
+  const opts=all.map(m=>({value:m,label:monthLabel(m)}));
+  ieFillSelect('ieFrom',opts,null,all.includes(ieFilters.from)?ieFilters.from:all[0]);
+  ieFillSelect('ieTo',opts,null,all.includes(ieFilters.to)?ieFilters.to:all[all.length-1]);
+  ieReadFilters();
+}
+function ieKpi(label,value,foot,color){return `<div class="ie-kpi"><div class="ie-kpi-label">${color?`<i style="background:${color}"></i>`:''}${label}</div><div class="ie-number">${ieNum(value)}</div><div class="ie-foot">${foot}</div></div>`;}
+function renderIndicators(){
+  if(!document.getElementById('ieCategory'))return;
+  ieReadFilters();const base=ieScope(),cohort=ieOpened(base),total=cohort.length;
+  const open=cohort.filter(t=>ieStatus(t)==='open'),closed=cohort.filter(t=>ieStatus(t)==='closed'),frozen=cohort.filter(t=>ieStatus(t)==='frozen'),cancelled=cohort.filter(t=>ieStatus(t)==='cancelled');
+  const outside=open.filter(statusPrazoFora).length,awaiting=open.filter(t=>normalize(t.desStatus).includes('aguardando autoriza')).length;
+  const knownClosed=closed.map(ieOnTime).filter(x=>x!==null),onTime=knownClosed.filter(Boolean).length;
+  document.getElementById('indicatorKpis').innerHTML=ieKpi('Total de vagas',total,'chamados de vaga abertos no período')+ieKpi('Em aberto',open.length,`${pct(open.length,total)}% do total · <b>${outside}</b> fora do prazo · ${awaiting} aguardando autorização`,IE_COLORS.replacement)+ieKpi('Fechadas',closed.length,`${pct(closed.length,total)}% do total · <b>${pct(onTime,closed.length)}%</b> fechadas no prazo`,IE_COLORS.closed)+ieKpi('Suspensas (congeladas)',frozen.length,`${pct(frozen.length,total)}% do total`,IE_COLORS.frozen)+ieKpi('Canceladas',cancelled.length,`${pct(cancelled.length,total)}% do total`,IE_COLORS.cancelled);
+  const rest=cohort.filter(t=>!['open','closed','frozen','cancelled'].includes(ieStatus(t)));
+  const counts={admission:0,return:0,rhClosed:0,other:0};rest.forEach(t=>counts[ieStatus(t)]++);
+  document.getElementById('ieStatusNote').textContent=rest.length?`Também incluídos no total: ${counts.admission} em admissão, ${counts.return} em retorno de usuário, ${counts.rhClosed} concluída(s) no RH aguardando o status geral e ${counts.other} em outras situações. Essas vagas não entram no saldo em aberto; concluídas apenas no RH não antecipam o total de fechadas.`:'';
+  document.getElementById('indicatorScopeHint').textContent=total?`${monthLabel(ieFilters.from)} a ${monthLabel(ieFilters.to)} · ${ieNum(total)} aberturas`:'Nenhuma vaga no período';
+  ieRenderComposition(base,cohort);renderIndicatorHistory();ieRenderStatusAndStages(cohort);ieRenderTowers(cohort);ieRenderJobs(cohort);ieRenderPyramid(base);ieRenderMap(base);ieRenderRecurring(cohort);ieRenderUnits(cohort);ieRenderDetails(base);renderIndicatorDimension();
+}
+function ieRenderComposition(base,cohort){
+  const count={replacement:0,growth:0,unknown:0};cohort.forEach(t=>count[ieOccurrence(t)]++);
+  const mini=(label,val,foot,cls='')=>`<div class="ie-mini ${cls}"><div class="ie-foot">${label}</div><div class="ie-number">${ieNum(val)}</div><div class="ie-foot">${foot}</div></div>`;
+  document.getElementById('ieCompositionCards').innerHTML=mini('Aberturas no período',cohort.length,'')+mini('Substituição',count.replacement,`${pct(count.replacement,cohort.length)}% das aberturas`)+mini('Aumento de quadro',count.growth,`${pct(count.growth,cohort.length)}% das aberturas`,'growth')+mini('Sem informação',count.unknown,'chamados sem Ocorrência reconhecida');
+  const labels={replacement:'Substituição',growth:'Aumento de quadro',unknown:'Sem informação'};
+  document.getElementById('ieCompositionBar').innerHTML=cohort.length?Object.entries(count).filter(([,n])=>n).map(([key,n])=>`<div style="width:${n/cohort.length*100}%;background:${IE_COLORS[key]}" title="${labels[key]}: ${ieNum(n)} (${pct(n,cohort.length)}%)"><span>${labels[key]} ${pct(n,cohort.length)}%</span></div>`).join(''):'<div style="width:100%;justify-content:center;color:#ddd">Sem aberturas no período</div>';
+  const source=ACTIVE_ASSETS_FROM_UPLOAD?'última base de ativos enviada neste navegador':'fechamento de setembro/2026';
+  let context=`<b>Contexto do Grupo · ${ieText(source)}:</b> ${ieNum(ACTIVE_ASSETS_COUNT)} ativos · turnover acumulado informado de ${TURNOVER_ACCUMULATED_PCT}% (jan–set/2026). `;
+  if(!ACTIVE_ASSETS_FROM_UPLOAD){
+    const estimated=Math.round(ACTIVE_ASSETS_COUNT*TURNOVER_ACCUMULATED_PCT/100),period=TICKETS.filter(t=>(t.mesAb||'')>='2026-01'&&(t.mesAb||'')<='2026-09');
+    const sub=period.filter(t=>ieOccurrence(t)==='replacement').length,grow=period.filter(t=>ieOccurrence(t)==='growth').length;
+    context+=`Isso equivale a aproximadamente ${ieNum(estimated)} desligamentos <em>se</em> o turnover informado adotar desligamentos ÷ ativos. No Grupo, jan–set teve ${ieNum(sub)} aberturas de substituição e ${ieNum(grow)} de aumento de quadro. A estimativa depende dessa definição de turnover.`;
+  }else context+='A base de ativos atualiza o headcount; o turnover mantém a referência informada de setembro/2026.';
+  document.getElementById('ieContext').innerHTML=context;
+}
+function ieBalanceAt(base,month){
+  const end=month+'-31';
+  return base.filter(t=>{
+    const opened=t.dataAb||((t.mesAb||'')+'-01');if(!/^\d{4}-\d{2}/.test(opened)||opened.slice(0,10)>end)return false;
+    const status=ieStatus(t);
+    if(status==='open')return true;
+    if(status==='closed'||status==='cancelled')return !!t.dataFe&&t.dataFe.slice(0,10)>end;
+    if(status==='frozen'){const frozen=ieFreezeMonth(t);return !!frozen&&frozen>month;}
+    return false;
+  }).length;
 }
 function renderIndicatorHistory(){
-  const chart=document.getElementById('indicatorHistoryChart'),summary=document.getElementById('indicatorHistorySummary');if(!chart||!summary)return;
-  const count=document.getElementById('indicatorHistoryMonths')?.value||'12';
-  const base=scopeTicketsBySegment(indicatorSegment);
-  let histMonths=[...new Set(base.flatMap(t=>[t.mesAb,t.mesFe,freezeMovementMonth(t)]).filter(Boolean))].sort();
-  if(count!=='all')histMonths=histMonths.slice(-Number(count));
-  const rows=histMonths.map(m=>{
-    const open=base.filter(t=>t.mesAb===m).length;
-    const close=base.filter(t=>t.mesFe===m&&t.desStatus==='Concluido').length;
-    const cancel=base.filter(t=>t.mesFe===m&&t.desStatus==='Cancelamento').length;
-    const freeze=base.filter(t=>freezeMovementMonth(t)===m).length;
-    return {m,open,close,cancel,freeze,delta:open-close-cancel-freeze};
+  const el=document.getElementById('indicatorHistoryChart');if(!el)return;
+  const base=ieScope(),all=ieAllMonths().filter(ieInPeriod);
+  const rows=all.map(m=>{const opened=base.filter(t=>(t.mesAb||monthFromIso(t.dataAb))===m),by={replacement:0,growth:0,unknown:0};opened.forEach(t=>by[ieOccurrence(t)]++);return {month:m,...by,opened:opened.length,closed:base.filter(t=>ieStatus(t)==='closed'&&(t.mesFe||monthFromIso(t.dataFe))===m).length,cancelled:base.filter(t=>ieStatus(t)==='cancelled'&&(t.mesFe||monthFromIso(t.dataFe))===m).length,frozen:base.filter(t=>ieStatus(t)==='frozen'&&ieFreezeMonth(t)===m).length,balance:ieBalanceAt(base,m)};});
+  if(!rows.length){el.innerHTML='<div class="ie-empty">Sem movimentação no período selecionado.</div>';document.getElementById('ieHistoryNotes').textContent='';return;}
+  const W=Math.max(900,rows.length*94),H=340,L=40,R=40,T=30,B=45,w=W-L-R,h=H-T-B,rawMax=Math.max(1,...rows.flatMap(r=>[r.opened,r.closed,r.cancelled,r.frozen,r.balance])),step=Math.max(1,Math.ceil(rawMax/4/5)*5),max=step*4,y=v=>T+h-v/max*h,slot=w/rows.length,bw=Math.min(23,slot*.2);
+  let svg=`<svg class="ie-monthly-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Evolução mensal: aberturas, fechamentos, cancelamentos, congelamentos e saldo em aberto"><title>Evolução mensal da carteira de vagas</title>`;
+  for(let i=0;i<=4;i++){const val=step*i,yy=y(val);svg+=`<line x1="${L}" y1="${yy}" x2="${W-R}" y2="${yy}" stroke="#343430"/><text x="${L-9}" y="${yy+4}" fill="#92918a" text-anchor="end" font-size="10">${ieNum(val)}</text>`;}
+  const centers=[];
+  rows.forEach((r,i)=>{
+    const start=L+i*slot+(slot-(4*bw+9))/2,cx=L+(i+.5)*slot;centers.push([cx,y(r.balance)]);
+    let stack=0;for(const key of ['replacement','growth','unknown']){const n=r[key];if(n)svg+=`<rect x="${start}" y="${y(stack+n)}" width="${bw}" height="${n/max*h}" fill="${IE_COLORS[key]}" rx="2"><title>${monthLabel(r.month)} · ${key==='replacement'?'Substituição':key==='growth'?'Aumento de quadro':'Sem informação'}: ${n}</title></rect>`;stack+=n;}
+    svg+=`<text x="${start+bw/2}" y="${y(r.opened)-5}" fill="#92918a" font-size="9" text-anchor="middle">${r.opened}</text>`;
+    ['closed','cancelled','frozen'].forEach((key,k)=>{const n=r[key],x=start+(k+1)*(bw+3);svg+=`<rect x="${x}" y="${y(n)}" width="${bw}" height="${Math.max(1,n/max*h)}" fill="${IE_COLORS[key]}" rx="2"><title>${monthLabel(r.month)} · ${key==='closed'?'Fechadas':key==='cancelled'?'Canceladas':'Congeladas'}: ${n}</title></rect><text x="${x+bw/2}" y="${y(n)-5}" fill="#d8d6cc" font-size="9" text-anchor="middle">${n}</text>`;});
+    svg+=`<text x="${cx}" y="${H-17}" fill="#92918a" font-size="11" text-anchor="middle">${monthLabel(r.month)}</text>`;
   });
-  const max=Math.max(1,...rows.flatMap(r=>[r.open,r.close,r.cancel,r.freeze]));
-  const totalOpen=rows.reduce((s,r)=>s+r.open,0),totalClose=rows.reduce((s,r)=>s+r.close,0),totalCancel=rows.reduce((s,r)=>s+r.cancel,0),totalFreeze=rows.reduce((s,r)=>s+r.freeze,0);
-  const delta=totalOpen-totalClose-totalCancel-totalFreeze;
-  const currentOpen=base.filter(isCountedOpen).length;
-  const frozenWithoutDate=base.filter(t=>isCongelada(t)&&!freezeMovementMonth(t)).length;
-  summary.innerHTML=`<div class="history-pill">Abertas no período<br><b>${totalOpen}</b></div><div class="history-pill">Fechadas no período<br><b>${totalClose}</b></div><div class="history-pill">Canceladas no período<br><b>${totalCancel}</b></div><div class="history-pill">Congeladas no período<br><b>${totalFreeze}</b></div><div class="history-pill">Δ líquido<br><b>${delta>0?'+':''}${delta}</b></div><div class="history-pill">Saldo atual<br><b>${currentOpen}</b></div>${frozenWithoutDate?`<div class="history-pill">Congeladas sem data<br><b>${frozenWithoutDate}</b></div>`:''}<div class="history-pill">Meses exibidos<br><b>${rows.length}</b></div>`;
-  chart.innerHTML=rows.length?rows.map(r=>`<div class="month-col"><div class="delta-badge ${r.delta>0?'pos':r.delta<0?'neg':''}">Δ ${r.delta>0?'+':''}${r.delta}</div><div class="month-bars"><div class="month-bar open" style="height:${Math.max(2,r.open/max*165)}px"><span>${r.open}</span></div><div class="month-bar close" style="height:${Math.max(2,r.close/max*165)}px"><span>${r.close}</span></div><div class="month-bar cancel" style="height:${Math.max(2,r.cancel/max*165)}px"><span>${r.cancel}</span></div><div class="month-bar freeze" style="height:${Math.max(2,r.freeze/max*165)}px"><span>${r.freeze}</span></div></div><div class="month-label">${monthLabel(r.m)}</div></div>`).join(''):'<div class="empty-state" style="width:100%">Sem histórico mensal para este recorte.</div>';
+  svg+=`<polyline points="${centers.map(p=>p.join(',')).join(' ')}" fill="none" stroke="#eee" stroke-width="2"/>`;
+  centers.forEach((p,i)=>{svg+=`<circle cx="${p[0]}" cy="${p[1]}" r="3.3" fill="#eee" stroke="#1a1a18"><title>${monthLabel(rows[i].month)} · Saldo reconstituído: ${rows[i].balance}</title></circle>`;});
+  const last=rows[rows.length-1],c=centers[centers.length-1];svg+=`<text x="${Math.min(W-R,c[0])}" y="${Math.max(16,c[1]-10)}" text-anchor="end" fill="#fff" font-size="11" font-weight="600">Saldo ${ieNum(last.balance)}</text></svg>`;el.innerHTML=svg;
+  const missing=base.filter(t=>['closed','cancelled'].includes(ieStatus(t))&&!t.dataFe&&!t.mesFe).length,fallback=base.filter(t=>ieStatus(t)==='frozen'&&!t.dataCongelamento&&!t.dataMudancaStatus).length;
+  document.getElementById('ieHistoryNotes').textContent=`Saldo histórico reconstituído pelas datas disponíveis; situações de admissão e retorno não integram o saldo. ${fallback?`${fallback} congelada(s) sem data atribuída(s) ao mês de abertura. `:''}${missing?`${missing} encerrada(s) sem data de fechamento não entram nas barras mensais.`:''}`;
 }
-function renderIndicators(){
-  const segEl=document.getElementById('indicatorSegment'), monEl=document.getElementById('indicatorMonth'); if(!segEl||!monEl) return;
-  indicatorSegment=segEl.value; indicatorMonth=monEl.value||selectedMonth;
-  const base=scopeTicketsBySegment(indicatorSegment), open=base.filter(isCountedOpen), abert=base.filter(t=>t.mesAb===indicatorMonth), fech=base.filter(t=>t.mesFe===indicatorMonth&&t.desStatus==='Concluido'), fora=open.filter(statusPrazoFora);
-  const mk=(l,v,f)=>`<div class="indicator-card"><div class="ic-label">${l}</div><div class="ic-value">${v}</div><div class="ic-foot">${f}</div></div>`;
-  document.getElementById('indicatorKpis').innerHTML=mk('Saldo em aberto',open.length,'foto atual')+mk('Aberturas no mês',abert.length,monthLabel(indicatorMonth))+mk('Fechamentos no mês',fech.length,monthLabel(indicatorMonth))+mk('Abertas fora do prazo',fora.length,`${pct(fora.length,open.length)}% do saldo`)+mk('SLA médio abertas',avgDays(open)+' d','dias em aberto');
-  document.getElementById('indicatorScopeHint').textContent=indicatorSegment?`Recorte: ${indicatorSegment}`:'Visão consolidada do Grupo';
-  document.getElementById('indicatorBySegment').innerHTML=metricTableHtml(buildMetricRows(base,t=>t.seg||'Sem segmento',indicatorMonth),'Segmento');
-  document.getElementById('indicatorByGroup').innerHTML=metricTableHtml(buildMetricRows(base,getGrupoCargo,indicatorMonth),'Grupo de cargo');
-  renderIndicatorHistory();
-  renderIndicatorDimension();
+function ieStats(base){return {opened:ieOpened(base).length,closed:ieEvents(base,'closed').length,cancelled:ieEvents(base,'cancelled').length,frozen:base.filter(t=>ieStatus(t)==='frozen').length,open:base.filter(t=>ieStatus(t)==='open').length};}
+function ieRenderMap(base){
+  const allUfs=[...new Set(base.map(t=>ieGeo(t).uf))];
+  const states=allUfs.map(uf=>({uf,name:IE_STATES.find(x=>x.uf===uf)?.name||'Sem UF mapeada',region:IE_UF_REGIONS[uf]||'Sem região',...ieStats(base.filter(t=>ieGeo(t).uf===uf))}));
+  const max=Math.max(1,...states.map(s=>s[ieMapMode])),colors=['#24425e','#285988','#2d6eae','#337fcf','#3989e7'];
+  let svg='<svg class="ie-brazil-svg" viewBox="0 0 540 540" role="img" aria-label="Mapa do Brasil por estado; use as teclas Tab e Enter para filtrar"><title>Vagas por estado</title>';
+  for(const shape of IE_STATES){const data=states.find(x=>x.uf===shape.uf),n=data?.[ieMapMode]||0,color=n?colors[Math.min(4,Math.floor(n/max*4))]:'#292927';svg+=`<path d="${shape.path}" fill="${color}" role="button" tabindex="0" aria-label="${ieText(shape.name)}: ${n}. Filtrar estado" data-ie-uf="${shape.uf}" class="${ieFilters.uf===shape.uf?'selected':''}"><title>${ieText(shape.name)} · ${ieNum(n)} ${ieMapMode==='opened'?'aberturas no período':ieMapMode==='closed'?'fechadas no período':'em aberto hoje'}. Clique para filtrar.</title></path>`;}
+  const labelOverrides={AP:[287,60],PA:[278,141],MT:[241,254],GO:[317,301],RO:[145,224],MA:[373,149],PI:[404,185]};
+  for(const row of states.filter(x=>x.uf!=='?')){const sh=IE_STATES.find(s=>s.uf===row.uf);if(!sh)continue;const [x,y]=labelOverrides[row.uf]||sh.label;svg+=`<text x="${x}" y="${y}"><tspan x="${x}" dy="0">${row.uf}</tspan><tspan x="${x}" dy="15">${ieNum(row[ieMapMode])}</tspan></text>`;}
+  svg+='</svg>';document.getElementById('ieBrazilMap').innerHTML=svg;
+  const modeLabel={opened:'abertura no período',closed:'fechadas no período',open:'em aberto hoje'}[ieMapMode];
+  const regions=[...new Set(states.filter(s=>s.uf!=='?').map(s=>s.region))].sort((a,b)=>['Norte','Centro-Oeste','Nordeste','Sudeste','Sul'].indexOf(a)-['Norte','Centro-Oeste','Nordeste','Sudeste','Sul'].indexOf(b));
+  document.getElementById('ieRegionCards').innerHTML=regions.map(region=>{const s=ieStats(base.filter(t=>ieGeo(t).region===region));return `<div class="ie-mini"><div class="ie-foot">${region} · ${modeLabel}</div><div class="ie-number">${ieNum(s[ieMapMode])}</div><div class="ie-foot">${ieNum(s.opened)} aberturas · ${ieNum(s.closed)} fechadas · ${ieNum(s.open)} em aberto</div></div>`;}).join('');
+  const sorted=states.sort((a,b)=>b[ieMapMode]-a[ieMapMode]||a.name.localeCompare(b.name)),total=ieStats(base);
+  document.getElementById('ieStateTable').innerHTML=`<table class="ie-table"><thead><tr><th>Estado</th><th>Região</th><th>Abertura</th><th>Fechadas</th><th>Canceladas</th><th>Suspensas</th><th>Em aberto</th></tr></thead><tbody>${sorted.map(s=>`<tr data-ie-uf="${s.uf}" class="${s.uf===ieFilters.uf?'is-selected':''}" title="Filtrar ${ieText(s.name)}"><td>${ieText(s.name)}</td><td>${s.region}</td>${['opened','closed','cancelled','frozen','open'].map(k=>`<td>${ieNum(s[k])}</td>`).join('')}</tr>`).join('')}</tbody><tfoot><tr><td>Total</td><td></td>${['opened','closed','cancelled','frozen','open'].map(k=>`<td>${ieNum(total[k])}</td>`).join('')}</tr></tfoot></table>`;
+  const unknown=base.filter(t=>ieGeo(t).uf==='?').length;
+  document.getElementById('ieGeoNote').textContent=`Aberturas e encerramentos seguem o período; suspensas e em aberto refletem a situação atual. ${unknown?`${unknown} chamado(s) sem unidade/UF reconhecida ficam na linha “Sem UF mapeada”, preservando os totais.`:''}${base.length?'':' Nenhum chamado nos filtros selecionados.'}`;
 }
+function ieSummaryTable(base,keyFn,firstLabel){
+  const labels=[...new Set(base.map(keyFn).filter(Boolean))];
+  const rows=labels.map(label=>({label,...ieStats(base.filter(t=>keyFn(t)===label))})).sort((a,b)=>b.open-a.open||b.opened-a.opened);
+  if(!rows.length)return '<div class="ie-empty">Sem dados nos filtros selecionados.</div>';
+  return `<table class="ie-table"><thead><tr><th>${firstLabel}</th><th>Aberturas</th><th>Fechadas</th><th>Canceladas</th><th>Suspensas</th><th>Em aberto</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${ieText(r.label)}</td>${['opened','closed','cancelled','frozen','open'].map(k=>`<td>${ieNum(r[k])}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+}
+function ieRenderDetails(base){document.getElementById('indicatorBySegment').innerHTML=ieSummaryTable(base,t=>t.seg||'Sem segmento','Segmento');document.getElementById('indicatorByGroup').innerHTML=ieSummaryTable(base,ieGroup,'Categoria');}
 function renderIndicatorDimension(){
-  const el=document.getElementById('indicatorDimension'); if(!el) return;
-  const dim=el.value, base=scopeTicketsBySegment(indicatorSegment), year=currentYearForMonth(indicatorMonth);
-  const cfg={nuc:['Região / Núcleo',t=>t.nuc],emp:['Empresa',t=>t.emp],criador:['Líder solicitante',t=>t.criador],tec:['Analista',t=>t.tec],dir:['Diretoria',t=>t.dir],procedencia:['Procedência do fechamento',t=>t.procedencia]}[dim];
-  document.getElementById('indicatorDimensionTitle').textContent='Detalhamento — '+cfg[0];
-  let labels=[...new Set(base.map(cfg[1]).filter(Boolean))];
-  let rows=labels.map(label=>{ const list=base.filter(t=>cfg[1](t)===label), open=list.filter(isCountedOpen), yearList=list.filter(t=>(t.mesAb||'').startsWith(year)||(t.mesFe||'').startsWith(year)); return {label,abert:list.filter(t=>(t.mesAb||'').startsWith(year)).length,fech:list.filter(t=>(t.mesFe||'').startsWith(year)&&t.desStatus==='Concluido').length,saldo:open.length,sla:meanClosedDays(yearList),prazo:pctClosedOnTime(yearList)}; }).sort((a,b)=>b.saldo-a.saldo||b.fech-a.fech||a.label.localeCompare(b.label));
-  document.getElementById('indicatorDimensionTable').innerHTML=rows.length?`<table class="metric-table"><thead><tr><th>${cfg[0]}</th><th>Aberturas ${year}</th><th>Fechadas ${year}</th><th>Saldo aberto</th><th>SLA médio</th><th>% no prazo</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${escapeHtml(r.label)}</td><td>${r.abert}</td><td>${r.fech}</td><td class="num-mono">${r.saldo}</td><td>${r.sla} d</td><td>${r.prazo}%</td></tr>`).join('')}</tbody></table>`:'<div class="empty-state">Sem dados para este recorte.</div>';
+  const el=document.getElementById('indicatorDimension');if(!el)return;
+  const cfg={nuc:['Região / Núcleo',t=>t.nuc],emp:['Empresa',t=>t.emp],criador:['Líder solicitante',t=>t.criador],tec:['Analista',t=>t.tec],dir:['Diretoria',t=>t.dir],procedencia:['Procedência do fechamento',t=>t.procedencia]}[el.value];
+  document.getElementById('indicatorDimensionTitle').textContent='Detalhamento · '+cfg[0];document.getElementById('indicatorDimensionTable').innerHTML=ieSummaryTable(ieScope(),t=>cfg[1](t)||'Não informado',cfg[0]);
 }
+function ieSelectUf(uf){const el=document.getElementById('ieUf');if(![...el.options].some(o=>o.value===uf))return;el.value=ieFilters.uf===uf?'':uf;renderIndicators();}
+function ieRichStats(list){
+  const of=status=>list.filter(t=>ieStatus(t)===status),open=of('open'),closed=of('closed'),known=closed.map(ieOnTime).filter(x=>x!==null);
+  // Mantém Tempo em Aberto e o mesmo denominador de prazo usados anteriormente.
+  const days=closed.map(t=>t.tempoAb).filter(Number.isFinite);
+  return {total:list.length,growth:list.filter(t=>ieOccurrence(t)==='growth').length,open:open.length,closed:closed.length,frozen:of('frozen').length,cancelled:of('cancelled').length,late:open.filter(statusPrazoFora).length,onTime:pct(known.filter(Boolean).length,closed.length),avgAge:avgDays(open),sla:days.length?Math.round(days.reduce((a,b)=>a+b,0)/days.length):0};
+}
+function ieStatusSegments(stats,mini=false){
+  const colors={open:IE_COLORS.replacement,closed:IE_COLORS.closed,frozen:IE_COLORS.frozen,cancelled:IE_COLORS.cancelled};
+  let html=Object.keys(colors).filter(k=>stats[k]).map(k=>`<i style="width:${stats[k]/Math.max(1,stats.total)*100}%;background:${colors[k]}" title="${{open:'Em aberto',closed:'Fechadas',frozen:'Suspensas',cancelled:'Canceladas'}[k]}: ${ieNum(stats[k])}"></i>`).join('');
+  const other=stats.total-stats.open-stats.closed-stats.frozen-stats.cancelled;
+  if(other>0)html+=`<i style="width:${other/Math.max(1,stats.total)*100}%;background:#666" title="Outras situações: ${other}"></i>`;
+  return `<div class="${mini?'ie-mini-stack':'ie-stacked-track'}">${html}</div>`;
+}
+function ieGrouped(list,keyFn){const groups=new Map();for(const t of list){const label=keyFn(t)||'Não informado';if(!groups.has(label))groups.set(label,[]);groups.get(label).push(t);}return [...groups].map(([label,items])=>({label,items,...ieRichStats(items)}));}
+function ieRenderStatusAndStages(cohort){
+  const stats=ieRichStats(cohort),labels={open:'Em aberto',closed:'Fechadas',frozen:'Suspensas',cancelled:'Canceladas'},colors={open:IE_COLORS.replacement,closed:IE_COLORS.closed,frozen:IE_COLORS.frozen,cancelled:IE_COLORS.cancelled};
+  document.getElementById('ieStatusBar').innerHTML=ieStatusSegments(stats).replace(/^<div[^>]*>|<\/div>$/g,'');
+  document.getElementById('ieStatusLegend').innerHTML=Object.keys(labels).map(key=>`<span><i style="background:${colors[key]}"></i>${labels[key]} <b>${ieNum(stats[key])}</b> · ${pct(stats[key],stats.total)}%</span>`).join('');
+  const stages=new Map(),order=['Aguardando autorização','Análise de Elegibilidade','Triagem','Entrevista - RH','Avaliação Gestor','Em Proposta'];
+  for(const t of cohort.filter(t=>ieStatus(t)==='open')){
+    const raw=normalize(t.statusRH||'');let stage;
+    if(normalize(t.desStatus).includes('aguardando autoriza'))stage=order[0];
+    else if(raw.includes('elegibilidade'))stage=order[1];else if(raw.includes('triagem'))stage=order[2];else if(raw.includes('entrevista'))stage=order[3];else if(raw.includes('gestor'))stage=order[4];else if(raw.includes('proposta'))stage=order[5];else stage=t.statusRH||'Em atendimento · sem etapa RH';
+    stages.set(stage,(stages.get(stage)||0)+1);
+  }
+  const list=[...stages].sort((a,b)=>(order.indexOf(a[0])<0?99:order.indexOf(a[0]))-(order.indexOf(b[0])<0?99:order.indexOf(b[0]))),max=Math.max(1,...list.map(x=>x[1]));
+  document.getElementById('ieStageBars').innerHTML=list.length?list.map(([stage,n])=>`<div class="ie-stage-row"><span>${ieText(stage)}</span><div class="ie-stage-track"><i style="width:${n/max*100}%"></i></div><b>${ieNum(n)}</b></div>`).join(''):'<div class="ie-empty">Nenhuma vaga em aberto neste recorte.</div>';
+}
+const IE_RICH_COLS=[['total','Total'],['growth','Aumento de quadro'],['open','Em aberto'],['closed','Fechadas'],['frozen','Suspensas'],['cancelled','Canceladas'],['late','Abertas fora do prazo'],['onTime','Fechadas no prazo'],['avgAge','Idade média abertas (dias)']];
+function ieRichCells(row){return IE_RICH_COLS.map(([key])=>`<td class="${key==='late'&&row[key]?'ie-negative':''}">${row[key]===null?'—':ieNum(row[key])+(key==='onTime'?'%':'')}${key==='total'?ieStatusSegments(row,true):''}</td>`).join('');}
+function ieRenderTowers(cohort){
+  const rows=ieGrouped(cohort,t=>t.seg||'Sem torre').sort((a,b)=>((a[ieTowerSort.key]??-1)-(b[ieTowerSort.key]??-1))*ieTowerSort.direction||a.label.localeCompare(b.label));
+  document.getElementById('ieTowerTable').innerHTML=`<table class="ie-table ie-rich-table"><thead><tr><th>Torre</th>${IE_RICH_COLS.map(([key,label])=>`<th><button type="button" class="ie-sort-btn" data-ie-sort="tower:${key}">${label}${ieTowerSort.key===key?(ieTowerSort.direction<0?' ↓':' ↑'):''}</button></th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr data-ie-tower="${encodeURIComponent(r.label)}" class="${r.label===ieFilters.segment?'is-selected':''}"><td>${ieText(r.label)}</td>${ieRichCells(r)}</tr>`).join('')}</tbody><tfoot><tr><td>Total</td>${ieRichCells(ieRichStats(cohort))}</tr></tfoot></table>`;
+}
+function ieRenderJobs(cohort){
+  const key=document.getElementById('ieJobSort')?.value||'total',rows=ieGrouped(cohort,t=>t.cargo||'Cargo não informado').sort((a,b)=>b[key]-a[key]||b.total-a.total),max=Math.max(1,...rows.map(r=>r.total));
+  document.getElementById('ieJobBars').innerHTML=rows.length?rows.slice(0,ieJobLimit).map(r=>`<div class="ie-job-row"><span title="${ieText(r.label)}">${ieText(r.label)}</span><div style="width:${r.total/max*100}%">${ieStatusSegments(r)}</div><b>${ieNum(r.total)}</b></div>`).join(''):'<div class="ie-empty">Sem cargos neste recorte.</div>';
+  const more=document.getElementById('ieJobMore');more.hidden=rows.length<=10;more.textContent=ieJobLimit===10?'Mostrar 25':'Mostrar 10';
+}
+function ieRenderPyramid(base){
+  const cohort=ieOpened(base),order=['Liderança','Profissionais','Técnicos/Operacionais','Aprendiz','Estágio'];
+  let rows=ieGrouped(cohort,ieGroup);if(iePyramidMode==='open')rows=ieGrouped(base,ieGroup).map(r=>({...r,currentOpen:r.open}));
+  rows.sort((a,b)=>{const aI=order.indexOf(a.label),bI=order.indexOf(b.label);return (aI<0?99:aI)-(bI<0?99:bI)||b.total-a.total;});
+  const key=iePyramidMode==='open'?'open':'total',total=rows.reduce((s,r)=>s+r[key],0),max=Math.max(1,...rows.map(r=>r[key]));
+  document.getElementById('iePyramid').innerHTML=rows.length?rows.map(r=>`<div class="ie-pyramid-row"><span>${ieText(r.label)}</span><div class="ie-pyramid-track"><div class="ie-pyramid-bar" style="width:${r[key]/max*100}%"><b>${ieNum(r[key])} · ${pct(r[key],total)}%</b></div></div></div>`).join(''):'<div class="ie-empty">Sem grupos de cargo neste recorte.</div>';
+  document.getElementById('iePyramidTable').innerHTML=`<table class="ie-table"><thead><tr><th>Grupo</th><th>${key==='open'?'Em aberto hoje':'Aberturas'}</th><th>% do total</th><th>Em aberto</th><th>Fechadas</th><th>SLA médio (dias)</th><th>Canceladas</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${ieText(r.label)}</td><td>${ieNum(r[key])}</td><td>${pct(r[key],total)}%</td><td>${ieNum(r.open)}</td><td>${ieNum(r.closed)}</td><td>${r.sla===null?'—':ieNum(r.sla)}</td><td>${pct(r.cancelled,r.total)}%</td></tr>`).join('')}</tbody></table>`;
+}
+function ieRenderRecurring(cohort){
+  const groups=new Map();for(const t of cohort){const key=ieKey(t.cargo)+'|'+ieKey(t.emp);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(t);}
+  const rows=[...groups.values()].filter(items=>items.length>=3).map(items=>({items,...ieRichStats(items)})).sort((a,b)=>b.total-a.total);
+  document.getElementById('ieRecurringTable').innerHTML=rows.length?`<table class="ie-table"><thead><tr><th>Cargo</th><th>Unidade</th><th>Torre</th><th>Vagas no período ↓</th><th>Em aberto</th><th>Fechadas</th><th>Canceladas</th></tr></thead><tbody>${rows.map(r=>{const t=r.items[0];return `<tr data-ie-unit="${encodeURIComponent(t.emp||'Não informado')}" data-ie-cargo="${encodeURIComponent(t.cargo||'')}"><td>${ieText(t.cargo)}</td><td>${ieText(t.emp)}</td><td>${ieText(t.seg)}</td><td>${ieNum(r.total)}${ieStatusSegments(r,true)}</td><td>${ieNum(r.open)}</td><td>${ieNum(r.closed)}</td><td>${ieNum(r.cancelled)}</td></tr>`;}).join('')}</tbody></table>`:'<div class="ie-empty">Nenhum cargo com três ou mais aberturas na mesma unidade neste período.</div>';
+}
+function ieRenderUnits(cohort){
+  const query=normalize(document.getElementById('ieUnitSearch')?.value||'');
+  const allRows=ieGrouped(cohort,t=>t.emp||'Não informado'),rows=allRows.filter(r=>normalize([r.label,r.items[0].seg,r.items[0].nuc].join(' ')).includes(query)).sort((a,b)=>((a[ieUnitSort.key]??-1)-(b[ieUnitSort.key]??-1))*ieUnitSort.direction||a.label.localeCompare(b.label));
+  document.getElementById('ieUnitHint').textContent=`${allRows.length} unidades · ${rows.length} exibidas. Clique numa unidade para ver as vagas dela.`;
+  document.getElementById('ieUnitTable').innerHTML=`<table class="ie-table ie-rich-table"><thead><tr><th>Unidade</th><th>Torre</th><th>Núcleo</th>${IE_RICH_COLS.map(([key,label])=>`<th><button type="button" class="ie-sort-btn" data-ie-sort="unit:${key}">${label}${ieUnitSort.key===key?(ieUnitSort.direction<0?' ↓':' ↑'):''}</button></th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr data-ie-unit="${encodeURIComponent(r.label)}"><td>${ieText(r.label)}</td><td>${ieText(r.items[0].seg)}</td><td>${ieText(r.items[0].nuc)}</td>${ieRichCells(r)}</tr>`).join('')}</tbody></table>`;
+}
+function ieOpenUnit(unit,cargo=''){
+  ieLastUnitFocus=document.activeElement;
+  const list=ieOpened(ieScope()).filter(t=>(t.emp||'Não informado')===unit&&(!cargo||t.cargo===cargo)).sort((a,b)=>(ieStatus(a)==='open'?-1:1)-(ieStatus(b)==='open'?-1:1)||String(b.dataAb).localeCompare(String(a.dataAb)));
+  document.getElementById('ieUnitTitle').textContent=unit+(cargo?' · '+cargo:'');document.getElementById('ieUnitModalHint').textContent=`${ieNum(list.length)} vagas abertas entre ${monthLabel(ieFilters.from)} e ${monthLabel(ieFilters.to)}. Segue os filtros da página.`;
+  document.getElementById('ieUnitTickets').innerHTML=`<table class="ie-table"><thead><tr><th>Chamado</th><th>Cargo</th><th>Situação</th><th>Status RH</th><th>Abertura</th><th>Fechamento</th><th>Ocorrência</th><th>Analista</th></tr></thead><tbody>${list.map(t=>`<tr><td>#${ieText(t.id)}</td><td>${ieText(t.cargo)}</td><td>${ieText(t.desStatus)}</td><td>${ieText(t.statusRH||'—')}</td><td>${fmtDate(t.dataAb)}</td><td>${fmtDate(t.dataFe)}</td><td>${ieText(t.ocor||'—')}</td><td>${ieText(t.tec||'—')}</td></tr>`).join('')}</tbody></table>`;
+  document.getElementById('ieUnitModal').hidden=false;document.getElementById('ieUnitClose').focus();
+}
+function ieCloseUnit(){document.getElementById('ieUnitModal').hidden=true;ieLastUnitFocus?.focus();}
 function initIndicators(){
-  renderIndicatorFilters(); renderIndicators();
-  document.getElementById('indicatorSegment')?.addEventListener('change',renderIndicators);
-  document.getElementById('indicatorMonth')?.addEventListener('change',renderIndicators);
+  renderIndicatorFilters();renderIndicators();
+  for(const id of ['indicatorSegment','ieArea','ieCategory','ieFrom','ieTo','ieUf'])document.getElementById(id)?.addEventListener('change',renderIndicators);
   document.getElementById('indicatorDimension')?.addEventListener('change',renderIndicatorDimension);
-  document.getElementById('indicatorHistoryMonths')?.addEventListener('change',renderIndicatorHistory);
+  document.getElementById('ieJobSort')?.addEventListener('change',()=>ieRenderJobs(ieOpened(ieScope())));
+  document.getElementById('ieJobMore')?.addEventListener('click',()=>{ieJobLimit=ieJobLimit===10?25:10;ieRenderJobs(ieOpened(ieScope()));});
+  document.getElementById('ieUnitSearch')?.addEventListener('input',()=>ieRenderUnits(ieOpened(ieScope())));
+  document.getElementById('ieUnitClose')?.addEventListener('click',ieCloseUnit);
+  document.getElementById('ieUnitModal')?.addEventListener('click',e=>{if(e.target.id==='ieUnitModal')ieCloseUnit();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!document.getElementById('ieUnitModal').hidden)ieCloseUnit();});
+  document.getElementById('ieReset')?.addEventListener('click',()=>{ieFilters={segment:'',area:'',category:'',uf:'',from:'',to:''};renderIndicatorFilters();renderIndicators();});
+  document.getElementById('view-indicadores')?.addEventListener('click',e=>{
+    const mode=e.target.closest('[data-ie-map]');if(mode){ieMapMode=mode.dataset.ieMap;document.querySelectorAll('[data-ie-map]').forEach(b=>b.classList.toggle('active',b===mode));ieRenderMap(ieScope());return;}
+    const pyramid=e.target.closest('[data-ie-pyramid]');if(pyramid){iePyramidMode=pyramid.dataset.iePyramid;document.querySelectorAll('[data-ie-pyramid]').forEach(b=>b.classList.toggle('active',b===pyramid));ieRenderPyramid(ieScope());return;}
+    const tower=e.target.closest('[data-ie-tower]');if(tower){const value=decodeURIComponent(tower.dataset.ieTower);document.getElementById('indicatorSegment').value=ieFilters.segment===value?'':value;renderIndicators();return;}
+    const unit=e.target.closest('[data-ie-unit]');if(unit){ieOpenUnit(decodeURIComponent(unit.dataset.ieUnit),decodeURIComponent(unit.dataset.ieCargo||''));return;}
+    const sort=e.target.closest('[data-ie-sort]');if(sort){const [table,key]=sort.dataset.ieSort.split(':'),state=table==='tower'?ieTowerSort:ieUnitSort;state.direction=state.key===key?-state.direction:-1;state.key=key;if(table==='tower')ieRenderTowers(ieOpened(ieScope()));else ieRenderUnits(ieOpened(ieScope()));return;}
+    const uf=e.target.closest('[data-ie-uf]');if(uf)ieSelectUf(uf.dataset.ieUf);
+  });
+  document.getElementById('ieBrazilMap')?.addEventListener('keydown',e=>{const path=e.target.closest('[data-ie-uf]');if(path&&(e.key==='Enter'||e.key===' ')){e.preventDefault();ieSelectUf(path.dataset.ieUf);}});
 }
+
 
 // ================= DIÁRIO DE BORDO =================
 const DIARY_KEY='centralVagas.diarioBordo.v3';
@@ -2140,17 +2400,51 @@ function pickSheet(wb){
 function readWorkbook(file){
   return file.arrayBuffer().then(buf => XLSX.read(buf, {type:'array', cellDates:true}));
 }
+function pickAssetsSheet(wb){
+  const preferred = wb.SheetNames.find(name => /ativo|colaborador|funcionario|funcionário/i.test(name));
+  const name = preferred || wb.SheetNames.find(n => XLSX.utils.sheet_to_json(wb.Sheets[n], {defval:null}).length) || wb.SheetNames[0];
+  return name ? XLSX.utils.sheet_to_json(wb.Sheets[name], {defval:null}) : [];
+}
+function countActiveAssets(rows){
+  const nonEmpty = rows.filter(row => Object.values(row).some(value => value !== null && value !== undefined && String(value).trim() !== ''));
+  if(!nonEmpty.length) return 0;
+  const normalizeColumn = value => normalize(String(value)).replace(/[^a-z0-9]/g,'');
+  const idColumn = Object.keys(nonEmpty[0]).find(key => ['matricula','registro','chapa','cpf','email','emailcorporativo','idcolaborador','codigoempregado'].includes(normalizeColumn(key)));
+  if(!idColumn) return nonEmpty.length;
+  const ids=nonEmpty.map(row => String(row[idColumn] ?? '').trim());
+  return new Set(ids.filter(Boolean)).size + ids.filter(id=>!id).length;
+}
 
-async function processUploadedFiles(mainFile, rhFile){
+async function processUploadedFiles(mainFile, rhFile, assetsFile){
   const statusEl = document.getElementById('uploadStatus');
   statusEl.className = 'upload-status';
   statusEl.textContent = 'Lendo arquivo(s)...';
   try{
-    if(!mainFile) throw new Error('Selecione ao menos a base principal (planilha exportada).');
+    if(!mainFile && assetsFile){
+      const assetsWb = await readWorkbook(assetsFile);
+      const rows = pickAssetsSheet(assetsWb);
+      if(!rows.length) throw new Error('Não encontrei linhas na base de ativos enviada.');
+      ACTIVE_ASSETS_COUNT = countActiveAssets(rows);
+      ACTIVE_ASSETS_FROM_UPLOAD = true;
+      try { localStorage.setItem('centralVagasActiveAssetsCount', String(ACTIVE_ASSETS_COUNT)); } catch(e) {}
+      renderIndicators();
+      statusEl.textContent = `Base de ativos atualizada: ${ACTIVE_ASSETS_COUNT.toLocaleString('pt-BR')} pessoa(s). As vagas foram preservadas.`;
+      statusEl.className = 'upload-status ok';
+      return;
+    }
+    if(!mainFile) throw new Error('Selecione a base de vagas ou a base de ativos.');
     const mainWb = await readWorkbook(mainFile);
     const mainRows = pickSheet(mainWb);
     if(!mainRows.length) throw new Error('Não encontrei linhas na planilha enviada.');
     if(!('Chamado' in mainRows[0])) throw new Error('Essa planilha não parece ter a coluna "Chamado" — confira se é a base certa (aba "Export").');
+
+    let assetsCount = null;
+    if(assetsFile){
+      const assetsWb = await readWorkbook(assetsFile);
+      const assetsRows = pickAssetsSheet(assetsWb);
+      if(!assetsRows.length) throw new Error('Não encontrei linhas na base de ativos enviada.');
+      assetsCount = countActiveAssets(assetsRows);
+    }
 
     let rhMap = {};
     if(rhFile){
@@ -2176,7 +2470,7 @@ async function processUploadedFiles(mainFile, rhFile){
       const dAb = r['Data de Abertura'];
       const dFe = r['Data de Fechamento'];
       const dVe = r['Data do Vencimento'];
-      const categoria = CLASSIFICATION[cargo] || 'Nao Classificado';
+      const categoria = classifyTicket(cargo, r['Departamento']);
       const aberto = !!desStatus && desStatus!=='Concluido' && desStatus!=='Cancelamento';
       // Se a base principal já vier com a coluna DES_STATUSRH (arquivo já mesclado),
       // usa ela direto. Só recorre ao mapa do arquivo separado (rhFile) quando a
@@ -2229,6 +2523,11 @@ async function processUploadedFiles(mainFile, rhFile){
 
     TICKETS = newTickets;
     if(sharedMode){ statusEl.textContent='Salvando base na nuvem...'; await syncTicketsToSupabase(newTickets); }
+    if(assetsCount !== null){
+      ACTIVE_ASSETS_COUNT = assetsCount;
+      ACTIVE_ASSETS_FROM_UPLOAD = true;
+      try { localStorage.setItem('centralVagasActiveAssetsCount', String(assetsCount)); } catch(e) { /* não impede a atualização do painel */ }
+    }
     LAST_BASE_UPDATE = new Date().toISOString();
     rebuildDashboard();
 
@@ -2237,6 +2536,7 @@ async function processUploadedFiles(mainFile, rhFile){
     if(skipped) msg += `, ${skipped} linha(s) ignorada(s)`;
     if(rhFile) msg += ` · Status RH mesclado do arquivo separado para ${Object.keys(rhMap).length} chamado(s)`;
     else if(mergedFromMain) msg += ` · Status RH já vinha na própria planilha`;
+    if(assetsCount !== null) msg += ` · Base de ativos: ${assetsCount.toLocaleString('pt-BR')} pessoa(s)`;
     statusEl.textContent = msg;
     statusEl.className = 'upload-status ok';
   } catch(err){
@@ -2297,7 +2597,8 @@ uploadModal.addEventListener('click', (e)=>{ if(e.target===uploadModal) uploadMo
 document.getElementById('processUpload').addEventListener('click', ()=>{
   const mainFile = document.getElementById('fileMain').files[0];
   const rhFile = document.getElementById('fileRH').files[0];
-  processUploadedFiles(mainFile, rhFile);
+  const assetsFile = document.getElementById('fileAtivos').files[0];
+  processUploadedFiles(mainFile, rhFile, assetsFile);
 });
 
 // ================= INIT =================
